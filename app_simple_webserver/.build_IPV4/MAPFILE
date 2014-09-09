@@ -1,0 +1,1031 @@
+Memory map for node 32778, tile 0
+==================================
+
+Sections:
+
+  Name                 Start    Length
+  -------------------- -------- --------
+  .text                00010000 00005154
+  .init                00015154 0000005c
+  .fini                000151b0 0000003a
+  .text.__call_exitprocs_impl 000151ec 00000004
+  .text._cleanup_impl  000151f0 00000004
+  .rodata              000151f4 00000004
+  .eh_frame            000151f8 00000058
+  .cp.rodata           00015250 00000018
+  .cp.const4           00015268 00000010
+  .cp.rodata.cst4      00015278 0000005c
+  .ctors               000152d4 0000003c
+  .dtors               00015310 0000003c
+  .bss                 0001534c 00000000
+  .dp.data             0001534c 000001a8
+  .dp.rodata           000154f4 000000d5
+  .dp.bss              000155cc 00001824
+
+Symbols:
+
+  Address  Size     Section              Name
+  -------- -------- -------------------- --------------------
+  00010000 00000000 .text                _start
+  00010024 00000000 .text                _InitThreadLoop
+  0001003a 00000000 .text                _GetRamEnd
+  0001004a 00000000 .text                _Join
+  00010078 00000000 .text                _NonZeroReturn
+  00010080 00000000 .text                _TrapHandler
+  00010084 00000000 .text                _InitThreadRoutine
+  0001008a 00000000 .text                _TouchRegisters
+  000100a4 00000000 .text                _SetupTraps
+  000100aa 00000000 .text                __register_frame_info_bases
+  000100aa 00000000 .text                __free_libc_hwlock
+  000100c0 00000000 .text                _ExitWithError
+  000100c4 00000052 .text                httpd_init_state
+  00010118 00000064 .text                httpd_send
+  0001017c 0000002a .text                parse_http_request
+  000101a8 00000048 .text                httpd_recv
+  000101f0 000000dc .text                httpd_handle_event
+  000102cc 0000002c .text                httpd_init
+  000102f8 00000012 .text                timer_set
+  0001030a 00000018 .text                timer_expired
+  00010322 00000070 .text                uip_arp_timer
+  00010392 00000240 .text                uip_arp_out
+  000105d2 00000156 .text                uip_arp_update
+  00010728 0000013a .text                uip_arp_arpin
+  00010862 00000014 .text                xtcp_copy_word
+  00010876 00000026 .text                xtcp_compare_words
+  0001089c 00000008 .text                uip_ipaddr_copy
+  000108a4 00000008 .text                uip_ipaddr_cmp
+  000108ac 00000042 .text                uip_unlisten
+  000108ee 00000042 .text                uip_udp_unlisten
+  00010930 00000040 .text                uip_listen
+  00010970 00000040 .text                uip_udp_listen
+  000109b0 00000008 .text                htons
+  000109b8 00000166 .text                uip_connect
+  00010b1e 00000026 .text                uip_send
+  00010b44 0000002a .text                xtcp_increment_word
+  00010b6e 0000004c .text                chksum
+  00010bba 00000046 .text                upper_layer_chksum
+  00010c00 0000000a .text                uip_tcpchksum
+  00010c0a 00000020 .text                uip_ipchksum
+  00010c2a 0000001e .text                uip_add32
+  00010c48 0000001e .text                uip_add_rcv_nxt
+  00010c66 00000fc4 .text                uip_process
+  00011c2a 000000fe .text                uip_udp_new
+  00011d28 00000050 .text                uip_init
+  00011d78 0000001a .text                uip_linkdown
+  00011d92 00000054 .text                autoip_configured
+  00011de6 00000042 .text                dhcpc_configured
+  00011e28 00000054 .text                uip_linkup
+  00011e7c 000000e2 .text                uip_server_init
+  00011f5e 00000012 .text                xtcp_tx_buffer
+  00011f70 0000009a .text                xtcp_process_periodic_timer
+  0001200a 0000006a .text                xtcp_process_udp_acks
+  00012074 000000de .text                xtcp_process_incoming_packet
+  00012152 000000ec .text                xtcpd_check_connection_poll
+  0001223e 00000104 .text                uip_split_output
+  00012342 00000062 .text                uip_split_output_send
+  000123a4 00000060 .text                lookup_xtcpd_state
+  00012404 00000030 .text                get_listener_linknum
+  00012434 0000004e .text                register_listener
+  00012482 00000032 .text                xtcpd_bind_local
+  000124b4 00000082 .text                xtcpd_bind_remote
+  00012536 00000012 .text                xtcpd_init_send
+  00012548 00000014 .text                xtcpd_set_appstate
+  0001255c 00000010 .text                xtcpd_abort
+  0001256c 00000014 .text                xtcpd_close
+  00012580 00000014 .text                xtcpd_ack_recv_mode
+  00012594 00000028 .text                xtcpd_ack_recv
+  000125bc 0000001e .text                xtcpd_pause
+  000125da 00000028 .text                xtcpd_unpause
+  00012602 0000000e .text                uip_xtcp_up
+  00012610 0000000c .text                uip_xtcp_down
+  0001261c 0000000a .text                get_uip_xtcp_ifstate
+  00012626 00000002 .text                xtcpd_join_group
+  00012628 00000002 .text                xtcpd_leave_group
+  0001262a 00000036 .text                xtcpd_get_mac_address
+  00012660 0000002c .text                xtcpd_set_poll_interval
+  0001268c 00000020 .text                uip_xtcpd_send_config
+  000126ac 0000004c .text                uip_xtcp_checkstate
+  000126f8 000000d8 .text                xtcpd_get_ipconfig
+  000127d0 0000003a .text                do_xtcpd_send
+  0001280a 00000034 .text                xtcpd_event
+  0001283e 00000076 .text                xtcpd_connect
+  000128b4 00000048 .text                xtcpd_listen
+  000128fc 00000040 .text                xtcpd_unlisten
+  0001293c 000000c8 .text                xtcpd_init_state
+  00012a04 00000134 .text                uip_xtcpd_handle_poll
+  00012b38 00000204 .text                xtcpd_appcall
+  00012d3c 0000001c .text                xtcpd_init
+  00012d58 00000020 .text                autoip_init
+  00012d78 00000018 .text                rand
+  00012d90 0000001c .text                autoip_start
+  00012dac 00000008 .text                autoip_stop
+  00012db4 0000002c .text                autoip_arp_in
+  00012de0 00000018 .text                random_timer_set
+  00012df8 0000005a .text                create_arp_packet
+  00012e52 0000002a .text                send_probe
+  00012e7c 00000042 .text                send_announce
+  00012ebe 0000010e .text                autoip_periodic
+  00012fcc 0000008e .text                send_request
+  0001305a 0000008c .text                create_msg
+  000130e6 00000070 .text                msg_for_me
+  00013156 0000010e .text                parse_msg
+  00013264 0000031a .text                dhcpc_appcall
+  0001357e 00000022 .text                dhcpc_stop
+  000135a0 00000024 .text                dhcpc_start
+  000135c4 00000082 .text                dhcpc_init
+  00013648 00000026 .text                __main__main_tile_0
+  00013670 00000016 .text                __main__main_tile_0_task_ethernet_xtcp_server_0
+  00013688 0000000a .text                __main__main_tile_0_task_xhttpd_1
+  00013694 00000052 .text                xhttpd
+  000136e8 00000048 .text                ethernet_xtcp_server
+  00013730 00000024 .text                xtcp_listen
+  00013754 0000001c .text                xtcp_event
+  00013770 0000001a .text                xtcp_init_send
+  0001378a 00000024 .text                xtcp_set_connection_appstate
+  000137ae 0000001a .text                xtcp_close
+  000137c8 0000001a .text                xtcp_abort
+  000137e2 0000000c .text                xtcp_recv
+  000137ee 00000034 .text                xtcp_recvi
+  00013822 00000010 .text                xtcp_send
+  00013832 00000026 .text                xtcp_sendi
+  00013858 00000080 .text                xtcp_get_ipconfig
+  000138d8 0000000c .text                xtcpd_send_event
+  000138e4 00000042 .text                xtcpd_service_clients
+  00013928 00000050 .text                xtcpd_service_clients_until_ready
+  00013978 00000072 .text                xtcpd_recv
+  000139ec 0000003a .text                xtcpd_send
+  00013a28 00000022 .text                xtcpd_server_init
+  00013a4c 0000001a .text                xtcpd_queue_event
+  00013a68 0000002a .text                send_conn_and_complete
+  00013a94 00000340 .text                xtcpd_service_client0
+  00013dd4 0000005c .text                clock_time
+  00013e30 0000005e .text                uip_single_server
+  00013e90 00000092 .text                xcoredev_send
+  00013f24 00000174 .text                theServer
+  00014098 00000010 .text                uip_single_server.task.mii_driver.0
+  000140a8 00000030 .text                uip_single_server.task.theServer.1
+  000140d8 0000009e .text                mii_buffer_init
+  00014178 000000a0 .text                mii_get_in_buffer
+  00014218 00000050 .text                mii_free_in_buffer
+  00014268 00000058 .text                mii_restart_buffer
+  000142c0 00000004 .text                mii_out_init
+  000142c4 00000046 .text                mii_out_packet
+  0001430c 00000004 .text                mii_out_packet_done
+  00014310 00000104 .text                miiClientUser
+  00014414 0000001e .text                mii_initialise
+  00014434 0000002c .text                mii_driver
+  00014460 0000002e .text                phy_reset
+  00014490 00000044 .text                mii_port_init
+  000144d4 00000070 .text                otp_board_info_get_mac
+  00014544 00000026 .text                otp_read_word
+  0001456a 00000052 .text                otp_board_info_get_header
+  000145bc 00000008 .text                smi_init
+  000145c4 0000007a .text                eth_phy_config
+  0001463e 00000012 .text                smi_check_link_state
+  00014650 00000062 .text                smi_reg
+  000146b2 00000088 .text                smi_bit_shift
+  0001473c 00000000 .text                mii_install_handler
+  00014768 00000000 .text                miiInterruptHandler
+  0001479e 00000000 .text                buffersAvailable
+  000147aa 00000000 .text                returnFromInterrupt
+  000147bc 00000000 .text                miiLLD
+  00014804 00000000 .text                mii_rxd
+  00014810 00000000 .text                mii_rxdv0
+  00014818 00000000 .text                mii_rxLastBits
+  00014828 00000000 .text                mii_rxd_packet
+  0001483c 00000000 .text                mii_rxd_preamble
+  00014850 00000000 .text                stateDone
+  00014856 00000000 .text                drainIn
+  0001485e 00000000 .text                doneDone
+  00014874 00000000 .text                stateIdle
+  0001487e 00000000 .text                outIdle
+  000148ac 00000000 .text                outPacket
+  000148c8 00000000 .text                Tail0
+  000148d8 00000000 .text                Tail1
+  000148f8 00000000 .text                Tail2
+  0001491c 00000000 .text                Tail3
+  0001493c 00000010 .text                p_reset_0.ctor
+  0001494c 00000008 .text                p_reset_0.dtor
+  00014954 00000010 .text                __localPortInitializer1.ctor
+  00014964 00000008 .text                __localPortInitializer1.dtor
+  0001496c 00000010 .text                __localPortInitializer2.ctor
+  0001497c 00000008 .text                __localPortInitializer2.dtor
+  00014984 00000010 .text                __localPortInitializer3.ctor
+  00014994 00000008 .text                __localPortInitializer3.dtor
+  0001499c 00000010 .text                __localPortInitializer4.ctor
+  000149ac 00000008 .text                __localPortInitializer4.dtor
+  000149b4 00000008 .text                __localPortInitializer5.ctor
+  000149bc 00000008 .text                __localPortInitializer5.dtor
+  000149c4 00000008 .text                __localPortInitializer6.ctor
+  000149cc 00000008 .text                __localPortInitializer6.dtor
+  000149d4 00000010 .text                __localPortInitializer7.ctor
+  000149e4 00000008 .text                __localPortInitializer7.dtor
+  000149ec 00000010 .text                __localPortInitializer8.ctor
+  000149fc 00000008 .text                __localPortInitializer8.dtor
+  00014a04 0000001a .text                __localPortInitializer9.ctor
+  00014a1e 00000008 .text                __localPortInitializer9.dtor
+  00014a26 00000010 .text                __localPortInitializer10.ctor
+  00014a36 00000008 .text                __localPortInitializer10.dtor
+  00014a3e 00000010 .text                __localPortInitializer11.ctor
+  00014a4e 00000008 .text                __localPortInitializer11.dtor
+  00014a56 00000010 .text                __localPortInitializer12.ctor
+  00014a66 00000008 .text                __localPortInitializer12.dtor
+  00014a6e 0000001a .text                __localPortInitializer13.ctor
+  00014a88 00000008 .text                __localPortInitializer13.dtor
+  00014a90 00000010 .text                __localPortInitializer14.ctor
+  00014aa0 00000008 .text                __localPortInitializer14.dtor
+  00014aa8 00000008 .text                __mcmain800a00
+  00014ab0 00000000 .text                main
+  00014bc2 00000000 .text                buildRegArg
+  00014bd2 00000000 .text                hasEndReg
+  00014bd4 00000000 .text                wakeCore
+  00014bee 00000000 .text                readRemoteChanend
+  00014bfc 00000000 .text                doneRemoteChans
+  00014c00 00000000 .text                doneRemoteChans_2
+  00014c04 00000000 .text                endOfStartup
+  00014c0c 00000016 .text                __libc_done
+  00014c24 0000001c .text                _exit_unlocked
+  00014c40 0000000e .text                __init_threadlocal_timer
+  00014c4e 0000000c .text                __free_threadlocal_timer
+  00014c5a 00000004 .text                _DoException
+  00014c5e 0000000c .text                _exit
+  00014c6c 0000003e .text                memset
+  00014cac 0000002c .text                strncmp
+  00014cd8 00000016 .text                strlen
+  00014cf0 00000016 .text                printchar
+  00014d06 0000003e .text                printint
+  00014d44 00000024 .text                printstr
+  00014d68 00000032 .text                printstrln
+  00014d9a 0000002e .text                reverse_array
+  00014dc8 0000005e .text                printuint_base
+  00014e28 00000020 .text                memmove
+  00014e48 0000002c .text                memcpy
+  00014e74 0000001e .text                __misaligned_store
+  00014e92 00000032 .text                __misaligned_load
+  00014ec4 00000026 .text                memcmp
+  00014eec 00000012 .text                srand
+  00014f00 0000003c .text                rand
+  00014f3c 00000000 .text                __start_other_cores
+  00014f78 0000003a .text                __memcpy_4
+  00014fb2 00000038 .text                configure_out_port_strobed_master
+  00014fea 00000032 .text                configure_in_port_strobed_slave
+  0001501c 00000010 .text                configure_clock_src
+  0001502c 00000008 .text                __call_exitprocs
+  00015034 00000008 .text                _cleanup
+  0001503c 0000000a .text                _done
+  00015048 00000008 .text                __alloc_libc_hwlock
+  00015050 00000004 .text                _DoSyscall
+  00015054 0000000c .text                _write
+  00015060 00000014 .text                _safe_strlen
+  00015074 00000012 .text                __start_core
+  00015086 00000016 .text                __set_port_in
+  0001509c 00000028 .text                __set_port_out
+  000150b6 00000000 .text                loop
+  000150be 00000000 .text                do_output
+  000150c4 0000001e .text                _DoSyscallErrno
+  000150e4 00000014 .text                strnlen
+  000150f8 0000000c .text                __errno
+  00015104 00000000 .text                xtcp_send.thunk.0
+  0001510a 00000000 .text                xtcp_recv.thunk.4
+  00015110 00000000 .text                printstr.thunk.8
+  00015116 00000000 .text                xtcpd_service_clients_until_ready.thunk.10
+  0001511e 00000000 .text                xtcpd_send.thunk.12
+  00015134 00000000 .text                xtcpd_recv.thunk.14
+  00015154 00000000 .init                _init
+  000151a4 00000000 .init                do_ctors_loop
+  000151ae 00000000 .init                do_ctors_end
+  000151b0 00000000 .fini                _fini
+  000151d2 00000000 .fini                do_dtors_loop
+  000151de 00000000 .fini                do_dtors_end
+  000151ec 00000002 .text.__call_exitprocs_impl __call_exitprocs_impl
+  000151f0 00000002 .text._cleanup_impl  _cleanup_impl
+  000151f4 00000000 .rodata              _RamSize
+  000151f8 00000000 .eh_frame            __EH_FRAME_BEGIN__
+  0001524c 00000000 .eh_frame            __EH_FRAME_END__
+  00015250 00000000 .cp.rodata           _cp
+  00015250 00000000 .cp.rodata           initialCRC
+  00015254 00000000 .cp.rodata           polynomial
+  00015258 00000000 .cp.rodata           allFives
+  0001525c 00000000 .cp.rodata           DallFives
+  00015260 00000008 .cp.rodata           tile
+  00015268 00000000 .cp.const4           destChanendZero800800
+  0001526c 00000000 .cp.const4           thisChanendZero
+  0001526c 00000000 .cp.const4           destChanendZero800a00
+  00015270 00000000 .cp.const4           destChanendZero800c00
+  00015274 00000000 .cp.const4           destChanendZero800d00
+  000152d4 00000000 .ctors               _CTOR_LIST_
+  00015310 00000000 .dtors               _DTOR_LIST_
+  00015310 00000000 .ctors               _CTOR_END_
+  0001534c 00000000 .dp.data             _dp
+  0001534c 00000000 .bss                 _fbss
+  0001534c 00000000 .dp.data             _NullPtr
+  0001534c 00000000 .bss                 _ebss
+  0001534c 00000000 .dtors               _DTOR_END_
+  00015350 00000000 .dp.data             dtor_list_ptr
+  00015354 00000000 .dp.data             dtors_size
+  00015358 000000ae .dp.data             page
+  00015408 00000004 .dp.data             uip_buf
+  0001540c 00000004 .dp.data             guid
+  00015410 00000040 .dp.data             xtcp_ports_0
+  00015450 00000010 .dp.data             par.desc.1
+  00015460 00000010 .dp.data             par.desc.1
+  00015470 00000000 .dp.data             tailValues
+  00015480 00000000 .dp.data             spreadRemoteEndsData
+  0001548c 00000040 .dp.data             _rand_next
+  000154cc 00000020 .dp.data             __timers
+  000154ec 00000000 .dp.data             ctor_list_ptr
+  000154f0 00000000 .dp.data             ctors_size
+  00015514 00000004 .dp.rodata           broadcast_ipaddr
+  00015518 00000004 .dp.rodata           all_zeroes_addr
+  0001551c 00000004 .dp.rodata           all_ones_addr
+  00015520 0000002a .dp.rodata           autoip_arp_pkt
+  0001554c 00000029 .dp.rodata           .str
+  00015578 00000004 .dp.rodata           p_reset_0
+  0001557c 00000004 .dp.rodata           __localPortInitializer1
+  00015580 00000004 .dp.rodata           __localPortInitializer2
+  00015584 00000004 .dp.rodata           __localPortInitializer3
+  00015588 00000004 .dp.rodata           __localPortInitializer4
+  0001558c 00000004 .dp.rodata           __localPortInitializer5
+  00015590 00000004 .dp.rodata           __localPortInitializer6
+  00015594 00000004 .dp.rodata           __localPortInitializer7
+  00015598 00000004 .dp.rodata           __localPortInitializer8
+  0001559c 00000004 .dp.rodata           __localPortInitializer9
+  000155a0 00000004 .dp.rodata           __localPortInitializer10
+  000155a4 00000004 .dp.rodata           __localPortInitializer11
+  000155a8 00000004 .dp.rodata           __localPortInitializer12
+  000155ac 00000004 .dp.rodata           __localPortInitializer13
+  000155b0 00000004 .dp.rodata           __localPortInitializer14
+  000155b4 00000001 .dp.rodata           newline
+  000155b8 00000011 .dp.rodata           digits
+  000155cc 00000000 .dp.bss              _fdp.bss
+  000155cc 000000c8 .dp.bss              connection_states
+  00015694 00000001 .dp.bss              arptime
+  00015698 00000001 .dp.bss              i
+  0001569c 00000060 .dp.bss              arp_table
+  000156fc 00000004 .dp.bss              ipaddr
+  00015700 00000001 .dp.bss              tmpage
+  00015704 00000001 .dp.bss              c
+  00015708 00000006 .dp.bss              uip_ethaddr
+  00015710 00000002 .dp.bss              ipid
+  00015714 00000001 .dp.bss              c
+  00015718 00000014 .dp.bss              uip_listenports
+  0001572c 00000014 .dp.bss              uip_udp_listenports
+  00015740 00000002 .dp.bss              lastport
+  00015744 00000460 .dp.bss              uip_conns
+  00015ba4 00000004 .dp.bss              iss
+  00015ba8 00000002 .dp.bss              uip_slen
+  00015bac 00000004 .dp.bss              uip_sappdata
+  00015bb0 00000004 .dp.bss              uip_acc32
+  00015bb4 00000004 .dp.bss              uip_conn
+  00015bb8 00000004 .dp.bss              uip_appdata
+  00015bbc 00000004 .dp.bss              uip_flags
+  00015bc0 00000002 .dp.bss              uip_len
+  00015bc4 00000004 .dp.bss              uip_udp_conn
+  00015bc8 00000004 .dp.bss              uip_hostaddr
+  00015bcc 000003c0 .dp.bss              uip_udp_conns
+  00015f8c 00000002 .dp.bss              tmp16
+  00015f90 00000001 .dp.bss              opt
+  00015f94 00000004 .dp.bss              uip_netmask
+  00015f98 00000004 .dp.bss              uip_draddr
+  00015f9c 00000001 .dp.bss              dhcp_done.b
+  00015fa0 00000004 .dp.bss              uip_static_ip
+  00015fa4 0000000c .dp.bss              uip_static_ipconfig
+  00015fb0 000005f8 .dp.bss              uip_buf32
+  000165a8 00000001 .dp.bss              uip_ifstate.b
+  000165ac 00000004 .dp.bss              xtcp_links
+  000165b0 00000028 .dp.bss              prev_ifstate
+  000165d8 00000004 .dp.bss              xtcp_num
+  000165dc 00000078 .dp.bss              tcp_listeners
+  00016654 00000078 .dp.bss              udp_listeners
+  000166cc 00000028 .dp.bss              my_autoip_state
+  000166f4 00000034 .dp.bss              s
+  00016728 00000004 .dp.bss              xid
+  0001672c 0000000c .dp.bss              ipconfig
+  00016738 00000028 .dp.bss              notified
+  00016760 00000028 .dp.bss              pending_event
+  00016788 00000024 .dp.bss              dummy_conn
+  000167ac 00000004 .dp.bss              time
+  000167b0 00000004 .dp.bss              prev_timestamp
+  000167b4 00000001 .dp.bss              init.b
+  000167b8 000005f0 .dp.bss              txbuf.static
+  00016da8 00000001 .dp.bss              tx_buf_in_use.static.b
+  00016dac 00000004 .dp.bss              linkstate.static
+  00016db0 00000000 .dp.bss              chanEndStore800800
+  00016db0 00000000 .dp.bss              chanEndStore800a00
+  00016db0 00000000 .dp.bss              chanEndStore800c00
+  00016db0 00000000 .dp.bss              chanEndStore800d00
+  00016db0 00000004 .dp.bss              __libc_hwlock
+  00016db4 00000020 .dp.bss              _errno
+  00016dd4 00000000 .dp.bss              __eh_object
+  00016df0 00000000 .dp.bss              _edp.bss
+
+
+Memory map for node 32776, tile 0
+==================================
+
+Sections:
+
+  Name                 Start    Length
+  -------------------- -------- --------
+  .text                00010000 000001e4
+  .init                000101e4 0000005c
+  .fini                00010240 0000003a
+  .text.__call_exitprocs_impl 0001027c 00000004
+  .text._cleanup_impl  00010280 00000004
+  .rodata              00010284 00000004
+  .eh_frame            00010288 00000044
+  .cp.rodata           000102cc 00000008
+  .cp.const4           000102d4 00000008
+  .cp.rodata.cst4      000102dc 00000004
+  .bss                 000102e0 00000000
+  .ctors               000102e0 00000000
+  .dtors               000102e0 00000000
+  .dp.data             000102e0 00000034
+  .dp.rodata           00010314 00000000
+  .dp.bss              00010314 00000020
+
+Symbols:
+
+  Address  Size     Section              Name
+  -------- -------- -------------------- --------------------
+  00010000 00000000 .text                _start
+  00010024 00000000 .text                _InitThreadLoop
+  0001003a 00000000 .text                _GetRamEnd
+  0001004a 00000000 .text                _Join
+  00010078 00000000 .text                _NonZeroReturn
+  00010080 00000000 .text                _TrapHandler
+  00010084 00000000 .text                _InitThreadRoutine
+  0001008a 00000000 .text                _TouchRegisters
+  000100a4 00000000 .text                _SetupTraps
+  000100aa 00000000 .text                __register_frame_info_bases
+  000100aa 00000000 .text                __free_libc_hwlock
+  000100c0 00000000 .text                _ExitWithError
+  000100c4 00000004 .text                __mcmain800800
+  000100c8 00000000 .text                main
+  000100ea 00000000 .text                receiveEnd
+  000100f4 00000000 .text                waitForZero
+  000100fa 00000000 .text                noChans
+  00010106 00000000 .text                returnToCRT
+  0001010a 00000000 .text                buildRegArg
+  0001011a 00000000 .text                hasEndReg
+  0001011c 00000016 .text                __libc_done
+  0001011c 00000000 .text                endOfStartup
+  00010134 0000001c .text                _exit_unlocked
+  00010150 0000000e .text                __init_threadlocal_timer
+  0001015e 0000000c .text                __free_threadlocal_timer
+  0001016a 00000004 .text                _DoException
+  0001016e 0000000c .text                _exit
+  0001017c 0000003e .text                memset
+  000101bc 00000008 .text                __call_exitprocs
+  000101c4 00000008 .text                _cleanup
+  000101cc 0000000a .text                _done
+  000101d8 00000008 .text                __alloc_libc_hwlock
+  000101e0 00000004 .text                _DoSyscall
+  000101e4 00000000 .init                _init
+  00010234 00000000 .init                do_ctors_loop
+  0001023e 00000000 .init                do_ctors_end
+  00010240 00000000 .fini                _fini
+  00010262 00000000 .fini                do_dtors_loop
+  0001026e 00000000 .fini                do_dtors_end
+  0001027c 00000002 .text.__call_exitprocs_impl __call_exitprocs_impl
+  00010280 00000002 .text._cleanup_impl  _cleanup_impl
+  00010284 00000000 .rodata              _RamSize
+  00010288 00000000 .eh_frame            __EH_FRAME_BEGIN__
+  000102c8 00000000 .eh_frame            __EH_FRAME_END__
+  000102cc 00000000 .cp.rodata           _cp
+  000102cc 00000008 .cp.rodata           tile
+  000102d4 00000000 .cp.const4           thisChanendZero
+  000102d8 00000000 .cp.const4           nextChanendZero
+  000102e0 00000000 .dp.data             _dp
+  000102e0 00000000 .bss                 _fbss
+  000102e0 00000000 .ctors               _CTOR_LIST_
+  000102e0 00000000 .dtors               _DTOR_LIST_
+  000102e0 00000000 .dp.data             _NullPtr
+  000102e0 00000000 .bss                 _ebss
+  000102e0 00000000 .dtors               _DTOR_END_
+  000102e0 00000000 .ctors               _CTOR_END_
+  000102e4 00000000 .dp.data             dtor_list_ptr
+  000102e8 00000000 .dp.data             dtors_size
+  000102ec 00000020 .dp.data             __timers
+  000102ec 00000000 .dp.data             p_reset_0
+  000102ec 00000000 .dp.data             __localPortInitializer1
+  000102ec 00000000 .dp.data             __localPortInitializer2
+  000102ec 00000000 .dp.data             __localPortInitializer3
+  000102ec 00000000 .dp.data             __localPortInitializer4
+  000102ec 00000000 .dp.data             __localPortInitializer5
+  000102ec 00000000 .dp.data             __localPortInitializer6
+  000102ec 00000000 .dp.data             __localPortInitializer7
+  000102ec 00000000 .dp.data             __localPortInitializer8
+  000102ec 00000000 .dp.data             __localPortInitializer9
+  000102ec 00000000 .dp.data             __localPortInitializer10
+  000102ec 00000000 .dp.data             __localPortInitializer11
+  000102ec 00000000 .dp.data             __localPortInitializer12
+  000102ec 00000000 .dp.data             __localPortInitializer13
+  000102ec 00000000 .dp.data             __localPortInitializer14
+  0001030c 00000000 .dp.data             ctor_list_ptr
+  00010310 00000000 .dp.data             ctors_size
+  00010314 00000000 .dp.bss              _fdp.bss
+  00010314 00000000 .dp.bss              chanEndStore
+  00010314 00000004 .dp.bss              __libc_hwlock
+  00010318 00000000 .dp.bss              __eh_object
+  00010334 00000000 .dp.bss              _edp.bss
+
+
+Memory map for node 32780, tile 0
+==================================
+
+Sections:
+
+  Name                 Start    Length
+  -------------------- -------- --------
+  .text                00010000 000001e4
+  .init                000101e4 0000005c
+  .fini                00010240 0000003a
+  .text.__call_exitprocs_impl 0001027c 00000004
+  .text._cleanup_impl  00010280 00000004
+  .rodata              00010284 00000004
+  .eh_frame            00010288 00000044
+  .cp.rodata           000102cc 00000008
+  .cp.const4           000102d4 00000008
+  .cp.rodata.cst4      000102dc 00000004
+  .bss                 000102e0 00000000
+  .ctors               000102e0 00000000
+  .dtors               000102e0 00000000
+  .dp.data             000102e0 00000034
+  .dp.rodata           00010314 00000000
+  .dp.bss              00010314 00000020
+
+Symbols:
+
+  Address  Size     Section              Name
+  -------- -------- -------------------- --------------------
+  00010000 00000000 .text                _start
+  00010024 00000000 .text                _InitThreadLoop
+  0001003a 00000000 .text                _GetRamEnd
+  0001004a 00000000 .text                _Join
+  00010078 00000000 .text                _NonZeroReturn
+  00010080 00000000 .text                _TrapHandler
+  00010084 00000000 .text                _InitThreadRoutine
+  0001008a 00000000 .text                _TouchRegisters
+  000100a4 00000000 .text                _SetupTraps
+  000100aa 00000000 .text                __register_frame_info_bases
+  000100aa 00000000 .text                __free_libc_hwlock
+  000100c0 00000000 .text                _ExitWithError
+  000100c4 00000004 .text                __mcmain800c00
+  000100c8 00000000 .text                main
+  000100ea 00000000 .text                receiveEnd
+  000100f4 00000000 .text                waitForZero
+  000100fa 00000000 .text                noChans
+  00010106 00000000 .text                returnToCRT
+  0001010a 00000000 .text                buildRegArg
+  0001011a 00000000 .text                hasEndReg
+  0001011c 00000016 .text                __libc_done
+  0001011c 00000000 .text                endOfStartup
+  00010134 0000001c .text                _exit_unlocked
+  00010150 0000000e .text                __init_threadlocal_timer
+  0001015e 0000000c .text                __free_threadlocal_timer
+  0001016a 00000004 .text                _DoException
+  0001016e 0000000c .text                _exit
+  0001017c 0000003e .text                memset
+  000101bc 00000008 .text                __call_exitprocs
+  000101c4 00000008 .text                _cleanup
+  000101cc 0000000a .text                _done
+  000101d8 00000008 .text                __alloc_libc_hwlock
+  000101e0 00000004 .text                _DoSyscall
+  000101e4 00000000 .init                _init
+  00010234 00000000 .init                do_ctors_loop
+  0001023e 00000000 .init                do_ctors_end
+  00010240 00000000 .fini                _fini
+  00010262 00000000 .fini                do_dtors_loop
+  0001026e 00000000 .fini                do_dtors_end
+  0001027c 00000002 .text.__call_exitprocs_impl __call_exitprocs_impl
+  00010280 00000002 .text._cleanup_impl  _cleanup_impl
+  00010284 00000000 .rodata              _RamSize
+  00010288 00000000 .eh_frame            __EH_FRAME_BEGIN__
+  000102c8 00000000 .eh_frame            __EH_FRAME_END__
+  000102cc 00000000 .cp.rodata           _cp
+  000102cc 00000008 .cp.rodata           tile
+  000102d4 00000000 .cp.const4           thisChanendZero
+  000102d8 00000000 .cp.const4           nextChanendZero
+  000102e0 00000000 .dp.data             _dp
+  000102e0 00000000 .bss                 _fbss
+  000102e0 00000000 .ctors               _CTOR_LIST_
+  000102e0 00000000 .dtors               _DTOR_LIST_
+  000102e0 00000000 .dp.data             _NullPtr
+  000102e0 00000000 .bss                 _ebss
+  000102e0 00000000 .dtors               _DTOR_END_
+  000102e0 00000000 .ctors               _CTOR_END_
+  000102e4 00000000 .dp.data             dtor_list_ptr
+  000102e8 00000000 .dp.data             dtors_size
+  000102ec 00000020 .dp.data             __timers
+  000102ec 00000000 .dp.data             p_reset_0
+  000102ec 00000000 .dp.data             __localPortInitializer1
+  000102ec 00000000 .dp.data             __localPortInitializer2
+  000102ec 00000000 .dp.data             __localPortInitializer3
+  000102ec 00000000 .dp.data             __localPortInitializer4
+  000102ec 00000000 .dp.data             __localPortInitializer5
+  000102ec 00000000 .dp.data             __localPortInitializer6
+  000102ec 00000000 .dp.data             __localPortInitializer7
+  000102ec 00000000 .dp.data             __localPortInitializer8
+  000102ec 00000000 .dp.data             __localPortInitializer9
+  000102ec 00000000 .dp.data             __localPortInitializer10
+  000102ec 00000000 .dp.data             __localPortInitializer11
+  000102ec 00000000 .dp.data             __localPortInitializer12
+  000102ec 00000000 .dp.data             __localPortInitializer13
+  000102ec 00000000 .dp.data             __localPortInitializer14
+  0001030c 00000000 .dp.data             ctor_list_ptr
+  00010310 00000000 .dp.data             ctors_size
+  00010314 00000000 .dp.bss              _fdp.bss
+  00010314 00000000 .dp.bss              chanEndStore
+  00010314 00000004 .dp.bss              __libc_hwlock
+  00010318 00000000 .dp.bss              __eh_object
+  00010334 00000000 .dp.bss              _edp.bss
+
+
+Memory map for node 32781, tile 0
+==================================
+
+Sections:
+
+  Name                 Start    Length
+  -------------------- -------- --------
+  .text                00010000 000001e4
+  .init                000101e4 0000005c
+  .fini                00010240 0000003a
+  .text.__call_exitprocs_impl 0001027c 00000004
+  .text._cleanup_impl  00010280 00000004
+  .rodata              00010284 00000004
+  .eh_frame            00010288 00000044
+  .cp.rodata           000102cc 00000008
+  .cp.const4           000102d4 00000008
+  .cp.rodata.cst4      000102dc 00000004
+  .bss                 000102e0 00000000
+  .ctors               000102e0 00000000
+  .dtors               000102e0 00000000
+  .dp.data             000102e0 00000034
+  .dp.rodata           00010314 00000000
+  .dp.bss              00010314 00000020
+
+Symbols:
+
+  Address  Size     Section              Name
+  -------- -------- -------------------- --------------------
+  00010000 00000000 .text                _start
+  00010024 00000000 .text                _InitThreadLoop
+  0001003a 00000000 .text                _GetRamEnd
+  0001004a 00000000 .text                _Join
+  00010078 00000000 .text                _NonZeroReturn
+  00010080 00000000 .text                _TrapHandler
+  00010084 00000000 .text                _InitThreadRoutine
+  0001008a 00000000 .text                _TouchRegisters
+  000100a4 00000000 .text                _SetupTraps
+  000100aa 00000000 .text                __register_frame_info_bases
+  000100aa 00000000 .text                __free_libc_hwlock
+  000100c0 00000000 .text                _ExitWithError
+  000100c4 00000004 .text                __mcmain800d00
+  000100c8 00000000 .text                main
+  000100ea 00000000 .text                receiveEnd
+  000100f4 00000000 .text                waitForZero
+  000100fa 00000000 .text                noChans
+  00010106 00000000 .text                returnToCRT
+  0001010a 00000000 .text                buildRegArg
+  0001011a 00000000 .text                hasEndReg
+  0001011c 00000016 .text                __libc_done
+  0001011c 00000000 .text                endOfStartup
+  00010134 0000001c .text                _exit_unlocked
+  00010150 0000000e .text                __init_threadlocal_timer
+  0001015e 0000000c .text                __free_threadlocal_timer
+  0001016a 00000004 .text                _DoException
+  0001016e 0000000c .text                _exit
+  0001017c 0000003e .text                memset
+  000101bc 00000008 .text                __call_exitprocs
+  000101c4 00000008 .text                _cleanup
+  000101cc 0000000a .text                _done
+  000101d8 00000008 .text                __alloc_libc_hwlock
+  000101e0 00000004 .text                _DoSyscall
+  000101e4 00000000 .init                _init
+  00010234 00000000 .init                do_ctors_loop
+  0001023e 00000000 .init                do_ctors_end
+  00010240 00000000 .fini                _fini
+  00010262 00000000 .fini                do_dtors_loop
+  0001026e 00000000 .fini                do_dtors_end
+  0001027c 00000002 .text.__call_exitprocs_impl __call_exitprocs_impl
+  00010280 00000002 .text._cleanup_impl  _cleanup_impl
+  00010284 00000000 .rodata              _RamSize
+  00010288 00000000 .eh_frame            __EH_FRAME_BEGIN__
+  000102c8 00000000 .eh_frame            __EH_FRAME_END__
+  000102cc 00000000 .cp.rodata           _cp
+  000102cc 00000008 .cp.rodata           tile
+  000102d4 00000000 .cp.const4           nextChanendZero
+  000102d8 00000000 .cp.const4           thisChanendZero
+  000102e0 00000000 .dp.data             _dp
+  000102e0 00000000 .bss                 _fbss
+  000102e0 00000000 .ctors               _CTOR_LIST_
+  000102e0 00000000 .dtors               _DTOR_LIST_
+  000102e0 00000000 .dp.data             _NullPtr
+  000102e0 00000000 .bss                 _ebss
+  000102e0 00000000 .dtors               _DTOR_END_
+  000102e0 00000000 .ctors               _CTOR_END_
+  000102e4 00000000 .dp.data             dtor_list_ptr
+  000102e8 00000000 .dp.data             dtors_size
+  000102ec 00000020 .dp.data             __timers
+  000102ec 00000000 .dp.data             p_reset_0
+  000102ec 00000000 .dp.data             __localPortInitializer1
+  000102ec 00000000 .dp.data             __localPortInitializer2
+  000102ec 00000000 .dp.data             __localPortInitializer3
+  000102ec 00000000 .dp.data             __localPortInitializer4
+  000102ec 00000000 .dp.data             __localPortInitializer5
+  000102ec 00000000 .dp.data             __localPortInitializer6
+  000102ec 00000000 .dp.data             __localPortInitializer7
+  000102ec 00000000 .dp.data             __localPortInitializer8
+  000102ec 00000000 .dp.data             __localPortInitializer9
+  000102ec 00000000 .dp.data             __localPortInitializer10
+  000102ec 00000000 .dp.data             __localPortInitializer11
+  000102ec 00000000 .dp.data             __localPortInitializer12
+  000102ec 00000000 .dp.data             __localPortInitializer13
+  000102ec 00000000 .dp.data             __localPortInitializer14
+  0001030c 00000000 .dp.data             ctor_list_ptr
+  00010310 00000000 .dp.data             ctors_size
+  00010314 00000000 .dp.bss              _fdp.bss
+  00010314 00000000 .dp.bss              chanEndStore
+  00010314 00000004 .dp.bss              __libc_hwlock
+  00010318 00000000 .dp.bss              __eh_object
+  00010334 00000000 .dp.bss              _edp.bss
+
+
+Memory map for node 32778, tile 0
+==================================
+
+Sections:
+
+  Name                 Start    Length
+  -------------------- -------- --------
+  .text                00010000 000002d4
+  .cp.rodata           000102d4 00000024
+  .bss                 000102f8 00000000
+  .ctors               000102f8 00000000
+  .dtors               000102f8 00000000
+  .dp.data             000102f8 00000018
+  .dp.bss              00010310 00000000
+
+Symbols:
+
+  Address  Size     Section              Name
+  -------- -------- -------------------- --------------------
+  00010000 00000000 .text                _start
+  00010042 00000000 .text                disableLinks
+  0001005e 00000000 .text                nodeIdLoop
+  000100e4 00000000 .text                setDimensionReg
+  00010100 00000000 .text                sayHello4
+  0001011c 00000000 .text                waitForHello4
+  00010132 00000000 .text                sayHelloAgain4
+  0001014a 00000000 .text                sayHello5
+  00010166 00000000 .text                waitForHello5
+  0001017c 00000000 .text                sayHelloAgain5
+  00010194 00000000 .text                sayHello6
+  000101b0 00000000 .text                waitForHello6
+  000101c6 00000000 .text                sayHelloAgain6
+  000101de 00000000 .text                sayHello7
+  000101fa 00000000 .text                waitForHello7
+  00010210 00000000 .text                sayHelloAgain7
+  0001022c 00000008 .text                read_sswitch_reg
+  00010234 00000038 .text                read_switch_reg
+  00010266 00000000 .text                skip_in
+  0001026c 0000000a .text                write_sswitch_reg
+  00010276 0000000a .text                write_sswitch_reg_no_ack
+  00010280 00000050 .text                write_switch_reg
+  000102a0 00000000 .text                build_return_no_ack
+  000102a8 00000000 .text                write_switch_reg_send
+  000102c2 00000000 .text                write_switch_reg_return_0
+  000102c8 00000000 .text                write_switch_reg_free_and_return_1
+  000102d0 00000004 .text                return_zero
+  000102d4 00000000 .cp.rodata           _cp
+  000102d4 00000000 .cp.rodata           xs1g_link_ports
+  000102ec 00000008 .cp.rodata           _done
+  000102f4 00000004 .cp.rodata           _DoSyscall
+  000102f8 00000000 .dp.data             _dp
+  000102f8 00000000 .bss                 _fbss
+  000102f8 00000000 .ctors               _CTOR_LIST_
+  000102f8 00000000 .dtors               _DTOR_LIST_
+  000102f8 00000000 .dp.data             xlink4RegVal
+  000102f8 00000000 .bss                 _ebss
+  000102f8 00000000 .ctors               _CTOR_END_
+  000102f8 00000000 .dtors               _DTOR_END_
+  000102fc 00000000 .dp.data             xlink5RegVal
+  00010300 00000000 .dp.data             xlink6RegVal
+  00010304 00000000 .dp.data             xlink7RegVal
+  00010308 00000000 .dp.data             dirBits0
+  0001030c 00000000 .dp.data             dirBits1
+  00010310 00000000 .dp.bss              _fdp.bss
+  00010310 00000000 .dp.bss              _edp.bss
+
+
+Memory map for node 32776, tile 0
+==================================
+
+Sections:
+
+  Name                 Start    Length
+  -------------------- -------- --------
+  .text                00010000 00000334
+  .cp.rodata           00010334 00000024
+  .bss                 00010358 00000000
+  .ctors               00010358 00000000
+  .dtors               00010358 00000000
+  .dp.data             00010358 0000001c
+  .dp.bss              00010374 00000000
+
+Symbols:
+
+  Address  Size     Section              Name
+  -------- -------- -------------------- --------------------
+  00010000 00000000 .text                _start
+  00010042 00000000 .text                disableLinks
+  0001005e 00000000 .text                nodeIdLoop
+  000100fa 00000000 .text                setDimensionReg
+  00010116 00000000 .text                sayHello7
+  00010132 00000000 .text                waitForHello7
+  00010148 00000000 .text                sayHelloAgain7
+  00010160 00000000 .text                sayHello6
+  0001017c 00000000 .text                waitForHello6
+  00010192 00000000 .text                sayHelloAgain6
+  000101aa 00000000 .text                sayHello5
+  000101c6 00000000 .text                waitForHello5
+  000101dc 00000000 .text                sayHelloAgain5
+  000101f4 00000000 .text                sayHello4
+  00010210 00000000 .text                waitForHello4
+  00010226 00000000 .text                sayHelloAgain4
+  0001023e 00000000 .text                sayHello3
+  0001025a 00000000 .text                waitForHello3
+  00010270 00000000 .text                sayHelloAgain3
+  0001028c 00000008 .text                read_sswitch_reg
+  00010294 00000038 .text                read_switch_reg
+  000102c6 00000000 .text                skip_in
+  000102cc 0000000a .text                write_sswitch_reg
+  000102d6 0000000a .text                write_sswitch_reg_no_ack
+  000102e0 00000050 .text                write_switch_reg
+  00010300 00000000 .text                build_return_no_ack
+  00010308 00000000 .text                write_switch_reg_send
+  00010322 00000000 .text                write_switch_reg_return_0
+  00010328 00000000 .text                write_switch_reg_free_and_return_1
+  00010330 00000004 .text                return_zero
+  00010334 00000000 .cp.rodata           _cp
+  00010334 00000000 .cp.rodata           xs1g_link_ports
+  0001034c 00000008 .cp.rodata           _done
+  00010354 00000004 .cp.rodata           _DoSyscall
+  00010358 00000000 .dp.data             _dp
+  00010358 00000000 .bss                 _fbss
+  00010358 00000000 .ctors               _CTOR_LIST_
+  00010358 00000000 .dtors               _DTOR_LIST_
+  00010358 00000000 .dp.data             xlink7RegVal
+  00010358 00000000 .bss                 _ebss
+  00010358 00000000 .ctors               _CTOR_END_
+  00010358 00000000 .dtors               _DTOR_END_
+  0001035c 00000000 .dp.data             xlink6RegVal
+  00010360 00000000 .dp.data             xlink5RegVal
+  00010364 00000000 .dp.data             xlink4RegVal
+  00010368 00000000 .dp.data             xlink3RegVal
+  0001036c 00000000 .dp.data             dirBits0
+  00010370 00000000 .dp.data             dirBits1
+  00010374 00000000 .dp.bss              _fdp.bss
+  00010374 00000000 .dp.bss              _edp.bss
+
+
+Memory map for node 32780, tile 0
+==================================
+
+Sections:
+
+  Name                 Start    Length
+  -------------------- -------- --------
+  .text                00010000 00000334
+  .cp.rodata           00010334 00000024
+  .bss                 00010358 00000000
+  .ctors               00010358 00000000
+  .dtors               00010358 00000000
+  .dp.data             00010358 0000001c
+  .dp.bss              00010374 00000000
+
+Symbols:
+
+  Address  Size     Section              Name
+  -------- -------- -------------------- --------------------
+  00010000 00000000 .text                _start
+  00010042 00000000 .text                disableLinks
+  0001005e 00000000 .text                nodeIdLoop
+  000100fa 00000000 .text                setDimensionReg
+  00010116 00000000 .text                sayHello3
+  00010132 00000000 .text                waitForHello3
+  00010148 00000000 .text                sayHelloAgain3
+  00010160 00000000 .text                sayHello4
+  0001017c 00000000 .text                waitForHello4
+  00010192 00000000 .text                sayHelloAgain4
+  000101aa 00000000 .text                sayHello5
+  000101c6 00000000 .text                waitForHello5
+  000101dc 00000000 .text                sayHelloAgain5
+  000101f4 00000000 .text                sayHello6
+  00010210 00000000 .text                waitForHello6
+  00010226 00000000 .text                sayHelloAgain6
+  0001023e 00000000 .text                sayHello7
+  0001025a 00000000 .text                waitForHello7
+  00010270 00000000 .text                sayHelloAgain7
+  0001028c 00000008 .text                read_sswitch_reg
+  00010294 00000038 .text                read_switch_reg
+  000102c6 00000000 .text                skip_in
+  000102cc 0000000a .text                write_sswitch_reg
+  000102d6 0000000a .text                write_sswitch_reg_no_ack
+  000102e0 00000050 .text                write_switch_reg
+  00010300 00000000 .text                build_return_no_ack
+  00010308 00000000 .text                write_switch_reg_send
+  00010322 00000000 .text                write_switch_reg_return_0
+  00010328 00000000 .text                write_switch_reg_free_and_return_1
+  00010330 00000004 .text                return_zero
+  00010334 00000000 .cp.rodata           _cp
+  00010334 00000000 .cp.rodata           xs1g_link_ports
+  0001034c 00000008 .cp.rodata           _done
+  00010354 00000004 .cp.rodata           _DoSyscall
+  00010358 00000000 .dp.data             _dp
+  00010358 00000000 .bss                 _fbss
+  00010358 00000000 .ctors               _CTOR_LIST_
+  00010358 00000000 .dtors               _DTOR_LIST_
+  00010358 00000000 .dp.data             xlink3RegVal
+  00010358 00000000 .bss                 _ebss
+  00010358 00000000 .ctors               _CTOR_END_
+  00010358 00000000 .dtors               _DTOR_END_
+  0001035c 00000000 .dp.data             xlink4RegVal
+  00010360 00000000 .dp.data             xlink5RegVal
+  00010364 00000000 .dp.data             xlink6RegVal
+  00010368 00000000 .dp.data             xlink7RegVal
+  0001036c 00000000 .dp.data             dirBits0
+  00010370 00000000 .dp.data             dirBits1
+  00010374 00000000 .dp.bss              _fdp.bss
+  00010374 00000000 .dp.bss              _edp.bss
+
+
+Memory map for node 32781, tile 0
+==================================
+
+Sections:
+
+  Name                 Start    Length
+  -------------------- -------- --------
+  .text                00010000 000002d4
+  .cp.rodata           000102d4 00000024
+  .bss                 000102f8 00000000
+  .ctors               000102f8 00000000
+  .dtors               000102f8 00000000
+  .dp.data             000102f8 00000018
+  .dp.bss              00010310 00000000
+
+Symbols:
+
+  Address  Size     Section              Name
+  -------- -------- -------------------- --------------------
+  00010000 00000000 .text                _start
+  00010042 00000000 .text                disableLinks
+  0001005e 00000000 .text                nodeIdLoop
+  000100e4 00000000 .text                setDimensionReg
+  00010100 00000000 .text                sayHello7
+  0001011c 00000000 .text                waitForHello7
+  00010132 00000000 .text                sayHelloAgain7
+  0001014a 00000000 .text                sayHello6
+  00010166 00000000 .text                waitForHello6
+  0001017c 00000000 .text                sayHelloAgain6
+  00010194 00000000 .text                sayHello5
+  000101b0 00000000 .text                waitForHello5
+  000101c6 00000000 .text                sayHelloAgain5
+  000101de 00000000 .text                sayHello4
+  000101fa 00000000 .text                waitForHello4
+  00010210 00000000 .text                sayHelloAgain4
+  0001022c 00000008 .text                read_sswitch_reg
+  00010234 00000038 .text                read_switch_reg
+  00010266 00000000 .text                skip_in
+  0001026c 0000000a .text                write_sswitch_reg
+  00010276 0000000a .text                write_sswitch_reg_no_ack
+  00010280 00000050 .text                write_switch_reg
+  000102a0 00000000 .text                build_return_no_ack
+  000102a8 00000000 .text                write_switch_reg_send
+  000102c2 00000000 .text                write_switch_reg_return_0
+  000102c8 00000000 .text                write_switch_reg_free_and_return_1
+  000102d0 00000004 .text                return_zero
+  000102d4 00000000 .cp.rodata           _cp
+  000102d4 00000000 .cp.rodata           xs1g_link_ports
+  000102ec 00000008 .cp.rodata           _done
+  000102f4 00000004 .cp.rodata           _DoSyscall
+  000102f8 00000000 .dp.data             _dp
+  000102f8 00000000 .bss                 _fbss
+  000102f8 00000000 .ctors               _CTOR_LIST_
+  000102f8 00000000 .dtors               _DTOR_LIST_
+  000102f8 00000000 .dp.data             xlink7RegVal
+  000102f8 00000000 .bss                 _ebss
+  000102f8 00000000 .ctors               _CTOR_END_
+  000102f8 00000000 .dtors               _DTOR_END_
+  000102fc 00000000 .dp.data             xlink6RegVal
+  00010300 00000000 .dp.data             xlink5RegVal
+  00010304 00000000 .dp.data             xlink4RegVal
+  00010308 00000000 .dp.data             dirBits0
+  0001030c 00000000 .dp.data             dirBits1
+  00010310 00000000 .dp.bss              _fdp.bss
+  00010310 00000000 .dp.bss              _edp.bss
+
+

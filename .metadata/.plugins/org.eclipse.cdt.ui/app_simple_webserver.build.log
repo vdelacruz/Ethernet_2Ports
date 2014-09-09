@@ -1,0 +1,37 @@
+
+**** Build of configuration IPV4 for project app_simple_webserver ****
+
+xmake CONFIG=IPV4 all 
+Using modules: module_xtcp module_ethernet_board_support module_ethernet module_otp_board_info module_ethernet_smi module_locks
+Creating dependencies for main.xc
+Compiling main.xc
+Creating app_simple_webserver_IPV4.xe
+Constraint check for "tile[0]" (node "0", tile 0):
+  Cores available:            8,   used:          3 .  OKAY
+  Timers available:          10,   used:          3 .  OKAY
+  Chanends available:        32,   used:          8 .  OKAY
+  Memory available:       65536,   used:      43956 .  OKAY
+    (Stack: 15812, Code: 20980, Data: 7164)
+Constraints checks PASSED.
+Constraint check for "tile[1]" (node "1", tile 0):
+  Cores available:            8,   used:          1 .  OKAY
+  Timers available:          10,   used:          1 .  OKAY
+  Chanends available:        32,   used:          0 .  OKAY
+  Memory available:       65536,   used:       1156 .  OKAY
+    (Stack: 336, Code: 644, Data: 176)
+Constraints checks PASSED.
+Constraint check for "tile[2]" (node "2", tile 0):
+  Cores available:            8,   used:          1 .  OKAY
+  Timers available:          10,   used:          1 .  OKAY
+  Chanends available:        32,   used:          0 .  OKAY
+  Memory available:       65536,   used:       1156 .  OKAY
+    (Stack: 336, Code: 644, Data: 176)
+Constraints checks PASSED.
+Constraint check for "tile[3]" (node "3", tile 0):
+  Cores available:            8,   used:          1 .  OKAY
+  Timers available:          10,   used:          1 .  OKAY
+  Chanends available:        32,   used:          0 .  OKAY
+  Memory available:       65536,   used:       1156 .  OKAY
+    (Stack: 336, Code: 644, Data: 176)
+Constraints checks PASSED.
+Build Complete

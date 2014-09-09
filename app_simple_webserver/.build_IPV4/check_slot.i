@@ -1,0 +1,5 @@
+# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_board_support/SOMANET-C22/check_slot.c"
+# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_board_support/SOMANET-C22/check_slot.c"

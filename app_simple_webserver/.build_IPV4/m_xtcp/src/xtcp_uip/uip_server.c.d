@@ -1,0 +1,35 @@
+.build_IPV4/m_xtcp/src/xtcp_uip/uip_server.c.d ./.build_IPV4/m_xtcp/src/xtcp_uip/uip_server.c.o:  \
+ ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/uip_server.c \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_conf_derived.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/uip.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/uipopt.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/uip-conf.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_server.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_client.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_conf_derived.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_bufinfo.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_blocking_client.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/xtcp_server_conf.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/timer.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/clock.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/clock-arch.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_client.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/timer.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/pt.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/lc.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/lc-switch.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/uip_arp.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/xcoredev.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/uip_server.h \
+  ../../Ethernet\ sin\ mii/module_ethernet/src/include/ethernet_rx_client.h \
+  ../../Ethernet\ sin\ mii/module_ethernet/src/common/ethernet_conf_derived.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_conf_derived.h \
+  ../../Ethernet\ sin\ mii/module_ethernet/src/include/ethernet_rx_client_lite.h \
+  ../../Ethernet\ sin\ mii/module_ethernet/src/include/ethernet_rx_client_full.h \
+  ../../Ethernet\ sin\ mii/module_ethernet/src/include/ethernet_tx_client.h \
+  ../../Ethernet\ sin\ mii/module_ethernet/src/include/ethernet_tx_client_lite.h \
+  ../../Ethernet\ sin\ mii/module_ethernet/src/include/ethernet_tx_client_full.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/uip_xtcp.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/autoip/autoip.h \
+  ../../Ethernet\ sin\ mii/module_xtcp/src/xtcp_uip/igmp/igmp.h
