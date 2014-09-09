@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc"
-# 16 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc"
+# 16 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -300,7 +300,7 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 17 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc" 2
+# 17 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc" 2
 # 1 "xclib.h" 1 3
 # 35 "xclib.h" 3
 unsigned bitrev(unsigned x);
@@ -308,17 +308,17 @@ unsigned bitrev(unsigned x);
 unsigned byterev(unsigned x);
 # 59 "xclib.h" 3
 int clz(unsigned x);
-# 18 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc" 2
-# 19 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc"
+# 18 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc" 2
+# 19 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc"
 # 1 "ethernet_conf_derived.h" 1
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -330,7 +330,7 @@ service xscope_host_data(chanend c);;
 # 10 "ethernet_conf_derived.h"
 # 1 "xtcp_conf_derived.h" 1
 # 11 "ethernet_conf_derived.h" 2
-# 20 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc" 2
+# 20 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc" 2
 # 1 "ethernet_server_def.h" 1
 # 20 "ethernet_server_def.h"
 # 1 "ethernet_conf_derived.h" 1
@@ -367,8 +367,8 @@ typedef enum {
   ETHERNET_REQ_ACK,
   ETHERNET_REQ_NACK,
 } ethernet_protocol_t;
-# 21 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc" 2
-# 22 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc"
+# 21 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc" 2
+# 22 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc"
 # 1 "ethernet_tx_client_full.h" 1
 # 19 "ethernet_tx_client_full.h"
 # 1 "xccompat.h" 1 3
@@ -410,7 +410,7 @@ void mac_set_qav_bandwidth(chanend c_mac,
 # 131 "ethernet_tx_client_full.h"
 #pragma select handler
 void mac_check_link_client(chanend c, unsigned char &linkNum, int &status);
-# 23 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc" 2
+# 23 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc" 2
 # 1 "print.h" 1 3
 # 34 "print.h" 3
 int printchar(char value);
@@ -444,8 +444,8 @@ int printllonghexln(unsigned long long value);
 int printstr(const char (& alias s)[]);
 # 133 "print.h" 3
 int printstrln(const char (& alias s)[]);
-# 24 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc" 2
-# 26 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc"
+# 24 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc" 2
+# 26 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc"
 #pragma select handler
 void mac_check_link_client(chanend c, unsigned char &linkNum, int &status)
 {
@@ -455,12 +455,12 @@ void mac_check_link_client(chanend c, unsigned char &linkNum, int &status)
   (void)  __builtin_in_uchar(c) ;
   (void)  __builtin_inct(c) ;
 }
-# 56 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc"
+# 56 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc"
 #pragma unsafe arrays
 static void ethernet_send_frame_unify(chanend ethernet_tx_svr, unsigned int Buf[], int count, unsigned int &sentTime, unsigned int Cmd, int ifnum)
 {
   int i;
-# 63 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc"
+# 63 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc"
   ethernet_tx_svr <: Cmd;
 
   slave {
@@ -485,7 +485,7 @@ void mac_tx_full(chanend ethernet_tx_svr, unsigned int Buf[], int count, int ifn
   ethernet_send_frame_unify(ethernet_tx_svr, Buf, count, sentTime, ETHERNET_TX_REQ, ifnum);
   return;
 }
-# 88 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc"
+# 88 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc"
 #pragma unsafe arrays
 void mac_tx_offset2(chanend ethernet_tx_svr,
                     unsigned int Buf[],
@@ -493,7 +493,7 @@ void mac_tx_offset2(chanend ethernet_tx_svr,
                     int ifnum)
 {
   unsigned int Cmd = ETHERNET_TX_REQ_OFFSET2;
-# 99 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc"
+# 99 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc"
   ethernet_tx_svr <: Cmd;
 
   slave {
@@ -528,12 +528,12 @@ int mac_get_macaddr_full(chanend ethernet_tx_svr, unsigned char Buf[6])
 
   return 0;
 }
-# 178 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc"
+# 178 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc"
 int mac_calc_idle_slope(int bps);
 
 void mac_set_qav_bandwidth(chanend c,
                            int port_num,
                            int bps)
 {
-# 192 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_client.xc"
+# 192 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_client.xc"
 }

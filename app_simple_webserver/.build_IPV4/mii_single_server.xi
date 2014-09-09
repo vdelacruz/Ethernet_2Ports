@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc"
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc"
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc"
 # 1 "ethernet_server_lite.h" 1
 # 9 "ethernet_server_lite.h"
 # 1 "smi.h" 1
@@ -326,11 +326,11 @@ typedef out buffered port:32 out_buffered_port_32_t;
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -410,7 +410,7 @@ typedef struct mii_interface_lite_t {
   __clock_t  clk_mii_tx;
 
   in port p_mii_rxclk;
-  in port p_mii_rxer;
+
   in buffered port:32 p_mii_rxd;
   in port p_mii_rxdv;
 
@@ -434,9 +434,9 @@ void ethernet_server_lite(mii_interface_lite_t &mii,
                           int num_rx,
                           chanend tx[],
                           int num_tx);
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc" 2
 # 1 "xs1.h" 1 3
-# 8 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc" 2
+# 8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc" 2
 # 1 "xclib.h" 1 3
 # 35 "xclib.h" 3
 unsigned bitrev(unsigned x);
@@ -444,7 +444,7 @@ unsigned bitrev(unsigned x);
 unsigned byterev(unsigned x);
 # 59 "xclib.h" 3
 int clz(unsigned x);
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc" 2
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc" 2
 # 1 "print.h" 1 3
 # 34 "print.h" 3
 int printchar(char value);
@@ -478,7 +478,7 @@ int printllonghexln(unsigned long long value);
 int printstr(const char (& alias s)[]);
 # 133 "print.h" 3
 int printstrln(const char (& alias s)[]);
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc" 2
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc" 2
 # 1 "mii_driver.h" 1
 # 4 "mii_driver.h"
 # 1 "mii.h" 1
@@ -490,9 +490,9 @@ extern void mii_initialise(out port ?p_mii_resetn,
 extern void mii_driver(mii_interface_lite_t &m, chanend cIn, chanend cOut);
 
 extern void phy_reset(out port p_mii_resetn, timer tmr);
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc" 2
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc" 2
 # 1 "mii.h" 1
-# 12 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc" 2
+# 12 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc" 2
 # 1 "mii_lite.h" 1
 # 4 "mii_lite.h"
 # 1 "xs1.h" 1 3
@@ -506,9 +506,9 @@ extern void phy_reset(out port p_mii_resetn, timer tmr);
 extern void mii_port_init(mii_interface_lite_t &m);
 # 17 "mii_lite.h"
 extern void miiTimeStampInit(unsigned offset);
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc" 2
 # 1 "smi.h" 1
-# 14 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc" 2
+# 14 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc" 2
 # 1 "mii_client.h" 1
 
 
@@ -556,9 +556,9 @@ int mii_out_packet_(chanend c_out, int buf, int length);
 # 169 "mii_client.h"
 #pragma select handler
 void mii_out_packet_done(chanend cOut);
-# 15 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc" 2
+# 15 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc" 2
 # 1 "ethernet_conf_derived.h" 1
-# 16 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_single_server.xc" 2
+# 16 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_single_server.xc" 2
 
 
 

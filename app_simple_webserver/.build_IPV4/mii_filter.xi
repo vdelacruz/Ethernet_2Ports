@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc"
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc"
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc"
 # 1 "mii_full.h" 1
 # 8 "mii_full.h"
 # 1 "xs1.h" 1 3
@@ -329,11 +329,11 @@ typedef out buffered port:32 out_buffered_port_32_t;
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -380,7 +380,7 @@ typedef struct mii_interface_lite_t {
   __clock_t  clk_mii_tx;
 
   in port p_mii_rxclk;
-  in port p_mii_rxer;
+
   in buffered port:32 p_mii_rxd;
   in port p_mii_rxdv;
 
@@ -523,9 +523,9 @@ void mii_tx_pins(
       mii_ts_queue_t &ts_queue ,
       out buffered port:32 p_mii_txd ,
       int ifnum);
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc" 2
 # 1 "mii_queue.h" 1
-# 8 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc" 2
+# 8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc" 2
 # 1 "ethernet_server_def.h" 1
 # 20 "ethernet_server_def.h"
 # 1 "ethernet_conf_derived.h" 1
@@ -562,11 +562,11 @@ typedef enum {
   ETHERNET_REQ_ACK,
   ETHERNET_REQ_NACK,
 } ethernet_protocol_t;
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc" 2
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc" 2
 # 1 "ethernet_conf_derived.h" 1
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc" 2
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc" 2
 # 1 "xccompat.h" 1 3
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc" 2
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc" 2
 # 1 "print.h" 1 3
 # 34 "print.h" 3
 int printchar(char value);
@@ -600,7 +600,7 @@ int printllonghexln(unsigned long long value);
 int printstr(const char (& alias s)[]);
 # 133 "print.h" 3
 int printstrln(const char (& alias s)[]);
-# 12 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc" 2
+# 12 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc" 2
 # 1 "mii_malloc.h" 1
 # 3 "mii_malloc.h"
 # 1 "mii_full.h" 1
@@ -629,7 +629,7 @@ mii_buffer_t mii_get_next_buf(mii_mempool_t mempool);
 int mii_get_wrap_ptr(mii_mempool_t mempool);
 unsigned mii_packet_get_data(int buf, int n);
 int mii_packet_get_wrap_ptr(int buf);
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc" 2
 # 1 "mii_filter.h" 1
 # 8 "mii_filter.h"
 # 1 "mii_full.h" 1
@@ -652,7 +652,7 @@ void ethernet_get_filter_counts( unsigned &address ,
 								unsigned &filter ,
 								unsigned &length ,
 								unsigned &crc );
-# 14 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc" 2
+# 14 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc" 2
 # 1 "mac_filter.h" 1
 # 4 "mac_filter.h"
 # 1 "ethernet_conf_derived.h" 1
@@ -689,7 +689,7 @@ inline int mac_custom_filter(unsigned int buf[])
   return result;
 }
 # 8 "mac_filter.h" 2
-# 15 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc" 2
+# 15 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc" 2
 # 1 "xscope.h" 1 3
 # 38 "xscope.h" 3
 typedef enum {
@@ -774,10 +774,10 @@ void xscope_data_from_host(chanend c, char buf[256], int &n);
 # 349 "xscope.h" 3
 void xscope_connect_data_from_host(chanend from_host);
 # 407 "xscope.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/xscope_probes.h" 1
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/xscope_probes.h" 1
 # 408 "xscope.h" 2 3
-# 16 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc" 2
-# 35 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc"
+# 16 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc" 2
+# 35 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc"
 int mac_custom_filter_coerce(int buf, unsigned int mac[]);
 
 
@@ -798,7 +798,7 @@ void ethernet_get_filter_counts(unsigned &address, unsigned &filter, unsigned &l
     length = ethernet_filtered_by_length;
     crc = ethernet_filtered_by_bad_crc;
 }
-# 58 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc"
+# 58 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc"
 #pragma unsafe arrays
 void ethernet_filter(const char mac_address[], streaming chanend c[ (1) ]) {
     unsigned int mac[2];
@@ -811,7 +811,7 @@ void ethernet_filter(const char mac_address[], streaming chanend c[ (1) ]) {
     {
         select
         {
-# 70 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc"
+# 70 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc"
 #pragma xta endpoint "rx_packet"
             case (int ifnum=0; ifnum< (1) ; ifnum++) c[ifnum] :> buf :
             {
@@ -856,7 +856,7 @@ void ethernet_filter(const char mac_address[], streaming chanend c[ (1) ]) {
 
                         mii_packet_set_filter_result(buf, 0);
                         mii_packet_set_stage(buf,1);
-# 117 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc"
+# 117 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc"
                     }
 
                     else if (~crc)
@@ -866,7 +866,7 @@ void ethernet_filter(const char mac_address[], streaming chanend c[ (1) ]) {
 
                         mii_packet_set_filter_result(buf, 0);
                         mii_packet_set_stage(buf,1);
-# 130 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc"
+# 130 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc"
                     }
 
                     else
@@ -898,7 +898,7 @@ void ethernet_filter(const char mac_address[], streaming chanend c[ (1) ]) {
 
 
                             mii_packet_set_timestamp_id(buf, 0);
-# 164 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.xc"
+# 164 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.xc"
                             mii_packet_set_filter_result(buf, filter_result);
                             mii_packet_set_stage(buf, 1);
                         }

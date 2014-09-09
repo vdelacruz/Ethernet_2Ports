@@ -196,6 +196,7 @@ void httpd_handle_event(chanend tcp_svr, xtcp_connection_t *conn)
   switch (conn->event)
     {
     case XTCP_IFUP: {
+        printstr(" Up !!!");
       xtcp_ipconfig_t ipconfig;
       xtcp_get_ipconfig(tcp_svr, &ipconfig);
 
@@ -231,6 +232,7 @@ void httpd_handle_event(chanend tcp_svr, xtcp_connection_t *conn)
       }
       return;
     case XTCP_IFDOWN:
+        printstr(" Down !!!");
     case XTCP_ALREADY_HANDLED:
       return;
     default:

@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
-# 20 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
+# 20 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -300,7 +300,7 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 21 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc" 2
+# 21 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc" 2
 # 1 "xclib.h" 1 3
 # 35 "xclib.h" 3
 unsigned bitrev(unsigned x);
@@ -308,7 +308,7 @@ unsigned bitrev(unsigned x);
 unsigned byterev(unsigned x);
 # 59 "xclib.h" 3
 int clz(unsigned x);
-# 22 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc" 2
+# 22 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc" 2
 # 1 "mii_full.h" 1
 # 8 "mii_full.h"
 # 1 "xs1.h" 1 3
@@ -339,11 +339,11 @@ typedef out buffered port:32 out_buffered_port_32_t;
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -390,7 +390,7 @@ typedef struct mii_interface_lite_t {
   __clock_t  clk_mii_tx;
 
   in port p_mii_rxclk;
-  in port p_mii_rxer;
+
   in buffered port:32 p_mii_rxd;
   in port p_mii_rxdv;
 
@@ -533,9 +533,9 @@ void mii_tx_pins(
       mii_ts_queue_t &ts_queue ,
       out buffered port:32 p_mii_txd ,
       int ifnum);
-# 23 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc" 2
+# 23 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc" 2
 # 1 "mii_queue.h" 1
-# 24 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc" 2
+# 24 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc" 2
 # 1 "mii_filter.h" 1
 # 8 "mii_filter.h"
 # 1 "mii_full.h" 1
@@ -585,9 +585,9 @@ void ethernet_get_filter_counts( unsigned &address ,
 								unsigned &filter ,
 								unsigned &length ,
 								unsigned &crc );
-# 25 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc" 2
+# 25 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc" 2
 # 1 "mii_malloc.h" 1
-# 26 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc" 2
+# 26 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc" 2
 # 1 "ethernet_rx_server.h" 1
 # 25 "ethernet_rx_server.h"
 # 1 "xccompat.h" 1 3
@@ -636,7 +636,7 @@ void ethernet_rx_server(
 		mii_mempool_t rxmem_lp[],
 		chanend link[],
 		int num_links);
-# 27 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc" 2
+# 27 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc" 2
 # 1 "ethernet_rx_client.h" 1
 # 9 "ethernet_rx_client.h"
 # 1 "ethernet_conf_derived.h" 1
@@ -745,7 +745,7 @@ void safe_mac_rx(chanend c_mac,
                  unsigned int &len ,
                  unsigned int &src_port ,
                  int n);
-# 28 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc" 2
+# 28 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc" 2
 # 1 "ethernet_link_status.h" 1
 
 
@@ -754,7 +754,7 @@ void ethernet_update_link_status(int linkNum, int status);
 int ethernet_get_link_status(int linkNum);
 
 int ethernet_link_status_notification(int linkNum);
-# 29 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc" 2
+# 29 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc" 2
 # 1 "print.h" 1 3
 # 34 "print.h" 3
 int printchar(char value);
@@ -788,7 +788,7 @@ int printllonghexln(unsigned long long value);
 int printstr(const char (& alias s)[]);
 # 133 "print.h" 3
 int printstrln(const char (& alias s)[]);
-# 30 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc" 2
+# 30 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc" 2
 # 1 "xscope.h" 1 3
 # 38 "xscope.h" 3
 typedef enum {
@@ -873,9 +873,9 @@ void xscope_data_from_host(chanend c, char buf[256], int &n);
 # 349 "xscope.h" 3
 void xscope_connect_data_from_host(chanend from_host);
 # 407 "xscope.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/xscope_probes.h" 1
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/xscope_probes.h" 1
 # 408 "xscope.h" 2 3
-# 31 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc" 2
+# 31 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc" 2
 
 
 
@@ -900,7 +900,7 @@ static inline void notify(chanend c)
 {
   __builtin_outct(c, 0x1 ) ;
 }
-# 66 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 66 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
 #pragma select handler
 void service_link_cmd(chanend link, int linkIndex, unsigned int &cmd)
 {
@@ -974,7 +974,7 @@ void service_link_cmd(chanend link, int linkIndex, unsigned int &cmd)
       link :> link_status[linkIndex].wants_status_updates;
       break;
     }
-# 150 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 150 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
     default:
       break;
   }
@@ -987,7 +987,7 @@ void service_link_cmd(chanend link, int linkIndex, unsigned int &cmd)
 void mac_rx_send_frame(int buf,
                        chanend link,
                        unsigned cmd);
-# 163 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 163 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
 #pragma unsafe arrays
 void mac_rx_send_frame1(int p,
                         chanend link,
@@ -1048,7 +1048,7 @@ void mac_rx_send_frame1(int p,
     }
   }
 }
-# 224 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 224 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
 #pragma unsafe arrays
 void mac_rx_send_frame0(mii_packet_t &p,
                         chanend link,
@@ -1095,7 +1095,7 @@ void mac_rx_send_frame0(mii_packet_t &p,
     }
   }
 }
-# 275 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 275 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
 #pragma unsafe arrays
 static void process_received_frame(int buf,
                                  chanend link[],
@@ -1138,11 +1138,11 @@ static void process_received_frame(int buf,
           }
         } else {
           link_status[i].dropped_pkt_cnt++;
-# 320 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 320 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
         }
       }
     }
-# 330 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 330 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
   }
 
   if (tcount == 0) {
@@ -1163,19 +1163,19 @@ void send_status_packet(chanend c, int src_port, int status)
     c <: status;
   }
 }
-# 361 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 361 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
 #pragma unsafe arrays
 void ethernet_rx_server(
-# 366 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 366 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
     mii_mempool_t rxmem_lp[],
     chanend link[],
     int num_link)
 {
   int i;
   unsigned int cmd;
-# 375 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 375 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
   int rdptr_lp[ (1) ];
-# 383 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 383 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
   for (unsigned p=0; p< (1) ; ++p) {
     rdptr_lp[p] = mii_init_my_rdptr(rxmem_lp[p]);
   }
@@ -1196,7 +1196,7 @@ void ethernet_rx_server(
   while (1)
   {
     int kill_link = -1;
-# 405 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 405 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
 #pragma ordered
     select
     {
@@ -1251,7 +1251,7 @@ void ethernet_rx_server(
         break;
       default:
       {
-# 470 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.xc"
+# 470 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.xc"
         for (unsigned p=0; p< (1) ; ++p) {
           int buf = mii_get_my_next_buf(rxmem_lp[p], rdptr_lp[p]);
           if (buf != 0 && mii_packet_get_stage(buf) == 1) {

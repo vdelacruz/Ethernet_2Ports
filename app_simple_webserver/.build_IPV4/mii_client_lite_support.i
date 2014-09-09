@@ -1,8 +1,8 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite_support.c"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4//"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite_support.c"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite_support.c"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite_support.c"
 # 1 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/xs1.h" 1 3 4
 # 19 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/xs1.h" 3 4
 # 1 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/timer.h" 1 3 4
@@ -99,7 +99,7 @@ __attribute__((deprecated)) static inline unsigned get_core_id(void) {
 __attribute__((deprecated)) static inline unsigned get_thread_id(void) {
   return __builtin_getid();
 }
-# 2 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite_support.c" 2
+# 2 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite_support.c" 2
 # 1 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/xccompat.h" 1 3 4
 # 122 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/xccompat.h" 3 4
 typedef unsigned chanend;
@@ -173,44 +173,44 @@ typedef unsigned out_buffered_port_16_t;
 
 
 typedef unsigned out_buffered_port_32_t;
-# 3 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite_support.c" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_conf_derived.h" 1
+# 3 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite_support.c" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_conf_derived.h" 1
 
 
 # 1 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/platform.h" 1 3 4
 # 21 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/platform.h" 3 4
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1 3 4
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1 3 4
 # 22 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/platform.h" 2 3 4
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_conf_derived.h" 2
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_conf_derived.h" 2
 
 
 
 
 
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_conf_derived.h" 1
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_conf_derived.h" 2
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite_support.c" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client.h" 1
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_conf_derived.h" 1
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client.h" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_conf_derived.h" 1
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_conf_derived.h" 2
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite_support.c" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client.h" 1
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_conf_derived.h" 1
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client.h" 2
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client_lite.h" 1
-# 48 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client_lite.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client_lite.h" 1
+# 48 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client_lite.h"
 void mac_rx_lite(chanend c_mac,
                  unsigned char buffer[],
                  unsigned int *len,
                  unsigned int *src_port);
-# 73 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client_lite.h"
+# 73 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client_lite.h"
 void safe_mac_rx_lite(chanend c_mac,
                       unsigned char buffer[],
                       unsigned int *len,
                       unsigned int *src_port,
                       int n);
-# 12 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client.h" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client_full.h" 1
-# 26 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client_full.h"
+# 12 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client.h" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client_full.h" 1
+# 26 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client_full.h"
 void mac_rx_full(chanend c_mac,
                  unsigned char buffer[],
                  unsigned int *len,
@@ -225,20 +225,20 @@ void safe_mac_rx_full(chanend c_mac,
                       unsigned int *len,
                       unsigned int *src_port,
                       int n);
-# 61 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client_full.h"
+# 61 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client_full.h"
 void mac_rx_timed(chanend c_mac,
                   unsigned char buffer[],
                   unsigned int *len,
                   unsigned int *time,
                   unsigned int *src_port);
-# 88 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client_full.h"
+# 88 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client_full.h"
 void safe_mac_rx_timed(chanend c_mac,
                        unsigned char buffer[],
                        unsigned int *len,
                        unsigned int *time,
                        unsigned int *src_port,
                        int n);
-# 106 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client_full.h"
+# 106 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client_full.h"
 void mac_set_drop_packets(chanend c_mac_svr, int x);
 
 
@@ -247,7 +247,7 @@ void mac_set_drop_packets(chanend c_mac_svr, int x);
 
 
 void mac_set_queue_size(chanend c_mac_svr, int x);
-# 124 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client_full.h"
+# 124 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client_full.h"
 void mac_set_custom_filter(chanend c_mac_svr, int x);
 
 
@@ -256,7 +256,7 @@ void mac_set_custom_filter(chanend c_mac_svr, int x);
 
 
 void mac_get_link_counters(chanend mac_svr, int *overflow);
-# 141 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client_full.h"
+# 141 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client_full.h"
 void mac_get_global_counters(chanend mac_svr,
                        unsigned *mii_overflow,
                        unsigned *bad_length,
@@ -272,7 +272,7 @@ void mac_get_global_counters(chanend mac_svr,
 
 
 void mac_get_tile_timer_offset(chanend mac_svr, int *offset);
-# 173 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client_full.h"
+# 173 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client_full.h"
 void mac_rx_offset2(chanend c_mac,
                     unsigned char buffer[],
                     unsigned int *len,
@@ -283,35 +283,35 @@ void mac_rx_offset2(chanend c_mac,
 
 
 void mac_request_status_packets(chanend c_mac);
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client.h" 2
-# 42 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client.h"
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client.h" 2
+# 42 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client.h"
 void mac_rx(chanend c_mac,
             unsigned char buffer[],
             unsigned int *len,
             unsigned int *src_port);
-# 69 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_rx_client.h"
+# 69 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_rx_client.h"
 void safe_mac_rx(chanend c_mac,
                  unsigned char buffer[],
                  unsigned int *len,
                  unsigned int *src_port,
                  int n);
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite_support.c" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client.h" 1
-# 22 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client_lite.h" 1
-# 35 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client_lite.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite_support.c" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client.h" 1
+# 22 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client_lite.h" 1
+# 35 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client_lite.h"
 void mac_tx_lite(chanend c_mac, unsigned int buffer[], int nbytes, int ifnum);
-# 49 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client_lite.h"
+# 49 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client_lite.h"
 int mac_get_macaddr_lite(chanend c_mac, unsigned char macaddr[]);
-# 23 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client.h" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client_full.h" 1
-# 35 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client_full.h"
+# 23 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client.h" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client_full.h" 1
+# 35 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client_full.h"
 void mac_tx_full(chanend c_mac, unsigned int buffer[], int nbytes, int ifnum);
-# 54 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client_full.h"
+# 54 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client_full.h"
 void mac_tx_offset2(chanend c_mac, unsigned int buffer[], int nbytes, int ifnum);
-# 80 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client_full.h"
+# 80 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client_full.h"
 void mac_tx_timed(chanend c_mac, unsigned int buffer[], int nbytes, unsigned int *time, int ifnum);
-# 94 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client_full.h"
+# 94 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client_full.h"
 int mac_get_macaddr_full(chanend c_mac, unsigned char macaddr[6]);
 
 
@@ -327,16 +327,16 @@ void mac_1722_router_enable_forwarding(chanend c, int key0, int key1);
 void mac_1722_router_disable_forwarding(chanend c, int key0, int key1);
 
 void mac_1722_update_router(chanend c, int remove_entry, int key0, int key1, int link, int hash);
-# 124 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client_full.h"
+# 124 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client_full.h"
 void mac_set_qav_bandwidth(chanend c_mac,
                            int port_num,
                            int bits_per_second);
-# 24 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client.h" 2
-# 37 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client.h"
+# 24 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client.h" 2
+# 37 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client.h"
 void mac_tx(chanend c_mac, unsigned int buffer[], int nbytes, int ifnum);
-# 52 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/ethernet_tx_client.h"
+# 52 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/ethernet_tx_client.h"
 int mac_get_macaddr(chanend c_mac, unsigned char macaddr[]);
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite_support.c" 2
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite_support.c" 2
 
 static unsigned char mac_s_macaddr[6];
 

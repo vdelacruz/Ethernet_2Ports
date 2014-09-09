@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_mac_filter.xc"
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_mac_filter.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_mac_filter.xc"
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_mac_filter.xc"
 # 1 "xtcp_mac_filter.h" 1
 # 8 "xtcp_mac_filter.h"
 # 1 "xtcp_conf_derived.h" 1
@@ -30,6 +30,6 @@ inline int mac_custom_filter(unsigned int buf[])
 
   return result;
 }
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_mac_filter.xc" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_mac_filter.xc" 2
 
 extern int mac_custom_filter(unsigned int buf[]);

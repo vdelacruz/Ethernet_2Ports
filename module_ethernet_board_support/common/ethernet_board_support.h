@@ -18,21 +18,38 @@
 #define PORT_ETH_RST_N PORT_ETH_RSTN
 #endif
 
+#if !defined(PORT_ETH_RST_N) && defined(PORT_ETH_RSTN)
+#define PORT_ETH_RST_N PORT_ETH_RSTN
+#endif
+
 #ifndef ETHERNET_DEFAULT_CLKBLK_0
 #define ETHERNET_DEFAULT_CLKBLK_0 on COM_TILE: XS1_CLKBLK_1
 #endif
 
+
 #ifndef ETHERNET_DEFAULT_CLKBLK_1
 #define ETHERNET_DEFAULT_CLKBLK_1 on COM_TILE: XS1_CLKBLK_2
+#endif
+
+#ifndef ETHERNET_DEFAULT_CLKBLK_2
+#define ETHERNET_DEFAULT_CLKBLK_2 on COM_TILE: XS1_CLKBLK_3
+#endif
+
+
+#ifndef ETHERNET_DEFAULT_CLKBLK_3
+#define ETHERNET_DEFAULT_CLKBLK_3 on COM_TILE: XS1_CLKBLK_4
 #endif
 
 #if !defined(PORT_ETH_MDIO) && defined(PORT_ETH_RST_N_MDIO)
 #define PORT_ETH_MDIO PORT_ETH_RST_N_MDIO
 #endif
 
+
 #if !defined(PORT_ETH_ERR) && defined(PORT_ETH_RXER)
 #define PORT_ETH_ERR PORT_ETH_RXER
 #endif
+
+
 
 #ifndef PORT_ETH_FAKE
 #define PORT_ETH_FAKE on COM_TILE: XS1_PORT_8C
@@ -43,15 +60,29 @@
   ETHERNET_DEFAULT_CLKBLK_0, \
   ETHERNET_DEFAULT_CLKBLK_1, \
 \
-    PORT_ETH_RXCLK,                             \
-    PORT_ETH_ERR,                               \
-    PORT_ETH_RXD,                               \
-    PORT_ETH_RXDV,                              \
-    PORT_ETH_TXCLK,                             \
-    PORT_ETH_TXEN,                              \
-    PORT_ETH_TXD,                               \
-    PORT_ETH_FAKE \
+    PORT_ETH_RXCLK_0,                             \
+    PORT_ETH_RXD_0,                               \
+    PORT_ETH_RXDV_0,                              \
+    PORT_ETH_TXCLK_0,                             \
+    PORT_ETH_TXEN_0,                              \
+    PORT_ETH_TXD_0,                               \
+    PORT_ETH_FAKE_0,                               \
 }
+
+#define ETHERNET_DEFAULT_MII_INIT_lite_1 { \
+  ETHERNET_DEFAULT_CLKBLK_2, \
+  ETHERNET_DEFAULT_CLKBLK_3, \
+\
+    PORT_ETH_RXCLK_1,                             \
+    PORT_ETH_RXD_1,                               \
+    PORT_ETH_RXDV_1,                              \
+    PORT_ETH_TXCLK_1,                             \
+    PORT_ETH_TXEN_1,                              \
+    PORT_ETH_TXD_1,                               \
+    PORT_ETH_FAKE_1,                               \
+}
+
+
 
 
 #define ETHERNET_DEFAULT_MII_INIT ADD_SUFFIX(ETHERNET_DEFAULT_MII_INIT,ETHERNET_DEFAULT_IMPLEMENTATION)
@@ -59,7 +90,10 @@
 
 
 #define ETHERNET_DEFAULT_SMI_INIT {PHY_ADDRESS, \
-                                   PORT_ETH_MDIOC}
+                                   PORT_ETH_MDIOC_0}
+
+#define ETHERNET_DEFAULT_SMI_INIT_1 {PHY_ADDRESS, \
+                                   PORT_ETH_MDIOC_1}
 
 
 

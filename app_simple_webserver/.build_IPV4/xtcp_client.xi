@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.xc"
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.xc"
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.xc"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -300,7 +300,7 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.xc" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.xc" 2
 # 1 "print.h" 1 3
 # 34 "print.h" 3
 int printchar(char value);
@@ -334,7 +334,7 @@ int printllonghexln(unsigned long long value);
 int printstr(const char (& alias s)[]);
 # 133 "print.h" 3
 int printstrln(const char (& alias s)[]);
-# 8 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.xc" 2
+# 8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.xc" 2
 # 1 "xccompat.h" 1 3
 # 201 "xccompat.h" 3
 typedef streaming chanend streaming_chanend_t;
@@ -350,7 +350,7 @@ typedef out buffered port:4 out_buffered_port_4_t;
 typedef out buffered port:8 out_buffered_port_8_t;
 typedef out buffered port:16 out_buffered_port_16_t;
 typedef out buffered port:32 out_buffered_port_32_t;
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.xc" 2
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.xc" 2
 # 1 "xtcp_client.h" 1
 # 8 "xtcp_client.h"
 # 1 "xccompat.h" 1 3
@@ -534,7 +534,7 @@ void xtcp_unpause(chanend c_xtcp,
 # 620 "xtcp_client.h"
 void xtcp_accept_partial_ack(chanend c_xtcp,
                              xtcp_connection_t &conn );
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.xc" 2
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.xc" 2
 # 1 "xtcp_cmd.h" 1
 
 
@@ -569,7 +569,7 @@ typedef enum xtcp_cmd_t {
   XTCP_CMD_UPDATE_BUFINFO,
   XTCP_CMD_ACCEPT_PARTIAL_ACK
 } xtcp_cmd_t;
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.xc" 2
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.xc" 2
 
 static void send_cmd(chanend c, xtcp_cmd_t cmd, int conn_id)
 {
@@ -641,7 +641,7 @@ void xtcp_bind_remote(chanend c_xtcp, xtcp_connection_t &conn,
     c_xtcp <: port_number;
   }
 }
-# 83 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.xc"
+# 83 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.xc"
 #pragma unsafe arrays
 transaction xtcp_event(chanend c_xtcp, xtcp_connection_t &conn)
 {
@@ -724,7 +724,7 @@ int xtcp_recvi(chanend c_xtcp, unsigned char data[], int index)
 
 	return len;
 }
-# 166 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.xc"
+# 166 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.xc"
 #pragma unsafe arrays
 int xtcp_recv_count(chanend c_xtcp, char data[], int count)
  {
@@ -847,9 +847,9 @@ void xtcp_get_mac_address(chanend c_xtcp, unsigned char mac_addr[])
 void xtcp_get_ipconfig(chanend c_xtcp,
                        xtcp_ipconfig_t &ipconfig)
 {
-# 291 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.xc"
+# 291 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.xc"
   send_cmd(c_xtcp, XTCP_CMD_GET_IPCONFIG, 0);
-# 295 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.xc"
+# 295 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.xc"
   slave {
 
 

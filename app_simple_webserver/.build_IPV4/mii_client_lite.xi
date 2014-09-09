@@ -1,4 +1,4 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite.xc"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -299,18 +299,18 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 2 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite.xc" 2
+# 2 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite.xc" 2
 # 1 "ethernet_rx_client.h" 1
 # 9 "ethernet_rx_client.h"
 # 1 "ethernet_conf_derived.h" 1
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -441,7 +441,7 @@ void safe_mac_rx(chanend c_mac,
                  unsigned int &len ,
                  unsigned int &src_port ,
                  int n);
-# 3 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite.xc" 2
+# 3 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite.xc" 2
 # 1 "ethernet_tx_client.h" 1
 # 20 "ethernet_tx_client.h"
 # 1 "ethernet_conf_derived.h" 1
@@ -488,10 +488,10 @@ void mac_check_link_client(chanend c, unsigned char &linkNum, int &status);
 void mac_tx(chanend c_mac, unsigned int buffer[], int nbytes, int ifnum);
 # 52 "ethernet_tx_client.h"
 int mac_get_macaddr(chanend c_mac, unsigned char macaddr[]);
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite.xc" 2
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite.xc" 2
 # 1 "ethernet_conf_derived.h" 1
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite.xc" 2
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_client_lite.xc"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite.xc" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_client_lite.xc"
 #pragma select handler
 void safe_mac_rx_lite(chanend cIn,
                         unsigned char buffer[],

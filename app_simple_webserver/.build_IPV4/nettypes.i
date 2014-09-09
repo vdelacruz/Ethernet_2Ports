@@ -1,15 +1,15 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/nettypes.c"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4//"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/nettypes.c"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/nettypes.c"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/nettypes.c"
 
 
 
 
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/nettypes.h" 1
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/nettypes.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/nettypes.h" 1
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/nettypes.h"
 typedef unsigned char u8_t;
 typedef unsigned short u16_t;
 typedef unsigned int u32_t;
@@ -80,7 +80,7 @@ typedef struct tagged_ethernet_hdr_t {
   n32_t qtag;
   n16_t ethertype;
 } tagged_ethernet_hdr_t;
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/nettypes.c" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/nettypes.c" 2
 
 extern inline n16_t hton16(u16_t x);
 extern inline u16_t ntoh16(n16_t x);

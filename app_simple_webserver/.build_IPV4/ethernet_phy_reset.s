@@ -1,4 +1,4 @@
-	.file	"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_phy_reset.xc"
+	.file	"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_phy_reset.xc"
 
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -31,9 +31,9 @@
 	.set eth_phy_reset.locnonotificationselect, 1
 
 
-	.file	1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_phy_reset.xc"
-	.file	2 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/timer.h"
-	.file	3 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/ethernet_phy_reset.h"
+	.file	1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_phy_reset.xc"
+	.file	2 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/timer.h"
+	.file	3 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/ethernet_phy_reset.h"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -95,11 +95,11 @@ eth_phy_reset:
 	.ascii	 "XMOS 32-bit XC Compiler Community_13.1.0 (build 12073, May-09-2014)"
 	.byte	0
 	.short	49152
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_phy_reset.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_phy_reset.xc"
 	.byte	0
 	.long	0
 	.long	.Lsection_line
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 	.byte	1
 	.byte	2

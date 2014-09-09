@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -300,7 +300,7 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc" 2
 # 1 "mii_queue.h" 1
 # 9 "mii_queue.h"
 # 1 "xccompat.h" 1 3
@@ -324,11 +324,11 @@ typedef out buffered port:32 out_buffered_port_32_t;
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -371,7 +371,7 @@ int get_and_dec_transmit_count(int buf_num);
 
 
 int mii_packet_get_and_clear_forwarding(int buf_num, int ifnum);
-# 8 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc" 2
+# 8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc" 2
 # 1 "mii.h" 1
 # 4 "mii.h"
 # 1 "xs1.h" 1 3
@@ -414,7 +414,7 @@ typedef struct mii_interface_lite_t {
   __clock_t  clk_mii_tx;
 
   in port p_mii_rxclk;
-  in port p_mii_rxer;
+
   in buffered port:32 p_mii_rxd;
   in port p_mii_rxdv;
 
@@ -425,7 +425,7 @@ typedef struct mii_interface_lite_t {
   in port p_mii_timing;
 
 } mii_interface_lite_t;
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc" 2
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc" 2
 # 1 "mii_malloc.h" 1
 # 3 "mii_malloc.h"
 # 1 "mii_full.h" 1
@@ -556,7 +556,7 @@ mii_buffer_t mii_get_next_buf(mii_mempool_t mempool);
 int mii_get_wrap_ptr(mii_mempool_t mempool);
 unsigned mii_packet_get_data(int buf, int n);
 int mii_packet_get_wrap_ptr(int buf);
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc" 2
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc" 2
 # 1 "stdlib.h" 1 3
 # 4 "stdlib.h" 3
 # 1 "stdlib.h" 1 3
@@ -925,7 +925,7 @@ long long _safe_strtoll(const char n[], char * unsafe (&?endptr)[1], int base);
 unsigned long long _safe_strtoull(const char n[], char * unsafe (&?endptr)[1], int base);
 int _safe_system(const char (&?string)[]);
 # 6 "stdlib.h" 2 3
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc" 2
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc" 2
 # 1 "syscall.h" 1 3
 # 48 "syscall.h" 3
 typedef unsigned ___size_t;
@@ -957,7 +957,7 @@ int _is_simulation(void);
 int _load_image(char dst[count], unsigned int src, ___size_t count);
 # 90 "syscall.h" 3
 void _plugins(int type, unsigned arg1, unsigned arg2);
-# 12 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc" 2
+# 12 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc" 2
 # 1 "ethernet_server_def.h" 1
 # 20 "ethernet_server_def.h"
 # 1 "ethernet_conf_derived.h" 1
@@ -994,7 +994,7 @@ typedef enum {
   ETHERNET_REQ_ACK,
   ETHERNET_REQ_NACK,
 } ethernet_protocol_t;
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc" 2
 # 1 "xclib.h" 1 3
 # 35 "xclib.h" 3
 unsigned bitrev(unsigned x);
@@ -1002,7 +1002,7 @@ unsigned bitrev(unsigned x);
 unsigned byterev(unsigned x);
 # 59 "xclib.h" 3
 int clz(unsigned x);
-# 14 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc" 2
+# 14 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc" 2
 # 1 "xscope.h" 1 3
 # 38 "xscope.h" 3
 typedef enum {
@@ -1087,19 +1087,19 @@ void xscope_data_from_host(chanend c, char buf[256], int &n);
 # 349 "xscope.h" 3
 void xscope_connect_data_from_host(chanend from_host);
 # 407 "xscope.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/xscope_probes.h" 1
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/xscope_probes.h" 1
 # 408 "xscope.h" 2 3
-# 15 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc" 2
-# 151 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 15 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc" 2
+# 151 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 static unsigned int ethernet_mii_no_queue_entries = 0;
 
 void ethernet_get_mii_counts(unsigned& dropped) {
     dropped = ethernet_mii_no_queue_entries;
 }
-# 158 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 158 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma unsafe arrays
 void mii_rx_pins(
-# 163 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 163 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
         mii_mempool_t rxmem_lp,
         in port p_mii_rxdv,
         in buffered port:32 p_mii_rxd,
@@ -1108,16 +1108,16 @@ void mii_rx_pins(
 {
     timer tmr;
     unsigned poly = 0xEDB88320;
-# 174 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 174 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
     unsigned wrap_ptr_lp;
-# 179 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 179 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
     wrap_ptr_lp = mii_get_wrap_ptr(rxmem_lp);
 
     p_mii_rxdv when  __builtin_pins_eq(0)  :> int lo;
 
     while (1)
     {
-# 185 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 185 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta label "mii_rx_begin"
 
         unsigned ii;
@@ -1130,71 +1130,71 @@ void mii_rx_pins(
         unsigned buf_lp, dptr_lp;
         unsigned end_ptr_lp;
         unsigned rdptr, rdptr_value;
-# 204 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 204 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
         buf_lp = mii_reserve(rxmem_lp, end_ptr_lp);
-# 210 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 210 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_rx_sof"
         p_mii_rxd when  __builtin_pins_eq(0xD)  :> int sof;
-# 213 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 213 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_rx_after_preamble"
         tmr :> time;
 
         if (buf_lp) {
             dptr_lp = mii_packet_get_data_ptr(buf_lp);
-# 222 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 222 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
         } else {
-# 223 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 223 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta label "mii_no_availible_buffers"
 
             ethernet_mii_no_queue_entries++;
-# 230 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 230 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
             p_mii_rxdv when  __builtin_pins_eq(0)  :> int hi;
             __builtin_clear_buff(p_mii_rxd) ;
             continue;
         }
 
         crc = 0x9226F562;
-# 243 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 243 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_rx_first_word"
         p_mii_rxd :> word;
         {__builtin_crc32(crc, word, poly); asm volatile (""::"r"(crc):"memory");} ;
         __asm__ volatile("stw %0,%1[" "0" "]"::"r"(word),"r"(dptr_lp):"memory"); ;
-# 251 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 251 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_rx_second_word"
         p_mii_rxd :> word;
         {__builtin_crc32(crc, word, poly); asm volatile (""::"r"(crc):"memory");} ;
         __asm__ volatile("stw %0,%1[" "1" "]"::"r"(word),"r"(dptr_lp):"memory"); ;
-# 259 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 259 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_rx_third_word"
         p_mii_rxd :> word;
         {__builtin_crc32(crc, word, poly); asm volatile (""::"r"(crc):"memory");} ;
         __asm__ volatile("stw %0,%1[" "2" "]"::"r"(word),"r"(dptr_lp):"memory"); ;
-# 267 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 267 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_rx_ethertype_word"
         p_mii_rxd :> word;
         {__builtin_crc32(crc, word, poly); asm volatile (""::"r"(crc):"memory");} ;
         __asm__ volatile("stw %0,%1[" "3" "]"::"r"(word),"r"(dptr_lp):"memory"); ;
-# 275 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 275 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
         {
-# 292 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 292 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
         buf = buf_lp;
         dptr = dptr_lp;
         wrap_ptr = wrap_ptr_lp;
         rdptr = mii_get_rdptr_address(rxmem_lp);
 
         }
-# 299 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 299 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_rx_fifth_word"
         p_mii_rxd :> word;
         {__builtin_crc32(crc, word, poly); asm volatile (""::"r"(crc):"memory");} ;
 
         if (!buf) {
-# 304 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 304 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta label "mii_rx_correct_priority_buffer_unavailable"
             p_mii_rxdv when  __builtin_pins_eq(0)  :> int hi;
 
             ethernet_mii_no_queue_entries++;
-# 312 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 312 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
             __builtin_clear_buff(p_mii_rxd) ;
             continue;
         }
@@ -1202,7 +1202,7 @@ void mii_rx_pins(
 
         dptr += 6*4;
         ii = 5*4;
-# 320 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 320 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_rx_sixth_word"
         unsigned int sixth_word;
         p_mii_rxd :> sixth_word;
@@ -1212,11 +1212,11 @@ void mii_rx_pins(
 
         do
         {
-# 329 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 329 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta label "mii_rx_data_inner_loop"
             select
             {
-# 332 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 332 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_rx_word"
                 case p_mii_rxd :> word:
                     asm("ldw %0,%1[0]":"=r"(rdptr_value):"r"(rdptr));
@@ -1230,11 +1230,11 @@ void mii_rx_pins(
                         }
                     }
                     break;
-# 345 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 345 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_rx_eof"
                 case p_mii_rxdv when  __builtin_pins_eq(0)  :> int lo:
                 {
-# 348 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 348 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta label "mii_eof_case"
                     endofframe = 1;
 
@@ -1272,14 +1272,14 @@ void mii_rx_pins(
             }
             else
             {
-# 388 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 388 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
             }
         }
     }
 
     return;
 }
-# 408 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 408 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 unsigned mii_transmit_packet(unsigned buf, out buffered port:32 p_mii_txd, timer tmr, unsigned ifg_time)
 {
     register const unsigned poly = 0xEDB88320;
@@ -1299,7 +1299,7 @@ unsigned mii_transmit_packet(unsigned buf, out buffered port:32 p_mii_txd, timer
 
 
     tmr when  __builtin_timer_after(ifg_time)  :> ifg_time;
-# 428 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 428 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_tx_sof"
     p_mii_txd <: 0x55555555;
     p_mii_txd <: 0xD5555555;
@@ -1310,7 +1310,7 @@ unsigned mii_transmit_packet(unsigned buf, out buffered port:32 p_mii_txd, timer
 
 
     word = mii_packet_get_data_word(dptr, 0);
-# 438 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 438 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_tx_first_word"
     p_mii_txd <: word;
     dptr+=4;
@@ -1318,7 +1318,7 @@ unsigned mii_transmit_packet(unsigned buf, out buffered port:32 p_mii_txd, timer
     {__builtin_crc32(crc, ~word, poly);} ;
 
     do {
-# 445 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 445 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta label "mii_tx_loop"
         __asm__("ldw %0,%1[" "0" "]":"=r"(word):"r"(dptr)); ;
         dptr+=4;
@@ -1326,12 +1326,12 @@ unsigned mii_transmit_packet(unsigned buf, out buffered port:32 p_mii_txd, timer
             asm("ldw %0,%0[0]":"=r"(dptr));
         i++;
         {__builtin_crc32(crc, word, poly);} ;
-# 452 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 452 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_tx_word"
         p_mii_txd <: word;
         tmr :> eof_time;
     } while (i < word_count);
-# 462 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 462 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
         if (tail_byte_count) {
           word = mii_packet_get_data_word(dptr, 0);
           switch (tail_byte_count)
@@ -1339,22 +1339,22 @@ unsigned mii_transmit_packet(unsigned buf, out buffered port:32 p_mii_txd, timer
             default:
               __builtin_unreachable();
               break;
-# 469 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 469 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma fallthrough
             case 3:
-# 471 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 471 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_tx_final_partword_3"
               __builtin_partout(p_mii_txd, 8, word) ;
               word =  __builtin_crc8shr(crc, word, poly) ;
-# 474 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 474 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma fallthrough
             case 2:
-# 476 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 476 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_tx_final_partword_2"
               __builtin_partout(p_mii_txd, 8, word) ;
               word =  __builtin_crc8shr(crc, word, poly) ;
             case 1:
-# 480 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 480 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_tx_final_partword_1"
               __builtin_partout(p_mii_txd, 8, word) ;
               __builtin_crc8shr(crc, word, poly) ;
@@ -1362,54 +1362,54 @@ unsigned mii_transmit_packet(unsigned buf, out buffered port:32 p_mii_txd, timer
             }
     }
         {__builtin_crc32(crc, ~0, poly);} ;
-# 487 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 487 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_tx_crc_0"
         p_mii_txd <: crc;
 
     return eof_time;
 }
-# 494 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 494 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma unsafe arrays
 void mii_tx_pins(
-# 505 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 505 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
         mii_mempool_t lp_queue,
         mii_ts_queue_t &ts_queue,
         out buffered port:32 p_mii_txd,
         int ifnum)
 {
-# 515 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 515 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
     timer tmr;
     unsigned ifg_time;
-# 521 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 521 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
     tmr :> ifg_time;
     while (1) {
-# 523 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 523 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta label "mii_tx_main_loop"
         unsigned buf;
         int bytes_left;
 
         int stage;
-# 583 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 583 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
         buf = mii_get_next_buf(lp_queue);
-# 603 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 603 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
         if (!buf) {
-# 604 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 604 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_tx_not_valid_to_transmit"
             continue;
         }
 
         if (buf && (mii_packet_get_stage(buf) != 1)) {
-# 609 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 609 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_tx_buffer_not_marked_for_transmission"
             continue;
         }
-# 613 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 613 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 #pragma xta endpoint "mii_tx_start"
         unsigned prev_eof_time = mii_transmit_packet(buf, p_mii_txd, tmr, ifg_time);
 
         ifg_time = prev_eof_time +  (96 + 96 - 10) ;
         ifg_time += (mii_packet_get_length(buf) & 0x3) * 8;
-# 629 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 629 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
         if (mii_packet_get_forwarding(buf) != 0)
         {
             mii_packet_get_and_clear_forwarding(buf, ifnum);
@@ -1426,7 +1426,7 @@ void mii_tx_pins(
         }
     }
 }
-# 651 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 651 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
 void mii_init_full(mii_interface_full_t &m) {
 
     timer tmr;
@@ -1437,7 +1437,7 @@ void mii_init_full(mii_interface_full_t &m) {
     __builtin_set_port_use (m.p_mii_rxd, 0x8 ) ;
     __builtin_set_port_use (m.p_mii_rxdv, 0x8 ) ;
     __builtin_set_port_use (m.p_mii_rxer, 0x8 ) ;
-# 667 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 667 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
     __builtin_set_pad_delay (m.p_mii_rxclk, 0 ) ;
 
     __builtin_set_port_rdy (m.p_mii_rxd, 0x300f ) ;
@@ -1458,7 +1458,7 @@ void mii_init_full(mii_interface_full_t &m) {
     __builtin_set_port_use (m.p_mii_txclk, 0x8 ) ;
     __builtin_set_port_use (m.p_mii_txd, 0x8 ) ;
     __builtin_set_port_use (m.p_mii_txen, 0x8 ) ;
-# 694 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_master.xc"
+# 694 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_master.xc"
     __builtin_set_pad_delay (m.p_mii_txclk, 0 ) ;
 
     m.p_mii_txd <: 0;

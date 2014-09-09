@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -300,7 +300,7 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc" 2
 # 1 "print.h" 1 3
 # 34 "print.h" 3
 int printchar(char value);
@@ -334,7 +334,7 @@ int printllonghexln(unsigned long long value);
 int printstr(const char (& alias s)[]);
 # 133 "print.h" 3
 int printstrln(const char (& alias s)[]);
-# 8 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc" 2
+# 8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc" 2
 # 1 "xtcp_cmd.h" 1
 
 
@@ -369,7 +369,7 @@ typedef enum xtcp_cmd_t {
   XTCP_CMD_UPDATE_BUFINFO,
   XTCP_CMD_ACCEPT_PARTIAL_ACK
 } xtcp_cmd_t;
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc" 2
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc" 2
 # 1 "xtcp_client.h" 1
 # 8 "xtcp_client.h"
 # 1 "xccompat.h" 1 3
@@ -567,7 +567,7 @@ void xtcp_unpause(chanend c_xtcp,
 # 620 "xtcp_client.h"
 void xtcp_accept_partial_ack(chanend c_xtcp,
                              xtcp_connection_t &conn );
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc" 2
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc" 2
 # 1 "xtcp_server.h" 1
 # 8 "xtcp_server.h"
 # 1 "xccompat.h" 1 3
@@ -650,7 +650,7 @@ void xtcpd_get_mac_address(unsigned char []);
 void xtcpd_server_init(void);
 
 void xtcpd_queue_event(chanend c, int linknum, int event);
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc" 2
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc" 2
 # 1 "xtcp_server_impl.h" 1
 # 11 "xtcp_server_impl.h"
 # 1 "xccompat.h" 1 3
@@ -690,7 +690,7 @@ void xtcpd_ack_recv_mode(int conn_id);
 void xtcpd_pause(int conn_id);
 void xtcpd_unpause(int conn_id);
 void xtcpd_accept_partial_ack(int conn_id);
-# 12 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc" 2
+# 12 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc" 2
 
 static int notified[ 10 ];
 static int pending_event[ 10 ];
@@ -865,10 +865,10 @@ static void handle_xtcp_cmd(chanend c,
 
     case XTCP_CMD_GET_IPCONFIG: {
       {
-# 189 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 189 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
         xtcp_ipconfig_t ipconfig;
         xtcpd_get_ipconfig(ipconfig);
-# 194 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 194 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
         master {
 
 
@@ -911,14 +911,14 @@ static void handle_xtcp_cmd(chanend c,
       xtcpd_unpause(conn_id);
       break;
     }
-# 243 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 243 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
     }
 }
 
 static void send_conn_and_complete(chanend c,
                                    xtcp_connection_t &conn)
 {
-# 249 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 249 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
 #pragma unsafe arrays
   for(int i=0;i<sizeof(conn)>>2;i++) {
     __builtin_out_uint(c, (conn,unsigned int[])[i]) ;
@@ -926,7 +926,7 @@ static void send_conn_and_complete(chanend c,
   __builtin_outct(c, 0x1 ) ;
   __builtin_chkct(c, 0x1 ) ;
 }
-# 257 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 257 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
 #pragma unsafe arrays
 int xtcpd_service_client0(chanend xtcp, int i, int waiting_link)
 {
@@ -970,7 +970,7 @@ int xtcpd_service_client0(chanend xtcp, int i, int waiting_link)
       }
   return activity;
 }
-# 301 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 301 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
 #pragma unsafe arrays
 void xtcpd_service_clients(chanend xtcp[], int num_xtcp){
     int activity = 1;
@@ -981,7 +981,7 @@ void xtcpd_service_clients(chanend xtcp[], int num_xtcp){
 
   }
 }
-# 312 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 312 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
 #pragma unsafe arrays
 void xtcpd_service_clients_until_ready(int waiting_link,
                                        chanend xtcp[],
@@ -1017,7 +1017,7 @@ static transaction do_recv(chanend xtcp, int &client_ready,
       xtcp <: data[i];
   }
 }
-# 348 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 348 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
 #pragma unsafe arrays
 void xtcpd_recv(chanend xtcp[],
                 int linknum,
@@ -1044,7 +1044,7 @@ void xtcpd_recv(chanend xtcp[],
 
   return;
 }
-# 375 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 375 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
 #pragma unsafe arrays
 int xtcpd_send(chanend c,
                xtcp_event_type_t event,
@@ -1063,7 +1063,7 @@ int xtcpd_send(chanend c,
   }
   return len;
 }
-# 409 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 409 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
 #pragma unsafe arrays
 void xtcpd_server_init() {
   for (int i=0;i< 10 ;i++) {
@@ -1071,7 +1071,7 @@ void xtcpd_server_init() {
     pending_event[i] = -1;
   }
 }
-# 417 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.xc"
+# 417 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc"
 #pragma unsafe arrays
 void xtcpd_queue_event(chanend c, int linknum, int event)
 {

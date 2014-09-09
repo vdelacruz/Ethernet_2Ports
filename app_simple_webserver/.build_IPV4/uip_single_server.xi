@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc"
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc"
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -300,7 +300,7 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
 # 1 "xclib.h" 1 3
 # 35 "xclib.h" 3
 unsigned bitrev(unsigned x);
@@ -308,7 +308,7 @@ unsigned bitrev(unsigned x);
 unsigned byterev(unsigned x);
 # 59 "xclib.h" 3
 int clz(unsigned x);
-# 8 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
 # 1 "safestring.h" 1 3
 # 39 "safestring.h" 3
 void safestrcpy(char s1[], const char s2[]);
@@ -349,7 +349,7 @@ int safememcmp(const unsigned char s1[], const unsigned char s2[],
                unsigned length);
 # 247 "safestring.h" 3
 int safememchr(const unsigned char s[], int c, unsigned length);
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
 # 1 "print.h" 1 3
 # 34 "print.h" 3
 int printchar(char value);
@@ -383,11 +383,11 @@ int printllonghexln(unsigned long long value);
 int printstr(const char (& alias s)[]);
 # 133 "print.h" 3
 int printstrln(const char (& alias s)[]);
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc"
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc"
 # 1 "xtcp_conf_derived.h" 1
-# 12 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
-# 15 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc"
+# 12 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 15 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc"
 # 1 "xtcp_client.h" 1
 # 8 "xtcp_client.h"
 # 1 "xccompat.h" 1 3
@@ -585,8 +585,8 @@ void xtcp_unpause(chanend c_xtcp,
 # 620 "xtcp_client.h"
 void xtcp_accept_partial_ack(chanend c_xtcp,
                              xtcp_connection_t &conn );
-# 16 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
-# 49 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc"
+# 16 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 49 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc"
 # 1 "xtcp_server.h" 1
 # 8 "xtcp_server.h"
 # 1 "xccompat.h" 1 3
@@ -669,7 +669,7 @@ void xtcpd_get_mac_address(unsigned char []);
 void xtcpd_server_init(void);
 
 void xtcpd_queue_event(chanend c, int linknum, int event);
-# 50 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 50 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
 # 1 "uip_xtcp.h" 1
 
 
@@ -687,8 +687,8 @@ int get_uip_xtcp_ifstate();
 void uip_linkdown();
 void uip_linkup();
 void uip_xtcp_null_events();
-# 51 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
-# 52 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc"
+# 51 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 52 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc"
 # 1 "smi.h" 1
 # 9 "smi.h"
 # 1 "xs1.h" 1 3
@@ -700,11 +700,11 @@ void uip_xtcp_null_events();
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -741,7 +741,7 @@ int smi_check_link_state( smi_interface_t &smi );
 
 
 int smi_reg( smi_interface_t &smi , unsigned reg, unsigned val, int inning);
-# 53 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 53 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
 # 1 "uip_single_server.h" 1
 # 1 "xs1.h" 1 3
 # 2 "uip_single_server.h" 2
@@ -788,7 +788,7 @@ typedef struct mii_interface_lite_t {
   __clock_t  clk_mii_tx;
 
   in port p_mii_rxclk;
-  in port p_mii_rxer;
+
   in buffered port:32 p_mii_rxd;
   in port p_mii_rxdv;
 
@@ -811,7 +811,7 @@ void uip_single_server(out port ?p_mii_resetn,
                        chanend xtcp[], int num_xtcp,
                        xtcp_ipconfig_t& ipconfig,
                        char mac_address[6]);
-# 54 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 54 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
 # 1 "mii_driver.h" 1
 # 4 "mii_driver.h"
 # 1 "mii.h" 1
@@ -823,7 +823,7 @@ extern void mii_initialise(out port ?p_mii_resetn,
 extern void mii_driver(mii_interface_lite_t &m, chanend cIn, chanend cOut);
 
 extern void phy_reset(out port p_mii_resetn, timer tmr);
-# 55 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 55 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
 # 1 "mii_client.h" 1
 
 
@@ -871,7 +871,7 @@ int mii_out_packet_(chanend c_out, int buf, int length);
 # 169 "mii_client.h"
 #pragma select handler
 void mii_out_packet_done(chanend cOut);
-# 56 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
+# 56 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc" 2
 
 extern int uip_static_ip;
 extern xtcp_ipconfig_t uip_static_ipconfig;
@@ -892,11 +892,11 @@ extern unsigned int uip_buf32[];
 extern void uip_arp_timer(void);
 extern void autoip_periodic();
 extern void igmp_periodic();
-# 77 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc"
+# 77 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc"
 #pragma unsafe arrays
 void xcoredev_send(chanend tx)
 {
-# 118 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc"
+# 118 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc"
     static int txbuf[( 1520 +3)/4];
     static int tx_buf_in_use=0;
     unsigned nWords;
@@ -914,7 +914,7 @@ void xcoredev_send(chanend tx)
     tx_buf_in_use=1;
 
 }
-# 136 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_single_server.xc"
+# 136 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc"
 #pragma unsafe arrays
 void copy_packet(unsigned dst[], unsigned src, unsigned len)
 {

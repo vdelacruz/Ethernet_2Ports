@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.xc"
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.xc"
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.xc"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -300,8 +300,8 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.xc" 2
-# 8 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.xc"
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.xc" 2
+# 8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.xc"
 # 1 "smi.h" 1
 # 9 "smi.h"
 # 1 "xs1.h" 1 3
@@ -327,11 +327,11 @@ typedef out buffered port:32 out_buffered_port_32_t;
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -368,7 +368,7 @@ int smi_check_link_state( smi_interface_t &smi );
 
 
 int smi_reg( smi_interface_t &smi , unsigned reg, unsigned val, int inning);
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.xc" 2
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.xc" 2
 # 1 "print.h" 1 3
 # 34 "print.h" 3
 int printchar(char value);
@@ -402,10 +402,10 @@ int printllonghexln(unsigned long long value);
 int printstr(const char (& alias s)[]);
 # 133 "print.h" 3
 int printstrln(const char (& alias s)[]);
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.xc" 2
-# 76 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.xc"
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.xc" 2
+# 76 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.xc"
 void smi_init(smi_interface_t &smi) {
-# 89 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.xc"
+# 89 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.xc"
   if ( 1  || (smi.phy_address < 0)) {
     smi.p_smi_mdc <: 1 <<  0 ;
     return;
@@ -431,7 +431,7 @@ static int smi_bit_shift(smi_interface_t &smi, unsigned data, unsigned count, un
                 i--;
                 smi.p_smi_mdc @ (t + 30) :> dataBit;
                 dataBit &= (1 <<  1 );
-# 117 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.xc"
+# 117 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.xc"
                 smi.p_smi_mdc <: dataBit;
                 data = (data << 1) | (dataBit >>  1 );
                 smi.p_smi_mdc @ (t + 60) <: 1 <<  0  | dataBit;
@@ -443,7 +443,7 @@ static int smi_bit_shift(smi_interface_t &smi, unsigned data, unsigned count, un
           while (i != 0) {
                 i--;
                 dataBit = ((data >> i) & 1) <<  1 ;
-# 131 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.xc"
+# 131 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.xc"
                 smi.p_smi_mdc @ (t + 30) <: dataBit;
                 smi.p_smi_mdc @ (t + 60) <: 1 <<  0  | dataBit;
                 t += 60;
@@ -452,7 +452,7 @@ static int smi_bit_shift(smi_interface_t &smi, unsigned data, unsigned count, un
         }
         return data;
     }
-# 166 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.xc"
+# 166 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.xc"
     return 0;
 
 }

@@ -1,17 +1,17 @@
-	.file	"/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc"
+	.file	"/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc"
 
 	.set usage.anon.0,0
 	.set usage.anon.1,0
 	.set usage.anon.2,0
-	.globwrite clock_time,usage.anon.2,"/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc:69: error: previously used here"
-	.globwrite clock_time,usage.anon.1,"/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc:76: error: previously used here"
-	.globwrite clock_time,usage.anon.0,"/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc:68: error: previously used here"
+	.globwrite clock_time,usage.anon.2,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc:69: error: previously used here"
+	.globwrite clock_time,usage.anon.1,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc:76: error: previously used here"
+	.globwrite clock_time,usage.anon.0,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc:68: error: previously used here"
 	.set clock_time.locnochandec, 1
 	.set clock_time.locnointerfaceaccess, 1
 	.set clock_time.locnonotificationselect, 1
 
 
-	.file	1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc"
+	.file	1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -172,11 +172,11 @@ init.b:
 	.ascii	 "XMOS 32-bit XC Compiler Community_13.1.0 (build 12073, May-09-2014)"
 	.byte	0
 	.short	49152
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc"
 	.byte	0
 	.long	0
 	.long	.Lsection_line
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 	.byte	1
 	.byte	2
@@ -442,10 +442,10 @@ init.b:
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 .cc_top cc_0,.Lxta.endpoint_labels0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc"
 	.byte	0
 	.long	64
 	.long	.Lxta.endpoint_labels0
@@ -455,38 +455,38 @@ init.b:
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 .cc_top cc_1,.Lxtalabel0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc"
 	.byte	0
 	.long	60
 	.long	67
 	.long	.Lxtalabel0
 .cc_bottom cc_1
 .cc_top cc_2,.Lxtalabel1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc"
 	.byte	0
 	.long	68
 	.long	70
 	.long	.Lxtalabel1
 .cc_bottom cc_2
 .cc_top cc_3,.Lxtalabel3
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc"
 	.byte	0
 	.long	71
 	.long	74
 	.long	.Lxtalabel3
 .cc_bottom cc_3
 .cc_top cc_4,.Lxtalabel2
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc"
 	.byte	0
 	.long	75
 	.long	78
 	.long	.Lxtalabel2
 .cc_bottom cc_4
 .cc_top cc_5,.Lxtalabel2
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.xc"
 	.byte	0
 	.long	87
 	.long	87

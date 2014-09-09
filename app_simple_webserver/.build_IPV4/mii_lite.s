@@ -1,4 +1,4 @@
-	.file	"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.file	"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -37,8 +37,8 @@
 	.set phy_reset.locnonotificationselect, 1
 
 
-	.file	1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
-	.file	2 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/timer.h"
+	.file	1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
+	.file	2 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/timer.h"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -170,7 +170,7 @@ mii_port_init:
 .Lxta.call_labels0:
 	bl configure_clock_src
 	.loc	1 17 0
-	ldw r1, r6[6]
+	ldw r1, r6[5]
 	ldw r5, r6[1]
 	.loc	1 17 0
 	mov r0, r5
@@ -179,15 +179,15 @@ mii_port_init:
 	.loc	1 19 0
 	setc res[r5], 32831
 	.loc	1 21 0
-	ldw r1, r6[5]
-	ldw r0, r6[4]
+	ldw r1, r6[4]
+	ldw r0, r6[3]
 	.loc	1 21 0
 	mov r2, r4
 .Lxta.call_labels2:
 	bl configure_in_port_strobed_slave
 	.loc	1 22 0
-	ldw r1, r6[7]
-	ldw r0, r6[8]
+	ldw r1, r6[6]
+	ldw r0, r6[7]
 	ldc r3, 0
 	.loc	1 22 0
 	mov r2, r5
@@ -228,7 +228,7 @@ mii_port_init:
 .Lsection_end1:
 	.section	.debug_info,"",@progbits
 .Linfo_begin1:
-	.long	868
+	.long	846
 	.short	2
 	.long	.Labbrev_begin
 	.byte	4
@@ -236,11 +236,11 @@ mii_port_init:
 	.ascii	 "XMOS 32-bit XC Compiler Community_13.1.0 (build 12073, May-09-2014)"
 	.byte	0
 	.short	49152
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	0
 	.long	.Lsection_line
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 	.byte	1
 	.byte	2
@@ -306,7 +306,7 @@ mii_port_init:
 	.byte	0
 	.byte	1
 	.byte	15
-	.long	866
+	.long	844
 	.long	.Ldebug_loc7+0
 	.byte	0
 	.byte	4
@@ -375,7 +375,7 @@ mii_port_init:
 	.byte	9
 	.ascii	 "mii_interface_lite_t"
 	.byte	0
-	.byte	40
+	.byte	36
 	.byte	10
 	.ascii	 "clk_mii_rx"
 	.byte	0
@@ -407,7 +407,7 @@ mii_port_init:
 	.byte	8
 	.byte	1
 	.byte	10
-	.ascii	 "p_mii_rxer"
+	.ascii	 "p_mii_rxd"
 	.byte	0
 	.long	578
 	.byte	1
@@ -417,7 +417,7 @@ mii_port_init:
 	.byte	12
 	.byte	1
 	.byte	10
-	.ascii	 "p_mii_rxd"
+	.ascii	 "p_mii_rxdv"
 	.byte	0
 	.long	578
 	.byte	1
@@ -427,7 +427,7 @@ mii_port_init:
 	.byte	16
 	.byte	1
 	.byte	10
-	.ascii	 "p_mii_rxdv"
+	.ascii	 "p_mii_txclk"
 	.byte	0
 	.long	578
 	.byte	1
@@ -437,7 +437,7 @@ mii_port_init:
 	.byte	20
 	.byte	1
 	.byte	10
-	.ascii	 "p_mii_txclk"
+	.ascii	 "p_mii_txen"
 	.byte	0
 	.long	578
 	.byte	1
@@ -447,7 +447,7 @@ mii_port_init:
 	.byte	24
 	.byte	1
 	.byte	10
-	.ascii	 "p_mii_txen"
+	.ascii	 "p_mii_txd"
 	.byte	0
 	.long	578
 	.byte	1
@@ -457,16 +457,6 @@ mii_port_init:
 	.byte	28
 	.byte	1
 	.byte	10
-	.ascii	 "p_mii_txd"
-	.byte	0
-	.long	578
-	.byte	1
-	.byte	15
-	.byte	2
-	.byte	35
-	.byte	32
-	.byte	1
-	.byte	10
 	.ascii	 "p_mii_timing"
 	.byte	0
 	.long	578
@@ -474,7 +464,7 @@ mii_port_init:
 	.byte	15
 	.byte	2
 	.byte	35
-	.byte	36
+	.byte	32
 	.byte	1
 	.byte	0
 	.byte	11
@@ -734,33 +724,33 @@ mii_port_init:
 	.typestring configure_in_port_strobed_slave, "f{0}(w:p,i:p,ck)"
 	.typestring configure_clock_src, "f{0}(ck,w:p)"
 	.typestring phy_reset, "f{0}(o:p,swt)"
-	.typestring mii_port_init, "f{0}(&(s(mii_interface_lite_t){m(clk_mii_rx){ck},m(clk_mii_tx){ck},m(p_mii_rxclk){i:p},m(p_mii_rxer){i:p},m(p_mii_rxd){bi:p:32},m(p_mii_rxdv){i:p},m(p_mii_txclk){i:p},m(p_mii_txen){o:p},m(p_mii_txd){bo:p:32},m(p_mii_timing){i:p}}))"
+	.typestring mii_port_init, "f{0}(&(s(mii_interface_lite_t){m(clk_mii_rx){ck},m(clk_mii_tx){ck},m(p_mii_rxclk){i:p},m(p_mii_rxd){bi:p:32},m(p_mii_rxdv){i:p},m(p_mii_txclk){i:p},m(p_mii_txen){o:p},m(p_mii_txd){bo:p:32},m(p_mii_timing){i:p}}))"
 	.section	.xtacalltable,"",@progbits
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 .cc_top cc_0,.Lxta.call_labels0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	16
 	.long	.Lxta.call_labels0
 .cc_bottom cc_0
 .cc_top cc_1,.Lxta.call_labels1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	17
 	.long	.Lxta.call_labels1
 .cc_bottom cc_1
 .cc_top cc_2,.Lxta.call_labels2
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	21
 	.long	.Lxta.call_labels2
 .cc_bottom cc_2
 .cc_top cc_3,.Lxta.call_labels3
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	22
 	.long	.Lxta.call_labels3
@@ -770,40 +760,40 @@ mii_port_init:
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 .cc_top cc_4,.Lxta.endpoint_labels0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	35
 	.long	.Lxta.endpoint_labels0
 .cc_bottom cc_4
 .cc_top cc_5,.Lxta.endpoint_labels1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	36
 	.long	.Lxta.endpoint_labels1
 .cc_bottom cc_5
 .cc_top cc_6,.Lxta.endpoint_labels2
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	38
 	.long	.Lxta.endpoint_labels2
 .cc_bottom cc_6
 .cc_top cc_7,.Lxta.endpoint_labels3
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	40
 	.long	.Lxta.endpoint_labels3
 .cc_bottom cc_7
 .cc_top cc_8,.Lxta.endpoint_labels4
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	41
 	.long	.Lxta.endpoint_labels4
 .cc_bottom cc_8
 .cc_top cc_9,.Lxta.endpoint_labels5
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	43
 	.long	.Lxta.endpoint_labels5
@@ -813,17 +803,17 @@ mii_port_init:
 .Lentries_start4:
 	.long	.Lentries_end5-.Lentries_start4
 	.long	0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 .cc_top cc_10,.Lxtalabel1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	16
 	.long	26
 	.long	.Lxtalabel1
 .cc_bottom cc_10
 .cc_top cc_11,.Lxtalabel0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lite.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lite.xc"
 	.byte	0
 	.long	33
 	.long	44

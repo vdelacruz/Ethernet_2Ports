@@ -1,14 +1,14 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/swlock.c"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4//"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/swlock.c"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/swlock.c"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/swlock.c"
 
 
 
 
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/swlock.h" 1
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/swlock.h" 1
 
 
 
@@ -93,11 +93,11 @@ typedef unsigned out_buffered_port_32_t;
 
 
 typedef unsigned clock;
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/swlock.h" 2
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/swlock.h" 2
 
 
 typedef unsigned swlock_t;
-# 23 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/swlock.h"
+# 23 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/swlock.h"
 enum {
   SWLOCK_NOT_ACQUIRED = 0
 };
@@ -109,13 +109,13 @@ enum {
 
 
 void swlock_init(swlock_t *lock);
-# 46 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/swlock.h"
+# 46 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/swlock.h"
 int swlock_try_acquire(swlock_t *lock);
-# 57 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/swlock.h"
+# 57 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/swlock.h"
 void swlock_acquire(swlock_t *lock);
-# 67 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/swlock.h"
+# 67 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/swlock.h"
 void swlock_release(swlock_t *lock);
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/swlock.c" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/swlock.c" 2
 
 
 void swlock_init(swlock_t *_lock)

@@ -71,8 +71,8 @@
 .set httpd_init.locnonotificationselect, 1
 
 
-	.file	1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/../src/httpd.c"
-	.file	2 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+	.file	1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/../src/httpd.c"
+	.file	2 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -526,176 +526,183 @@ httpd_recv:
 	.align	4
 	.type	httpd_handle_event,@function
 httpd_handle_event:
-.Ltmp109:
+.Ltmp108:
 	.cfi_startproc
 .Lfunc_begin5:
 	.loc	1 191 0
-	entsp 9
+	entsp 8
+.Ltmp109:
+	.cfi_def_cfa_offset 32
 .Ltmp110:
-	.cfi_def_cfa_offset 36
-.Ltmp111:
 	.cfi_offset 15, 0
 	.loc	1 190 0 prologue_end
+.Ltmp111:
+	stw r4, sp[7]
 .Ltmp112:
-	stw r4, sp[8]
-.Ltmp113:
 	.cfi_offset 4, -4
-	stw r5, sp[7]
-.Ltmp114:
+	stw r5, sp[6]
+.Ltmp113:
 	.cfi_offset 5, -8
-	stw r6, sp[6]
-.Ltmp115:
+	stw r6, sp[5]
+.Ltmp114:
 	.cfi_offset 6, -12
-	stw r7, sp[5]
-.Ltmp116:
+	stw r7, sp[4]
+.Ltmp115:
 	.cfi_offset 7, -16
-	stw r8, sp[4]
-.Ltmp117:
-	.cfi_offset 8, -20
 	mov r4, r1
-.Ltmp118:
+.Ltmp116:
+	mov r5, r0
+.Ltmp117:
 	.loc	1 196 0
-	ldw r1, r4[3]
-	sub r2, r1, 10
-	ldc r6, 2
-	lsu r2, r2, r6
-	bt r2, .LBB5_14
-	eq r2, r1, 9
-	bf r2, .LBB5_3
-.Ltmp119:
-	ldaw r4, sp[1]
-	.loc	1 200 0
-.Ltmp120:
-	mov r1, r4
-	bl xtcp_get_ipconfig
-.Ltmp121:
-	.loc	1 225 0
+	ldw r0, r4[3]
+	eq r1, r0, 11
+	bt r1, .LBB5_16
+	eq r1, r0, 10
+	bt r1, .LBB5_4
+	eq r1, r0, 9
+	bf r1, .LBB5_5
+.Ltmp118:
+	.loc	1 199 0
 	ldaw r0, dp[.L.str1]
 	bl printstr
-	.loc	1 229 0
-	ldc r7, 0
+	ldaw r4, sp[1]
+	.loc	1 201 0
+	mov r0, r5
+	mov r1, r4
+	bl xtcp_get_ipconfig
 	.loc	1 226 0
-	ld8u r0, r4[r7]
+	ldaw r0, dp[.L.str2]
+	bl printstr
+	.loc	1 230 0
+	ldc r6, 0
+	.loc	1 227 0
+	ld8u r0, r4[r6]
 	bl printint
 	mkmsk r0, 1
+	.loc	1 228 0
+	or r7, r4, r0
 	.loc	1 227 0
-	or r8, r4, r0
-	.loc	1 226 0
-	ldaw r5, dp[.L.str2]
+	ldaw r5, dp[.L.str3]
+.Ltmp119:
 	mov r0, r5
 	bl printstr
-	.loc	1 227 0
-	ld8u r0, r8[r7]
+	.loc	1 228 0
+	ld8u r0, r7[r6]
 	bl printint
+	ldc r0, 2
+	.loc	1 229 0
+	or r7, r4, r0
 	.loc	1 228 0
-	or r6, r4, r6
-	.loc	1 227 0
 	mov r0, r5
 	bl printstr
-	.loc	1 228 0
-	ld8u r0, r6[r7]
+	.loc	1 229 0
+	ld8u r0, r7[r6]
 	bl printint
 	mkmsk r0, 2
-	.loc	1 229 0
+	.loc	1 230 0
 	or r4, r4, r0
-	.loc	1 228 0
+	.loc	1 229 0
 	mov r0, r5
 	bl printstr
-	.loc	1 229 0
-	ld8u r0, r4[r7]
+	.loc	1 230 0
+	ld8u r0, r4[r6]
 	bl printint
-	ldaw r0, dp[.L.str3]
+	ldaw r0, dp[.L.str4]
 	bl printstr
-	bu .LBB5_14
-.Ltmp122:
-.LBB5_3:
-	.loc	1 241 0
-	ldw r2, r4[7]
-	ldc r3, 80
-	eq r2, r2, r3
-	bf r2, .LBB5_14
-	mkmsk r2, 3
-	.loc	1 242 0
-	lsu r2, r2, r1
-	bt r2, .LBB5_13
+	bu .LBB5_16
+.Ltmp120:
+.LBB5_4:
+	.loc	1 235 0
+	ldaw r0, dp[.L.str5]
+	bl printstr
+	bu .LBB5_16
+.LBB5_5:
+.Ltmp121:
+	.loc	1 243 0
+	ldw r1, r4[7]
+	ldc r2, 80
+	eq r1, r1, r2
+	bf r1, .LBB5_16
+	mkmsk r1, 3
+	.loc	1 244 0
+	lsu r1, r1, r0
+	bt r1, .LBB5_15
 	
 	.xtabranch .Ljumptable0+2,.Ljumptable0+4,.Ljumptable0+6,.Ljumptable0+8,.Ljumptable0+10,.Ljumptable0+12,.Ljumptable0+14,.Ljumptable0+16
 .Ljumptable0:
-		bru r1
-	.jmptable .LBB5_6,.LBB5_7,.LBB5_8,.LBB5_8,.LBB5_8,.LBB5_9,.LBB5_9,.LBB5_9
-.LBB5_6:
-.Ltmp123:
-	.loc	1 245 0
+		bru r0
+	.jmptable .LBB5_8,.LBB5_9,.LBB5_10,.LBB5_10,.LBB5_10,.LBB5_11,.LBB5_11,.LBB5_11
+.LBB5_8:
+	.loc	1 247 0
+	mov r0, r5
 	mov r1, r4
 	bl httpd_init_state
-.Ltmp124:
-	bu .LBB5_13
-.LBB5_7:
-.Ltmp125:
-	.loc	1 248 0
+	bu .LBB5_15
+.LBB5_9:
+	.loc	1 250 0
+	mov r0, r5
 	mov r1, r4
 	bl httpd_recv
-.Ltmp126:
-	bu .LBB5_13
-.LBB5_8:
-.Ltmp127:
-	.loc	1 253 0
+	bu .LBB5_15
+.LBB5_10:
+.Ltmp122:
+	.loc	1 255 0
+	mov r0, r5
 	mov r1, r4
 	bl httpd_send
-.Ltmp128:
-	bu .LBB5_13
-.LBB5_9:
+	bu .LBB5_15
+.Ltmp123:
+.LBB5_11:
 	ldc r0, 0
-.Ltmp129:
+.Ltmp124:
 	ldc r1, 20
 	.loc	1 180 0
-.Ltmp130:
+.Ltmp125:
 	ldaw r2, dp[connection_states]
 	mov r3, r0
-.LBB5_10:
-.Ltmp131:
+.LBB5_12:
+.Ltmp126:
 	mul r11, r3, r1
 	add r11, r2, r11
 	ldw r5, r11[1]
 	ldw r6, r4[0]
 	eq r5, r5, r6
-	bf r5, .LBB5_12
+	bf r5, .LBB5_14
 	.loc	1 182 0
 	stw r0, r11[0]
-.LBB5_12:
-.Ltmp132:
+.LBB5_14:
+.Ltmp127:
 .xtaloop 10
 	# LOOPMARKER 0
 	.loc	1 178 0
 	add r3, r3, 1
-.Ltmp133:
+.Ltmp128:
 	eq r11, r3, 10
-	bf r11, .LBB5_10
-.Ltmp134:
-.LBB5_13:
+	bf r11, .LBB5_12
+.Ltmp129:
+.LBB5_15:
 	ldc r0, 11
-	.loc	1 264 0
+	.loc	1 266 0
 	stw r0, r4[3]
-.Ltmp135:
-.LBB5_14:
-	.loc	1 232 0
-	ldw r8, sp[4]
-	ldw r7, sp[5]
-	ldw r6, sp[6]
-	ldw r5, sp[7]
-	ldw r4, sp[8]
-	retsp 9
-.Ltmp136:
-.Ltmp137:
-	.size	httpd_handle_event, .Ltmp137-httpd_handle_event
+.Ltmp130:
+.LBB5_16:
+	.loc	1 233 0
+	ldw r7, sp[4]
+	ldw r6, sp[5]
+	ldw r5, sp[6]
+	ldw r4, sp[7]
+	retsp 8
+.Ltmp131:
+.Ltmp132:
+	.size	httpd_handle_event, .Ltmp132-httpd_handle_event
 .Lfunc_end5:
-.Ltmp138:
+.Ltmp133:
 	.cfi_endproc
 .Leh_func_end5:
 
 	.align	4
 	.cc_bottom httpd_handle_event.function
-	.set	httpd_handle_event.nstackwords,((xtcp_get_ipconfig.nstackwords $M printint.nstackwords $M printstr.nstackwords $M httpd_init_state.nstackwords $M httpd_recv.nstackwords $M httpd_send.nstackwords) + 9)
+	.set	httpd_handle_event.nstackwords,((xtcp_get_ipconfig.nstackwords $M printint.nstackwords $M printstr.nstackwords $M httpd_init_state.nstackwords $M httpd_recv.nstackwords $M httpd_send.nstackwords) + 8)
 	.globl	httpd_handle_event.nstackwords
 	.set	httpd_handle_event.maxcores,httpd_init_state.maxcores $M httpd_recv.maxcores $M httpd_send.maxcores $M printint.maxcores $M printstr.maxcores $M xtcp_get_ipconfig.maxcores $M 1
 	.globl	httpd_handle_event.maxcores
@@ -708,27 +715,27 @@ httpd_handle_event:
 	.align	4
 	.type	httpd_init,@function
 httpd_init:
-.Ltmp141:
+.Ltmp136:
 	.cfi_startproc
 .Lfunc_begin6:
 	.loc	1 38 0
 	entsp 2
-.Ltmp142:
+.Ltmp137:
 	.cfi_def_cfa_offset 8
-.Ltmp143:
+.Ltmp138:
 	.cfi_offset 15, 0
 	.loc	1 37 0 prologue_end
-.Ltmp144:
+.Ltmp139:
 	stw r4, sp[1]
-.Ltmp145:
+.Ltmp140:
 	.cfi_offset 4, -4
 	ldc r1, 80
 	ldc r4, 0
 	.loc	1 41 0
-.Ltmp146:
+.Ltmp141:
 	mov r2, r4
 	bl xtcp_listen
-.Ltmp147:
+.Ltmp142:
 	ldc r0, 20
 	.loc	1 45 0
 	ldaw r1, dp[connection_states]
@@ -743,18 +750,18 @@ httpd_init:
 	# LOOPMARKER 0
 	.loc	1 43 0
 	add r2, r2, 1
-.Ltmp148:
+.Ltmp143:
 	eq r3, r2, 10
 	bf r3, .LBB6_1
-.Ltmp149:
+.Ltmp144:
 	.loc	1 48 0
 	ldw r4, sp[1]
 	retsp 2
-.Ltmp150:
-.Ltmp151:
-	.size	httpd_init, .Ltmp151-httpd_init
+.Ltmp145:
+.Ltmp146:
+	.size	httpd_init, .Ltmp146-httpd_init
 .Lfunc_end6:
-.Ltmp152:
+.Ltmp147:
 	.cfi_endproc
 .Leh_func_end6:
 
@@ -801,26 +808,40 @@ connection_states:
 	.cc_top .L.str1.data
 	.align	4
 	.type	.L.str1,@object
-	.size .L.str1,13
+	.size .L.str1,8
 .L.str1:
-.asciiz "IP Address: "
+.asciiz " Up !!!"
 	.cc_bottom .L.str1.data
 	.cc_top .L.str2.data
 	.align	4
 	.type	.L.str2,@object
-	.size .L.str2,2
+	.size .L.str2,13
 .L.str2:
-.asciiz "."
-	.space	2
+.asciiz "IP Address: "
 	.cc_bottom .L.str2.data
 	.cc_top .L.str3.data
 	.align	4
 	.type	.L.str3,@object
 	.size .L.str3,2
 .L.str3:
-.asciiz "\n"
+.asciiz "."
 	.space	2
 	.cc_bottom .L.str3.data
+	.cc_top .L.str4.data
+	.align	4
+	.type	.L.str4,@object
+	.size .L.str4,2
+.L.str4:
+.asciiz "\n"
+	.space	2
+	.cc_bottom .L.str4.data
+	.cc_top .L.str5.data
+	.align	4
+	.type	.L.str5,@object
+	.size .L.str5,10
+.L.str5:
+.asciiz " Down !!!"
+	.cc_bottom .L.str5.data
 	.cfi_sections .debug_frame
 	.text
 .Ltext_end:
@@ -838,11 +859,11 @@ connection_states:
 	.ascii	 "4.2.1 (LLVM build) XMOS Community_13.1.0 (build 12073)"
 	.byte	0
 	.short	1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/../src/httpd.c"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/../src/httpd.c"
 	.byte	0
 	.long	0
 	.long	.Lsection_line
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 	.byte	1
 	.byte	2
@@ -1187,18 +1208,18 @@ connection_states:
 	.byte	1
 	.byte	190
 	.long	1996
-	.long	.Ldebug_loc58+0
+	.long	.Ldebug_loc57+0
+	.byte	14
+	.long	.Ltmp117
+	.long	.Ltmp131
 	.byte	14
 	.long	.Ltmp118
-	.long	.Ltmp136
-	.byte	14
 	.long	.Ltmp120
-	.long	.Ltmp122
 	.byte	17
 	.ascii	 "ipconfig"
 	.byte	0
 	.byte	1
-	.byte	199
+	.byte	200
 	.long	2113
 	.byte	2
 	.byte	145
@@ -1226,17 +1247,17 @@ connection_states:
 	.byte	1
 	.byte	37
 	.long	2002
-	.long	.Ldebug_loc63+0
+	.long	.Ldebug_loc62+0
 	.byte	14
-	.long	.Ltmp146
-	.long	.Ltmp150
+	.long	.Ltmp141
+	.long	.Ltmp145
 	.byte	15
 	.byte	105
 	.byte	0
 	.byte	1
 	.byte	39
 	.long	288
-	.long	.Ldebug_loc65+0
+	.long	.Ldebug_loc64+0
 	.byte	0
 	.byte	0
 	.byte	18
@@ -1847,318 +1868,311 @@ connection_states:
 .Ldebug_loc0:
 	.long	.Lfunc_begin0
 	.long	.Ltmp15
-.Lset4 = .Ltmp154-.Ltmp153
+.Lset4 = .Ltmp149-.Ltmp148
 	.short	.Lset4
-.Ltmp153:
+.Ltmp148:
 	.byte	80
-.Ltmp154:
+.Ltmp149:
 	.long	0
 	.long	0
 .Ldebug_loc3:
 	.long	.Ltmp11
 	.long	.Ltmp14
-.Lset5 = .Ltmp156-.Ltmp155
+.Lset5 = .Ltmp151-.Ltmp150
 	.short	.Lset5
-.Ltmp155:
+.Ltmp150:
 	.byte	16
 	.byte	0
-.Ltmp156:
+.Ltmp151:
 	.long	.Ltmp14
 	.long	.Ltmp15
-.Lset6 = .Ltmp158-.Ltmp157
+.Lset6 = .Ltmp153-.Ltmp152
 	.short	.Lset6
-.Ltmp157:
+.Ltmp152:
 	.byte	91
-.Ltmp158:
+.Ltmp153:
 	.long	0
 	.long	0
 .Ldebug_loc6:
 	.long	.Lfunc_begin1
 	.long	.Ltmp34
-.Lset7 = .Ltmp160-.Ltmp159
+.Lset7 = .Ltmp155-.Ltmp154
 	.short	.Lset7
-.Ltmp159:
+.Ltmp154:
 	.byte	80
-.Ltmp160:
+.Ltmp155:
 	.long	.Ltmp35
 	.long	.Ltmp36
-.Lset8 = .Ltmp162-.Ltmp161
+.Lset8 = .Ltmp157-.Ltmp156
 	.short	.Lset8
-.Ltmp161:
+.Ltmp156:
 	.byte	80
-.Ltmp162:
+.Ltmp157:
 	.long	0
 	.long	0
 .Ldebug_loc10:
 	.long	.Lfunc_begin1
 	.long	.Ltmp34
-.Lset9 = .Ltmp164-.Ltmp163
+.Lset9 = .Ltmp159-.Ltmp158
 	.short	.Lset9
-.Ltmp163:
+.Ltmp158:
 	.byte	81
-.Ltmp164:
+.Ltmp159:
 	.long	.Ltmp35
 	.long	.Ltmp36
-.Lset10 = .Ltmp166-.Ltmp165
+.Lset10 = .Ltmp161-.Ltmp160
 	.short	.Lset10
-.Ltmp165:
+.Ltmp160:
 	.byte	81
-.Ltmp166:
+.Ltmp161:
 	.long	0
 	.long	0
 .Ldebug_loc14:
 	.long	.Ltmp30
 	.long	.Ltmp32
-.Lset11 = .Ltmp168-.Ltmp167
+.Lset11 = .Ltmp163-.Ltmp162
 	.short	.Lset11
-.Ltmp167:
+.Ltmp162:
 	.byte	16
 	.byte	0
-.Ltmp168:
+.Ltmp163:
 	.long	.Ltmp32
 	.long	.Ltmp32
-.Lset12 = .Ltmp170-.Ltmp169
+.Lset12 = .Ltmp165-.Ltmp164
 	.short	.Lset12
-.Ltmp169:
+.Ltmp164:
 	.byte	82
-.Ltmp170:
+.Ltmp165:
 	.long	.Ltmp32
 	.long	.Lfunc_end1
-.Lset13 = .Ltmp172-.Ltmp171
+.Lset13 = .Ltmp167-.Ltmp166
 	.short	.Lset13
-.Ltmp171:
+.Ltmp166:
 	.byte	16
 	.byte	0
-.Ltmp172:
+.Ltmp167:
 	.long	0
 	.long	0
 .Ldebug_loc19:
 	.long	.Lfunc_begin2
 	.long	.Ltmp52
-.Lset14 = .Ltmp174-.Ltmp173
+.Lset14 = .Ltmp169-.Ltmp168
 	.short	.Lset14
-.Ltmp173:
+.Ltmp168:
 	.byte	80
-.Ltmp174:
+.Ltmp169:
 	.long	.Ltmp52
 	.long	.Ltmp64
-.Lset15 = .Ltmp176-.Ltmp175
+.Lset15 = .Ltmp171-.Ltmp170
 	.short	.Lset15
-.Ltmp175:
+.Ltmp170:
 	.byte	84
-.Ltmp176:
+.Ltmp171:
 	.long	0
 	.long	0
 .Ldebug_loc23:
 	.long	.Lfunc_begin2
 	.long	.Ltmp51
-.Lset16 = .Ltmp178-.Ltmp177
+.Lset16 = .Ltmp173-.Ltmp172
 	.short	.Lset16
-.Ltmp177:
+.Ltmp172:
 	.byte	81
-.Ltmp178:
+.Ltmp173:
 	.long	.Ltmp51
 	.long	.Ltmp53
-.Lset17 = .Ltmp180-.Ltmp179
+.Lset17 = .Ltmp175-.Ltmp174
 	.short	.Lset17
-.Ltmp179:
+.Ltmp174:
 	.byte	85
-.Ltmp180:
+.Ltmp175:
 	.long	.Ltmp54
 	.long	.Ltmp61
-.Lset18 = .Ltmp182-.Ltmp181
+.Lset18 = .Ltmp177-.Ltmp176
 	.short	.Lset18
-.Ltmp181:
+.Ltmp176:
 	.byte	85
-.Ltmp182:
+.Ltmp177:
 	.long	0
 	.long	0
 .Ldebug_loc28:
 	.long	.Ltmp55
 	.long	.Ltmp56
-.Lset19 = .Ltmp184-.Ltmp183
+.Lset19 = .Ltmp179-.Ltmp178
 	.short	.Lset19
-.Ltmp183:
+.Ltmp178:
 	.byte	80
-.Ltmp184:
+.Ltmp179:
 	.long	.Ltmp61
 	.long	.Ltmp62
-.Lset20 = .Ltmp186-.Ltmp185
+.Lset20 = .Ltmp181-.Ltmp180
 	.short	.Lset20
-.Ltmp185:
+.Ltmp180:
 	.byte	85
-.Ltmp186:
+.Ltmp181:
 	.long	0
 	.long	0
 .Ldebug_loc31:
 	.long	.Lfunc_begin3
 	.long	.Ltmp75
-.Lset21 = .Ltmp188-.Ltmp187
+.Lset21 = .Ltmp183-.Ltmp182
 	.short	.Lset21
-.Ltmp187:
+.Ltmp182:
 	.byte	80
-.Ltmp188:
+.Ltmp183:
 	.long	.Ltmp75
 	.long	.Ltmp81
-.Lset22 = .Ltmp190-.Ltmp189
+.Lset22 = .Ltmp185-.Ltmp184
 	.short	.Lset22
-.Ltmp189:
+.Ltmp184:
 	.byte	84
-.Ltmp190:
+.Ltmp185:
 	.long	0
 	.long	0
 .Ldebug_loc35:
 	.long	.Lfunc_begin3
 	.long	.Ltmp78
-.Lset23 = .Ltmp192-.Ltmp191
+.Lset23 = .Ltmp187-.Ltmp186
 	.short	.Lset23
-.Ltmp191:
+.Ltmp186:
 	.byte	81
-.Ltmp192:
+.Ltmp187:
 	.long	0
 	.long	0
 .Ldebug_loc38:
 	.long	.Lfunc_begin3
 	.long	.Ltmp77
-.Lset24 = .Ltmp194-.Ltmp193
+.Lset24 = .Ltmp189-.Ltmp188
 	.short	.Lset24
-.Ltmp193:
+.Ltmp188:
 	.byte	82
-.Ltmp194:
+.Ltmp189:
 	.long	.Ltmp79
 	.long	.Ltmp80
-.Lset25 = .Ltmp196-.Ltmp195
+.Lset25 = .Ltmp191-.Ltmp190
 	.short	.Lset25
-.Ltmp195:
+.Ltmp190:
 	.byte	82
-.Ltmp196:
+.Ltmp191:
 	.long	.Ltmp81
 	.long	.Ltmp82
-.Lset26 = .Ltmp198-.Ltmp197
+.Lset26 = .Ltmp193-.Ltmp192
 	.short	.Lset26
-.Ltmp197:
+.Ltmp192:
 	.byte	82
-.Ltmp198:
+.Ltmp193:
 	.long	0
 	.long	0
 .Ldebug_loc43:
 	.long	.Lfunc_begin4
 	.long	.Ltmp97
-.Lset27 = .Ltmp200-.Ltmp199
+.Lset27 = .Ltmp195-.Ltmp194
 	.short	.Lset27
-.Ltmp199:
+.Ltmp194:
 	.byte	80
-.Ltmp200:
+.Ltmp195:
 	.long	.Ltmp97
 	.long	.Ltmp99
-.Lset28 = .Ltmp202-.Ltmp201
+.Lset28 = .Ltmp197-.Ltmp196
 	.short	.Lset28
-.Ltmp201:
+.Ltmp196:
 	.byte	85
-.Ltmp202:
+.Ltmp197:
 	.long	0
 	.long	0
 .Ldebug_loc47:
 	.long	.Lfunc_begin4
 	.long	.Ltmp96
-.Lset29 = .Ltmp204-.Ltmp203
+.Lset29 = .Ltmp199-.Ltmp198
 	.short	.Lset29
-.Ltmp203:
+.Ltmp198:
 	.byte	81
-.Ltmp204:
+.Ltmp199:
 	.long	.Ltmp96
 	.long	.Ltmp99
-.Lset30 = .Ltmp206-.Ltmp205
+.Lset30 = .Ltmp201-.Ltmp200
 	.short	.Lset30
-.Ltmp205:
+.Ltmp200:
 	.byte	84
-.Ltmp206:
+.Ltmp201:
 	.long	0
 	.long	0
 .Ldebug_loc51:
 	.long	.Lfunc_begin5
-	.long	.Ltmp121
-.Lset31 = .Ltmp208-.Ltmp207
+	.long	.Ltmp117
+.Lset31 = .Ltmp203-.Ltmp202
 	.short	.Lset31
-.Ltmp207:
+.Ltmp202:
 	.byte	80
-.Ltmp208:
-	.long	.Ltmp122
-	.long	.Ltmp124
-.Lset32 = .Ltmp210-.Ltmp209
-	.short	.Lset32
-.Ltmp209:
-	.byte	80
-.Ltmp210:
-	.long	.Ltmp125
-	.long	.Ltmp126
-.Lset33 = .Ltmp212-.Ltmp211
-	.short	.Lset33
-.Ltmp211:
-	.byte	80
-.Ltmp212:
-	.long	.Ltmp127
-	.long	.Ltmp128
-.Lset34 = .Ltmp214-.Ltmp213
-	.short	.Lset34
-.Ltmp213:
-	.byte	80
-.Ltmp214:
-	.long	0
-	.long	0
-.Ldebug_loc58:
-	.long	.Lfunc_begin5
-	.long	.Ltmp118
-.Lset35 = .Ltmp216-.Ltmp215
-	.short	.Lset35
-.Ltmp215:
-	.byte	81
-.Ltmp216:
-	.long	.Ltmp118
+.Ltmp203:
+	.long	.Ltmp117
 	.long	.Ltmp119
-.Lset36 = .Ltmp218-.Ltmp217
+.Lset32 = .Ltmp205-.Ltmp204
+	.short	.Lset32
+.Ltmp204:
+	.byte	85
+.Ltmp205:
+	.long	.Ltmp121
+	.long	.Ltmp123
+.Lset33 = .Ltmp207-.Ltmp206
+	.short	.Lset33
+.Ltmp206:
+	.byte	85
+.Ltmp207:
+	.long	0
+	.long	0
+.Ldebug_loc57:
+	.long	.Lfunc_begin5
+	.long	.Ltmp116
+.Lset34 = .Ltmp209-.Ltmp208
+	.short	.Lset34
+.Ltmp208:
+	.byte	81
+.Ltmp209:
+	.long	.Ltmp116
+	.long	.Ltmp118
+.Lset35 = .Ltmp211-.Ltmp210
+	.short	.Lset35
+.Ltmp210:
+	.byte	84
+.Ltmp211:
+	.long	.Ltmp121
+	.long	.Ltmp130
+.Lset36 = .Ltmp213-.Ltmp212
 	.short	.Lset36
-.Ltmp217:
+.Ltmp212:
 	.byte	84
-.Ltmp218:
-	.long	.Ltmp122
-	.long	.Ltmp135
-.Lset37 = .Ltmp220-.Ltmp219
-	.short	.Lset37
-.Ltmp219:
-	.byte	84
-.Ltmp220:
+.Ltmp213:
 	.long	0
 	.long	0
-.Ldebug_loc63:
+.Ldebug_loc62:
 	.long	.Lfunc_begin6
-	.long	.Ltmp147
-.Lset38 = .Ltmp222-.Ltmp221
-	.short	.Lset38
-.Ltmp221:
+	.long	.Ltmp142
+.Lset37 = .Ltmp215-.Ltmp214
+	.short	.Lset37
+.Ltmp214:
 	.byte	80
-.Ltmp222:
+.Ltmp215:
 	.long	0
 	.long	0
-.Ldebug_loc65:
-	.long	.Ltmp147
-	.long	.Ltmp148
-.Lset39 = .Ltmp224-.Ltmp223
-	.short	.Lset39
-.Ltmp223:
+.Ldebug_loc64:
+	.long	.Ltmp142
+	.long	.Ltmp143
+.Lset38 = .Ltmp217-.Ltmp216
+	.short	.Lset38
+.Ltmp216:
 	.byte	16
 	.byte	0
-.Ltmp224:
-	.long	.Ltmp148
-	.long	.Ltmp149
-.Lset40 = .Ltmp226-.Ltmp225
-	.short	.Lset40
-.Ltmp225:
+.Ltmp217:
+	.long	.Ltmp143
+	.long	.Ltmp144
+.Lset39 = .Ltmp219-.Ltmp218
+	.short	.Lset39
+.Ltmp218:
 	.byte	82
-.Ltmp226:
+.Ltmp219:
 	.long	0
 	.long	0
-.Ldebug_loc68:
+.Ldebug_loc67:
 	.section	.debug_aranges,"",@progbits
 	.section	.debug_ranges,"",@progbits
 	.section	.debug_macinfo,"",@progbits
@@ -2175,8 +2189,8 @@ connection_states:
 	.typestring xtcp_recv, "f{si}(ui,p(uc))"
 	.typestring xtcp_init_send, "f{0}(ui,p(s(xtcp_connection_t){m(id){si},m(protocol){e(xtcp_protocol_t){m(XTCP_PROTOCOL_TCP){0},m(XTCP_PROTOCOL_UDP){1}}},m(connection_type){e(xtcp_connection_type_t){m(XTCP_CLIENT_CONNECTION){0},m(XTCP_SERVER_CONNECTION){1}}},m(event){e(xtcp_event_type_t){m(XTCP_ABORTED){6},m(XTCP_ALREADY_HANDLED){11},m(XTCP_CLOSED){7},m(XTCP_IFDOWN){10},m(XTCP_IFUP){9},m(XTCP_NEW_CONNECTION){0},m(XTCP_POLL){8},m(XTCP_RECV_DATA){1},m(XTCP_REQUEST_DATA){2},m(XTCP_RESEND_DATA){4},m(XTCP_SENT_DATA){3},m(XTCP_TIMED_OUT){5}}},m(appstate){ui},m(remote_addr){a(4:uc)},m(remote_port){ui},m(local_port){ui},m(mss){ui}}))"
 	.typestring httpd_handle_event, "f{0}(ui,p(s(xtcp_connection_t){m(id){si},m(protocol){e(xtcp_protocol_t){m(XTCP_PROTOCOL_TCP){0},m(XTCP_PROTOCOL_UDP){1}}},m(connection_type){e(xtcp_connection_type_t){m(XTCP_CLIENT_CONNECTION){0},m(XTCP_SERVER_CONNECTION){1}}},m(event){e(xtcp_event_type_t){m(XTCP_ABORTED){6},m(XTCP_ALREADY_HANDLED){11},m(XTCP_CLOSED){7},m(XTCP_IFDOWN){10},m(XTCP_IFUP){9},m(XTCP_NEW_CONNECTION){0},m(XTCP_POLL){8},m(XTCP_RECV_DATA){1},m(XTCP_REQUEST_DATA){2},m(XTCP_RESEND_DATA){4},m(XTCP_SENT_DATA){3},m(XTCP_TIMED_OUT){5}}},m(appstate){ui},m(remote_addr){a(4:uc)},m(remote_port){ui},m(local_port){ui},m(mss){ui}}))"
-	.typestring xtcp_get_ipconfig, "f{0}(ui,p(s(xtcp_ipconfig_t){m(ipaddr){a(4:uc)},m(netmask){a(4:uc)},m(gateway){a(4:uc)}}))"
 	.typestring printstr, "f{si}(p(c:uc))"
+	.typestring xtcp_get_ipconfig, "f{0}(ui,p(s(xtcp_ipconfig_t){m(ipaddr){a(4:uc)},m(netmask){a(4:uc)},m(gateway){a(4:uc)}}))"
 	.typestring printint, "f{si}(si)"
 	.typestring httpd_init, "f{0}(ui)"
 	.typestring xtcp_listen, "f{0}(ui,si,e(xtcp_protocol_t){m(XTCP_PROTOCOL_TCP){0},m(XTCP_PROTOCOL_UDP){1}})"

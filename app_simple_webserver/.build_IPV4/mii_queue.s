@@ -1,4 +1,4 @@
-	.file	"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_queue.c"
+	.file	"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_queue.c"
 
 .set get_and_dec_transmit_count.locnoside, 1
 
@@ -51,8 +51,8 @@
 .set add_ts_queue_entry.locnonotificationselect, 1
 
 
-	.file	1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_queue.c"
-	.file	2 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/hwlock.h"
+	.file	1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_queue.c"
+	.file	2 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/hwlock.h"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -118,7 +118,7 @@ get_and_dec_transmit_count:
 .Ltmp10:
 	.size	get_and_dec_transmit_count, .Ltmp10-get_and_dec_transmit_count
 .Lfunc_end0:
-	.file	3 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h"
+	.file	3 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h"
 .Ltmp11:
 	.cfi_endproc
 .Leh_func_end0:
@@ -211,7 +211,7 @@ init_ts_queue:
 .Ltmp27:
 	.size	init_ts_queue, .Ltmp27-init_ts_queue
 .Lfunc_end2:
-	.file	4 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_queue.h"
+	.file	4 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_queue.h"
 .Ltmp28:
 	.cfi_endproc
 .Leh_func_end2:
@@ -390,11 +390,11 @@ add_ts_queue_entry:
 	.ascii	 "4.2.1 (LLVM build) XMOS Community_13.1.0 (build 12073)"
 	.byte	0
 	.short	1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_queue.c"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_queue.c"
 	.byte	0
 	.long	0
 	.long	.Lsection_line
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 	.byte	1
 	.byte	2

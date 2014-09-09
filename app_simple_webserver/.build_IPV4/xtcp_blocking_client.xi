@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_blocking_client.xc"
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_blocking_client.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_blocking_client.xc"
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_blocking_client.xc"
 # 1 "xtcp_client.h" 1
 # 8 "xtcp_client.h"
 # 1 "xccompat.h" 1 3
@@ -197,7 +197,7 @@ void xtcp_unpause(chanend c_xtcp,
 # 620 "xtcp_client.h"
 void xtcp_accept_partial_ack(chanend c_xtcp,
                              xtcp_connection_t &conn );
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_blocking_client.xc" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_blocking_client.xc" 2
 
 void xtcp_wait_for_ifup(chanend tcp_svr)
 {

@@ -1,8 +1,8 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4//"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c"
 
 
 
@@ -311,7 +311,7 @@ char *strupr (char *);
 # 103 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/string.h" 2 3 4
 
 
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
 # 1 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/print.h" 1 3 4
 # 34 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/print.h" 3 4
 int printchar(char value);
@@ -401,13 +401,13 @@ int printllonghexln(unsigned long long value);
 int printstr(const char *s);
 # 135 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/print.h" 3 4
 int printstrln(const char *s);
-# 8 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h" 1
-# 62 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uipopt.h" 1
-# 76 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uipopt.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h" 1
-# 63 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h"
+# 8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h" 1
+# 62 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uipopt.h" 1
+# 76 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uipopt.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h" 1
+# 63 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h"
 # 1 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/inttypes.h" 1 3 4
 # 17 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/inttypes.h" 3 4
 # 1 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/stdint.h" 1 3 4
@@ -495,20 +495,20 @@ extern uintmax_t strtoumax(const char * __restrict, char ** __restrict, int);
 
 extern intmax_t wcstoimax(const wchar_t * __restrict, wchar_t ** __restrict, int);
 extern uintmax_t wcstoumax(const wchar_t * __restrict, wchar_t ** __restrict, int);
-# 64 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h" 2
+# 64 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h" 2
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_conf_derived.h" 1
-# 66 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h" 2
-# 78 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_conf_derived.h" 1
+# 66 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h" 2
+# 78 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h"
 typedef uint8_t u8_t;
-# 87 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h"
+# 87 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h"
 typedef uint16_t u16_t;
-# 96 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h"
+# 96 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h"
 typedef uint32_t u32_t;
-# 106 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h"
+# 106 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h"
 typedef unsigned short uip_stats_t;
-# 193 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.h" 1
+# 193 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.h" 1
 
 
 
@@ -593,14 +593,14 @@ typedef unsigned out_buffered_port_32_t;
 
 
 typedef unsigned clock;
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.h" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h" 1
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_conf_derived.h" 1
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h" 2
-# 22 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_bufinfo.h" 1
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_bufinfo.h"
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.h" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h" 1
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_conf_derived.h" 1
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h" 2
+# 22 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_bufinfo.h" 1
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_bufinfo.h"
 typedef struct xtcp_bufinfo_t {
 
   int rx_new_event;
@@ -617,7 +617,7 @@ typedef struct xtcp_bufinfo_t {
   int tx_lowmark;
 
 } xtcp_bufinfo_t;
-# 23 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h" 2
+# 23 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h" 2
 
 
 
@@ -626,9 +626,9 @@ typedef struct xtcp_bufinfo_t {
 
 
 typedef unsigned int xtcp_appstate_t;
-# 52 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 52 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 typedef unsigned char xtcp_ipaddr_t[4];
-# 67 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 67 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 typedef struct xtcp_ipconfig_t {
   xtcp_ipaddr_t ipaddr;
   xtcp_ipaddr_t netmask;
@@ -646,12 +646,12 @@ typedef enum xtcp_protocol_t {
   XTCP_PROTOCOL_TCP,
   XTCP_PROTOCOL_UDP
 } xtcp_protocol_t;
-# 93 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 93 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 typedef enum xtcp_event_type_t {
   XTCP_NEW_CONNECTION,
-# 103 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 103 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
   XTCP_RECV_DATA,
-# 115 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 115 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
   XTCP_REQUEST_DATA,
 
 
@@ -669,7 +669,7 @@ typedef enum xtcp_event_type_t {
 
 
   XTCP_RESEND_DATA,
-# 140 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 140 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
   XTCP_TIMED_OUT,
 
 
@@ -713,7 +713,7 @@ typedef enum xtcp_connection_type_t {
   XTCP_CLIENT_CONNECTION,
   XTCP_SERVER_CONNECTION
 } xtcp_connection_type_t;
-# 193 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 193 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 typedef struct xtcp_connection_t {
   int id;
   xtcp_protocol_t protocol;
@@ -731,28 +731,28 @@ typedef struct xtcp_connection_t {
 
 
 } xtcp_connection_t;
-# 261 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_blocking_client.h" 1
-# 18 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_blocking_client.h"
+# 261 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_blocking_client.h" 1
+# 18 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_blocking_client.h"
 void xtcp_wait_for_ifup(chanend tcp_svr);
 
 
 
 xtcp_connection_t xtcp_wait_for_connection(chanend tcp_svr);
-# 37 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_blocking_client.h"
+# 37 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_blocking_client.h"
 int xtcp_write(chanend tcp_svr,
                xtcp_connection_t *conn,
                unsigned char buf[],
                int len);
-# 52 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_blocking_client.h"
+# 52 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_blocking_client.h"
 int xtcp_read(chanend tcp_svr,
               xtcp_connection_t *conn,
               unsigned char buf[],
               int minlen);
-# 262 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h" 2
-# 273 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 262 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h" 2
+# 273 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_uint_to_ipaddr(xtcp_ipaddr_t ipaddr, unsigned int i);
-# 284 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 284 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_listen(chanend c_xtcp, int port_number, xtcp_protocol_t proto);
 
 
@@ -762,25 +762,25 @@ void xtcp_listen(chanend c_xtcp, int port_number, xtcp_protocol_t proto);
 
 
 void xtcp_unlisten(chanend c_xtcp, int port_number);
-# 301 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 301 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_connect(chanend c_xtcp,
                   int port_number,
                   xtcp_ipaddr_t ipaddr,
                   xtcp_protocol_t proto);
-# 313 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 313 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_bind_local(chanend c_xtcp,
                      xtcp_connection_t *conn,
                      int port_number);
-# 329 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 329 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_bind_remote(chanend c_xtcp,
                       xtcp_connection_t *conn,
                       xtcp_ipaddr_t addr, int port_number);
-# 348 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 348 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void do_xtcp_event(chanend c_xtcp, xtcp_connection_t *conn);
-# 362 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 362 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_init_send(chanend c_xtcp,
                     xtcp_connection_t *conn);
-# 379 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 379 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_set_connection_appstate(chanend c_xtcp,
                                   xtcp_connection_t *conn,
                                   xtcp_appstate_t appstate);
@@ -800,7 +800,7 @@ void xtcp_close(chanend c_xtcp,
 
 void xtcp_abort(chanend c_xtcp,
                 xtcp_connection_t *conn);
-# 408 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 408 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 int xtcp_recv(chanend c_xtcp, char data[]);
 
 
@@ -810,21 +810,21 @@ int xtcp_recv(chanend c_xtcp, char data[]);
 
 
 void xtcp_ignore_recv(chanend c_xtcp);
-# 431 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 431 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 int xtcp_recvi(chanend c_xtcp, char data[], int i);
-# 453 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 453 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 int xtcp_recv_count(chanend c_xtcp, char data[], int count);
-# 464 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 464 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_ack_recv_mode(chanend c_xtcp,
                         xtcp_connection_t *conn) ;
-# 477 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 477 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_ack_recv(chanend c_xtcp,
                    xtcp_connection_t *conn);
-# 494 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 494 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_send(chanend c_xtcp,
                char *data,
                int len);
-# 507 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 507 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 inline void xtcp_complete_send(chanend c_xtcp) {
 
 
@@ -832,19 +832,19 @@ inline void xtcp_complete_send(chanend c_xtcp) {
   xtcp_send(c_xtcp, (void *) 0, 0);
 
 }
-# 532 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 532 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_sendi(chanend c_xtcp,
                 char *data,
                 int i,
                 int len);
-# 547 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 547 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_set_poll_interval(chanend c_xtcp,
                             xtcp_connection_t *conn,
                             int poll_interval);
-# 558 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 558 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_join_multicast_group(chanend c_xtcp,
                                xtcp_ipaddr_t addr);
-# 569 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 569 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_leave_multicast_group(chanend c_xtcp,
                                xtcp_ipaddr_t addr);
 
@@ -854,39 +854,39 @@ void xtcp_leave_multicast_group(chanend c_xtcp,
 
 
 void xtcp_get_mac_address(chanend c_xtcp, unsigned char mac_addr[]);
-# 587 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 587 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_get_ipconfig(chanend c_xtcp,
                        xtcp_ipconfig_t *ipconfig);
-# 598 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 598 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_pause(chanend c_xtcp,
                 xtcp_connection_t *conn);
-# 610 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 610 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_unpause(chanend c_xtcp,
                   xtcp_connection_t *conn);
-# 620 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+# 620 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 void xtcp_accept_partial_ack(chanend c_xtcp,
                              xtcp_connection_t *conn);
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.h" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/xtcp_server_conf.h" 1
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.h" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/xtcp_server_conf.h" 1
 
 
 
 
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/timer.h" 1
-# 70 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/timer.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock.h" 1
-# 61 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.h" 1
-# 42 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/timer.h" 1
+# 70 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/timer.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock.h" 1
+# 61 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.h" 1
+# 42 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.h"
 typedef int clock_time_t;
-# 62 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock.h" 2
-# 70 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock.h"
+# 62 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock.h" 2
+# 70 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock.h"
 void clock_init(void);
-# 79 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock.h"
+# 79 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock.h"
 clock_time_t clock_time(void);
-# 71 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/timer.h" 2
-# 80 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/timer.h"
+# 71 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/timer.h" 2
+# 80 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/timer.h"
 struct uip_timer {
   clock_time_t start;
   clock_time_t interval;
@@ -897,9 +897,9 @@ void timer_set(struct uip_timer *t, clock_time_t interval);
 void timer_reset(struct uip_timer *t);
 void timer_restart(struct uip_timer *t);
 int timer_expired(struct uip_timer *t);
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/xtcp_server_conf.h" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h" 1
-# 8 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/xtcp_server_conf.h" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/xtcp_server_conf.h" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h" 1
+# 8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/xtcp_server_conf.h" 2
 
 typedef struct xtcp_server_state_t {
   int send_request;
@@ -916,8 +916,8 @@ typedef struct xtcp_server_state_t {
 
 
 } xtcp_server_state_t;
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.h" 2
-# 19 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.h"
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.h" 2
+# 19 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.h"
 typedef struct xtcpd_state_t {
   unsigned int linknum;
   xtcp_connection_t conn;
@@ -955,31 +955,31 @@ void xtcpd_get_mac_address(unsigned char []);
 void xtcpd_server_init(void);
 
 void xtcpd_queue_event(chanend c, int linknum, int event);
-# 194 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h" 2
+# 194 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h" 2
 
 void xtcpd_appcall(void);
 
 typedef struct xtcpd_state_t uip_tcp_appstate_t;
 typedef struct xtcpd_state_t uip_udp_appstate_t;
-# 223 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h" 1
-# 42 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/timer.h" 1
-# 43 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/pt.h" 1
-# 58 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/pt.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/lc.h" 1
-# 131 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/lc.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/lc-switch.h" 1
-# 70 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/lc-switch.h"
+# 223 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h" 1
+# 42 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/timer.h" 1
+# 43 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/pt.h" 1
+# 58 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/pt.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/lc.h" 1
+# 131 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/lc.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/lc-switch.h" 1
+# 70 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/lc-switch.h"
 typedef unsigned short lc_t;
-# 132 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/lc.h" 2
-# 59 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/pt.h" 2
+# 132 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/lc.h" 2
+# 59 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/pt.h" 2
 
 struct pt {
   lc_t lc;
 };
-# 44 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h" 2
+# 44 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h" 2
 
 struct dhcpc_state {
   struct pt pt;
@@ -1007,11 +1007,11 @@ void dhcpc_appcall(void);
 void dhcpc_configured(const struct dhcpc_state *s);
 void dhcpc_start();
 void dhcpc_stop();
-# 224 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h" 2
-# 77 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uipopt.h" 2
-# 447 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uipopt.h"
+# 224 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h" 2
+# 77 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uipopt.h" 2
+# 447 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uipopt.h"
 void uip_log(char msg[]);
-# 63 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h" 2
+# 63 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h" 2
 
 
 
@@ -1023,7 +1023,7 @@ typedef u16_t uip_ip6addr_t[8];
 
 
 typedef uip_ip4addr_t uip_ipaddr_t;
-# 194 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 194 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 void uip_init(void);
 
 
@@ -1032,31 +1032,31 @@ void uip_init(void);
 
 
 void uip_setipid(u16_t id);
-# 464 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 464 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 extern u8_t *uip_buf;
-# 492 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 492 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 void uip_listen(u16_t port);
 void uip_udp_listen(u16_t port);
-# 507 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 507 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 void uip_unlisten(u16_t port);
 void uip_udp_unlisten(u16_t port);
-# 542 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 542 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 struct uip_conn *uip_connect(uip_ipaddr_t *ripaddr, u16_t port);
-# 582 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 582 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 void uip_send(const void *data, int len);
-# 818 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 818 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 struct uip_udp_conn *uip_udp_new(uip_ipaddr_t *ripaddr, u16_t rport);
-# 934 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 934 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 void uip_ipaddr_copy(void *dest, const void *src);
-# 960 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 960 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 int uip_ipaddr_cmp(const void *addr1, const void *addr2);
-# 1136 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1136 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 u16_t htons(u16_t val);
-# 1151 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1151 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 extern void *uip_appdata;
-# 1186 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1186 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 extern u16_t uip_len;
-# 1206 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1206 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 struct uip_conn {
   uip_ipaddr_t ripaddr;
 
@@ -1099,9 +1099,9 @@ struct uip_conn {
 extern struct uip_conn *uip_conn;
 
 extern struct uip_conn uip_conns[10];
-# 1256 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1256 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 extern u8_t uip_acc32[4];
-# 1265 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1265 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 struct uip_udp_conn {
   uip_ipaddr_t ripaddr;
   u16_t lport;
@@ -1112,7 +1112,7 @@ struct uip_udp_conn {
 
   uip_udp_appstate_t appstate;
 };
-# 1292 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1292 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 extern struct uip_udp_conn *uip_udp_conn;
 extern struct uip_udp_conn uip_udp_conns[10];
 
@@ -1182,13 +1182,13 @@ struct uip_stats {
 
 
 extern struct uip_stats uip_stat;
-# 1374 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1374 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 extern u32_t uip_flags;
-# 1419 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1419 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 void uip_process(u8_t flag);
-# 1460 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1460 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 struct uip_tcpip_hdr {
-# 1471 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1471 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
   u8_t vhl,
     tos,
     len[2],
@@ -1216,7 +1216,7 @@ struct uip_tcpip_hdr {
 
 
 struct uip_icmpip_hdr {
-# 1508 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1508 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
   u8_t vhl,
     tos,
     len[2],
@@ -1244,7 +1244,7 @@ struct uip_icmpip_hdr {
 
 
 struct uip_udpip_hdr {
-# 1545 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1545 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
   u8_t vhl,
     tos,
     len[2],
@@ -1263,7 +1263,7 @@ struct uip_udpip_hdr {
   u16_t udplen;
   u16_t udpchksum;
 };
-# 1609 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1609 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 extern uip_ipaddr_t uip_hostaddr, uip_netmask, uip_draddr;
 
 
@@ -1275,19 +1275,19 @@ extern uip_ipaddr_t uip_hostaddr, uip_netmask, uip_draddr;
 struct uip_eth_addr {
   u8_t addr[6];
 };
-# 1637 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1637 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 u16_t uip_chksum(u16_t *buf, u16_t len);
-# 1648 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1648 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 u16_t uip_ipchksum(void);
-# 1659 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1659 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 u16_t uip_tcpchksum(void);
-# 1670 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+# 1670 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 u16_t uip_udpchksum(void);
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
 
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server_impl.h" 1
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server_impl.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server_impl.h" 1
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server_impl.h"
 void xtcpd_ask(int linknum);
 void xtcpd_listen(int linknum, int port_number, xtcp_protocol_t p);
 void xtcpd_unlisten(int linknum, int port_number);
@@ -1322,11 +1322,11 @@ void xtcpd_ack_recv_mode(int conn_id);
 void xtcpd_pause(int conn_id);
 void xtcpd_unpause(int conn_id);
 void xtcpd_accept_partial_ack(int conn_id);
-# 12 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
+# 12 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
 
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/igmp/igmp.h" 1
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/igmp/igmp.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/igmp/igmp.h" 1
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/igmp/igmp.h"
 void igmp_init();
 
 void igmp_periodic();
@@ -1334,9 +1334,9 @@ void igmp_in();
 void igmp_join_group(uip_ipaddr_t addr);
 void igmp_leave_group(uip_ipaddr_t addr);
 int igmp_check_addr(uip_ipaddr_t addr);
-# 15 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_arp.h" 1
-# 64 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_arp.h"
+# 15 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_arp.h" 1
+# 64 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_arp.h"
 extern struct uip_eth_addr uip_ethaddr;
 
 
@@ -1347,18 +1347,18 @@ struct uip_eth_hdr {
   struct uip_eth_addr src;
   u16_t type;
 };
-# 82 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_arp.h"
+# 82 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_arp.h"
 void uip_arp_init(void);
-# 98 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_arp.h"
+# 98 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_arp.h"
 void uip_arp_arpin(void);
-# 117 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_arp.h"
+# 117 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_arp.h"
 void uip_arp_out(struct uip_udp_conn* conn);
 
 
 
 void uip_arp_timer(void);
-# 16 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
-# 26 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c"
+# 16 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c" 2
+# 26 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c"
 static int guid = 1;
 
 
@@ -1669,7 +1669,7 @@ void xtcpd_unpause(int conn_id)
     s->s.ack_request = 1;
   }
 }
-# 347 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c"
+# 347 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c"
 extern u16_t uip_slen;
 
 static int do_xtcpd_send(chanend c,
@@ -1679,10 +1679,10 @@ static int do_xtcpd_send(chanend c,
                   int mss)
 {
   int len;
-# 370 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c"
+# 370 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c"
   xtcpd_service_clients_until_ready(s->linknum, xtcp_links, xtcp_num);
   len = xtcpd_send(c,event,s,data,mss);
-# 387 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c"
+# 387 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c"
   return len;
 }
 
@@ -1745,7 +1745,7 @@ void uip_xtcpd_handle_poll(xtcpd_state_t *s)
       timer_set(&(s->s.tmr), s->s.poll_interval);
     }
 }
-# 457 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_xtcp.c"
+# 457 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_xtcp.c"
 void
 xtcpd_appcall(void)
 {

@@ -1,8 +1,8 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4//"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c"
 
 
 
@@ -85,10 +85,10 @@ typedef unsigned out_buffered_port_32_t;
 
 
 typedef unsigned clock;
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c" 2
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.h" 1
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.h" 1
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.h"
 # 1 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/xs1.h" 1 3 4
 # 19 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/xs1.h" 3 4
 # 1 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/timer.h" 1 3 4
@@ -183,33 +183,33 @@ __attribute__((deprecated)) static inline unsigned get_core_id(void) {
 __attribute__((deprecated)) static inline unsigned get_thread_id(void) {
   return __builtin_getid();
 }
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.h" 2
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.h" 2
 
 
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_conf_derived.h" 1
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_conf_derived.h" 1
 
 
 # 1 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/platform.h" 1 3 4
 # 21 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/platform.h" 3 4
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1 3 4
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1 3 4
 # 22 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/platform.h" 2 3 4
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_conf_derived.h" 2
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_conf_derived.h" 2
 
 
 
 
 
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_conf_derived.h" 1
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_conf_derived.h" 2
-# 14 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.h" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_conf_derived.h" 1
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_conf_derived.h" 2
+# 14 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.h" 2
 
 
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_board_support/SOMANET-C22/ethernet_board_conf.h" 1
-# 18 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.h" 2
-# 43 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_board_support/SOMANET-C22/ethernet_board_conf.h" 1
+# 18 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.h" 2
+# 43 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.h"
 typedef struct smi_interface_t {
     int phy_address;
 
@@ -224,9 +224,9 @@ typedef struct smi_interface_t {
 
 
 void smi_init(smi_interface_t *smi);
-# 68 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.h"
+# 68 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.h"
 void eth_phy_config(int eth100, smi_interface_t *smi);
-# 77 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.h"
+# 77 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.h"
 void eth_phy_config_noauto(int eth100, smi_interface_t *smi);
 
 
@@ -255,24 +255,24 @@ int smi_check_link_state(smi_interface_t *smi);
 
 
 int smi_reg(smi_interface_t *smi, unsigned reg, unsigned val, int inning);
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h" 1
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/mii.h" 1
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h" 1
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/mii.h" 1
 
 
 
 
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_conf_derived.h" 1
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/include/mii.h" 2
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_conf_derived.h" 1
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/include/mii.h" 2
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h" 2
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/common/ethernet_conf_derived.h" 1
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h" 2
-# 88 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_queue.h" 1
-# 26 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_queue.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/common/ethernet_conf_derived.h" 1
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h" 2
+# 88 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_queue.h" 1
+# 26 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_queue.h"
 typedef struct mii_ts_queue_t {
   int lock;
   int rdIndex;
@@ -302,7 +302,7 @@ int get_and_dec_transmit_count(int buf_num);
 
 
 int mii_packet_get_and_clear_forwarding(int buf_num, int ifnum);
-# 89 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h" 2
+# 89 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h" 2
 
 
 
@@ -334,7 +334,7 @@ typedef struct mii_packet_t {
 
   unsigned int data[((1518)+3)/4];
 } mii_packet_t;
-# 147 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h"
+# 147 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h"
 inline int mii_packet_get_length (int buf) { int x; __asm__("ldw %0,%1[" "0" "]":"=r"(x):"r"(buf)); return x; } inline void mii_packet_set_length (int buf, int x) { __asm__ volatile("stw %1, %0[" "0" "]"::"r"(buf),"r"(x):"memory"); }
 inline int mii_packet_get_timestamp (int buf) { int x; __asm__("ldw %0,%1[" "1" "]":"=r"(x):"r"(buf)); return x; } inline void mii_packet_set_timestamp (int buf, int x) { __asm__ volatile("stw %1, %0[" "1" "]"::"r"(buf),"r"(x):"memory"); }
 inline int mii_packet_get_filter_result (int buf) { int x; __asm__("ldw %0,%1[" "2" "]":"=r"(x):"r"(buf)); return x; } inline void mii_packet_set_filter_result (int buf, int x) { __asm__ volatile("stw %1, %0[" "2" "]"::"r"(buf),"r"(x):"memory"); }
@@ -362,7 +362,7 @@ inline int mii_packet_get_data_word(int data, int n) {
   __asm__("ldw %0,%1[%2]":"=r"(x):"r"(data),"r"(n));
   return x;
 }
-# 188 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h"
+# 188 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h"
 inline void mii_packet_set_data(int buf, int n, int v) {
   __asm__ volatile("stw %0,%1[%2]"::"r"(v),"r"(buf),"r"(n+10):"memory");
 }
@@ -374,7 +374,7 @@ inline void mii_packet_set_data_short(int buf, int n, int v) {
 inline void mii_packet_set_data_byte(int buf, int n, int v) {
   __asm__ volatile("st8 %0,%1[%2]"::"r"(v),"r"(buf),"r"(n+(10*4)):"memory");
 }
-# 215 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h"
+# 215 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h"
 void ethernet_get_mii_counts(unsigned *dropped);
 
 
@@ -389,16 +389,16 @@ void mii_rx_pins(
       unsigned c);
 
 void mii_tx_pins(
-# 238 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h"
+# 238 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h"
       unsigned lp_mempool,
       mii_ts_queue_t *ts_queue,
       unsigned p_mii_txd,
       int ifnum);
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c" 2
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c" 2
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.h" 1
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_malloc.h" 1
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.h" 1
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_malloc.h" 1
 
 
 
@@ -428,15 +428,15 @@ mii_buffer_t mii_get_next_buf(mii_mempool_t mempool);
 int mii_get_wrap_ptr(mii_mempool_t mempool);
 unsigned mii_packet_get_data(int buf, int n);
 int mii_packet_get_wrap_ptr(int buf);
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.h" 2
-# 21 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_filter.h"
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.h" 2
+# 21 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_filter.h"
 void ethernet_get_filter_counts(unsigned *address,
         unsigned *filter,
         unsigned *length,
         unsigned *crc);
-# 12 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_server.h" 1
-# 12 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_server.h"
+# 12 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_server.h" 1
+# 12 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_server.h"
 void ethernet_tx_server_no_buffer(const char mac_addr[],
                                   chanend tx[],
                                   int num_tx,
@@ -446,7 +446,7 @@ void ethernet_tx_server_no_buffer(const char mac_addr[],
                                   port p_mii_txd,
 
                                   smi_interface_t *smi1);
-# 36 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_tx_server.h"
+# 36 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_tx_server.h"
 void ethernet_tx_server(
 
 
@@ -458,11 +458,11 @@ void ethernet_tx_server(
                         chanend tx[], int num_tx,
                         smi_interface_t *smi1,
                         smi_interface_t *smi2);
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c" 2
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.h" 1
-# 27 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.h"
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server_def.h" 1
-# 38 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server_def.h"
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c" 2
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.h" 1
+# 27 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server_def.h" 1
+# 38 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server_def.h"
 typedef enum {
   ETHERNET_TX_REQ = 0x80000000,
   ETHERNET_TX_REQ_TIMED,
@@ -498,8 +498,8 @@ typedef enum {
   ETHERNET_REQ_ACK,
   ETHERNET_REQ_NACK,
 } ethernet_protocol_t;
-# 28 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.h" 2
-# 39 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_server.h"
+# 28 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.h" 2
+# 39 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_server.h"
 void ethernet_rx_server(
 
 
@@ -507,7 +507,7 @@ void ethernet_rx_server(
   mii_mempool_t rxmem_lp[],
   chanend link[],
   int num_links);
-# 14 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c" 2
+# 14 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c" 2
 
 # 1 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/print.h" 1 3 4
 # 34 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/print.h" 3 4
@@ -598,21 +598,21 @@ int printllonghexln(unsigned long long value);
 int printstr(const char *s);
 # 135 "/home/vdelacruz/XMOS/xTIMEcomposer/Community_13.1.0//target/include/print.h" 3 4
 int printstrln(const char *s);
-# 16 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c" 2
+# 16 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c" 2
 
 
 mii_ts_queue_t ts_queue[(1)];
 
 
 
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/hwlock.h" 1
-# 14 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/hwlock.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/hwlock.h" 1
+# 14 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/hwlock.h"
 typedef unsigned hwlock_t;
 
 enum {
   HWLOCK_NOT_ALLOCATED = 0
 };
-# 29 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/hwlock.h"
+# 29 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/hwlock.h"
 inline hwlock_t hwlock_alloc(void)
 {
   hwlock_t lock;
@@ -620,14 +620,14 @@ inline hwlock_t hwlock_alloc(void)
                     : "=r" (lock));
   return lock;
 }
-# 45 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/hwlock.h"
+# 45 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/hwlock.h"
 inline void hwlock_free(hwlock_t lock)
 {
   asm volatile ("freer res[%0]"
                         :
                         : "r" (lock));
 }
-# 60 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/hwlock.h"
+# 60 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/hwlock.h"
 inline void hwlock_acquire(hwlock_t lock)
 {
   asm volatile ("in %0, res[%0]"
@@ -635,7 +635,7 @@ inline void hwlock_acquire(hwlock_t lock)
                         : "r" (lock)
                         : "memory");
 }
-# 75 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/hwlock.h"
+# 75 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/hwlock.h"
 inline void hwlock_release(hwlock_t lock)
 {
   asm volatile ("out res[%0], %0"
@@ -643,9 +643,9 @@ inline void hwlock_release(hwlock_t lock)
                         : "r" (lock)
                         : "memory");
 }
-# 23 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c" 2
+# 23 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c" 2
 hwlock_t ethernet_memory_lock = 0;
-# 42 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c"
+# 42 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c"
 int rx_lp_data[(1)][(((4096))/4)];
 int tx_lp_data[(1)][(((4096))/4)];
 
@@ -665,7 +665,7 @@ void init_mii_mem() {
 
 
   for (int i=0; i<(1); ++i) {
-# 71 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c"
+# 71 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c"
     init_ts_queue(&ts_queue[i]);
   }
 
@@ -700,7 +700,7 @@ void mii_tx_pins_wr(port p,
                     int i)
 {
   mii_tx_pins(
-# 114 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c"
+# 114 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c"
     tx_mem_lp[i], &ts_queue[i], p, i);
 }
 

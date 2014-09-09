@@ -1,4 +1,4 @@
-	.file	"/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.c"
+	.file	"/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.c"
 
 .set uip_setipid.locnoside, 1
 
@@ -191,16 +191,16 @@
 .set uip_init.locnonotificationselect, 1
 
 
-	.file	1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.c"
-	.file	2 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h"
-	.file	3 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
-	.file	4 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.h"
-	.file	5 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
-	.file	6 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.h"
-	.file	7 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/xtcp_server_conf.h"
-	.file	8 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/timer.h"
-	.file	9 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/lc-switch.h"
-	.file	10 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h"
+	.file	1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.c"
+	.file	2 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h"
+	.file	3 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
+	.file	4 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.h"
+	.file	5 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
+	.file	6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.h"
+	.file	7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/xtcp_server_conf.h"
+	.file	8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/timer.h"
+	.file	9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/lc-switch.h"
+	.file	10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -4092,7 +4092,7 @@ uip_draddr:
 .Lsection_end1:
 	.section	.debug_info,"",@progbits
 .Linfo_begin1:
-	.long	4489
+	.long	4518
 	.short	2
 	.long	.Labbrev_begin
 	.byte	4
@@ -4100,11 +4100,11 @@ uip_draddr:
 	.ascii	 "4.2.1 (LLVM build) XMOS Community_13.1.0 (build 12073)"
 	.byte	0
 	.short	1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.c"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.c"
 	.byte	0
 	.long	0
 	.long	.Lsection_line
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 	.byte	1
 	.byte	2
@@ -5136,14 +5136,14 @@ uip_draddr:
 	.byte	0
 	.byte	1
 	.short	292
-	.long	4474
+	.long	4503
 	.long	.Ldebug_loc2+0
 	.byte	21
 	.byte	115
 	.byte	0
 	.byte	1
 	.short	292
-	.long	4474
+	.long	4503
 	.long	.Ldebug_loc4+0
 	.byte	0
 	.byte	22
@@ -5163,14 +5163,14 @@ uip_draddr:
 	.byte	0
 	.byte	1
 	.short	299
-	.long	4474
+	.long	4503
 	.long	.Ldebug_loc6+0
 	.byte	21
 	.byte	98
 	.byte	0
 	.byte	1
 	.short	299
-	.long	4474
+	.long	4503
 	.long	.Ldebug_loc10+0
 	.byte	0
 	.byte	20
@@ -5363,7 +5363,7 @@ uip_draddr:
 	.byte	0
 	.byte	1
 	.short	439
-	.long	4480
+	.long	4509
 	.long	.Ldebug_loc37+0
 	.byte	21
 	.ascii	 "rport"
@@ -5436,7 +5436,7 @@ uip_draddr:
 	.byte	0
 	.byte	1
 	.short	283
-	.long	4474
+	.long	4503
 	.long	.Ldebug_loc57+0
 	.byte	24
 	.long	.Lfunc_begin12
@@ -5474,7 +5474,7 @@ uip_draddr:
 	.byte	0
 	.byte	1
 	.short	348
-	.long	4474
+	.long	4503
 	.long	.Ldebug_loc65+0
 	.byte	21
 	.ascii	 "lengthInBytes"
@@ -5509,6 +5509,21 @@ uip_draddr:
 	.short	343
 	.byte	1
 	.long	644
+	.byte	28
+	.ascii	 "carry"
+	.byte	0
+	.byte	1
+	.short	343
+	.long	644
+	.byte	29
+	.byte	28
+	.ascii	 "sum"
+	.byte	0
+	.byte	1
+	.short	343
+	.long	628
+	.byte	0
+	.byte	0
 	.byte	22
 	.ascii	 "upper_layer_chksum"
 	.byte	0
@@ -5527,9 +5542,9 @@ uip_draddr:
 	.byte	1
 	.short	378
 	.long	298
-	.long	.Ldebug_loc81+0
+	.long	.Ldebug_loc83+0
 	.byte	0
-	.byte	28
+	.byte	30
 	.ascii	 "uip_udpchksum"
 	.byte	0
 	.ascii	 "uip_udpchksum"
@@ -5544,7 +5559,7 @@ uip_draddr:
 	.byte	1
 	.byte	94
 	.byte	1
-	.byte	28
+	.byte	30
 	.ascii	 "uip_tcpchksum"
 	.byte	0
 	.ascii	 "uip_tcpchksum"
@@ -5559,7 +5574,7 @@ uip_draddr:
 	.byte	1
 	.byte	94
 	.byte	1
-	.byte	28
+	.byte	30
 	.ascii	 "uip_ipchksum"
 	.byte	0
 	.ascii	 "uip_ipchksum"
@@ -5594,15 +5609,15 @@ uip_draddr:
 	.byte	0
 	.byte	1
 	.short	364
-	.long	4486
-	.long	.Ldebug_loc83+0
+	.long	4515
+	.long	.Ldebug_loc85+0
 	.byte	21
 	.ascii	 "len"
 	.byte	0
 	.byte	1
 	.short	364
 	.long	250
-	.long	.Ldebug_loc86+0
+	.long	.Ldebug_loc88+0
 	.byte	0
 	.byte	20
 	.ascii	 "uip_add32"
@@ -5623,15 +5638,15 @@ uip_draddr:
 	.byte	0
 	.byte	1
 	.short	321
-	.long	4474
-	.long	.Ldebug_loc89+0
+	.long	4503
+	.long	.Ldebug_loc91+0
 	.byte	21
 	.ascii	 "op16"
 	.byte	0
 	.byte	1
 	.short	321
 	.long	250
-	.long	.Ldebug_loc91+0
+	.long	.Ldebug_loc93+0
 	.byte	24
 	.long	.Lfunc_begin19
 	.long	.Ltmp241
@@ -5641,7 +5656,7 @@ uip_draddr:
 	.byte	1
 	.short	323
 	.long	628
-	.long	.Ldebug_loc93+0
+	.long	.Ldebug_loc95+0
 	.byte	0
 	.byte	0
 	.byte	26
@@ -5661,7 +5676,7 @@ uip_draddr:
 	.byte	1
 	.short	725
 	.long	250
-	.long	.Ldebug_loc95+0
+	.long	.Ldebug_loc97+0
 	.byte	0
 	.byte	20
 	.ascii	 "uip_process"
@@ -5683,7 +5698,7 @@ uip_draddr:
 	.byte	1
 	.short	733
 	.long	298
-	.long	.Ldebug_loc98+0
+	.long	.Ldebug_loc100+0
 	.byte	24
 	.long	.Ltmp272
 	.long	.Ltmp355
@@ -5693,10 +5708,10 @@ uip_draddr:
 	.byte	1
 	.short	734
 	.long	2116
-	.long	.Ldebug_loc102+0
+	.long	.Ldebug_loc104+0
 	.byte	0
 	.byte	0
-	.byte	29
+	.byte	31
 	.ascii	 "xtcp_swap_words"
 	.byte	0
 	.byte	1
@@ -5722,15 +5737,15 @@ uip_draddr:
 	.byte	0
 	.byte	1
 	.short	507
-	.long	4480
-	.long	.Ldebug_loc106+0
+	.long	4509
+	.long	.Ldebug_loc108+0
 	.byte	21
 	.ascii	 "rport"
 	.byte	0
 	.byte	1
 	.short	507
 	.long	250
-	.long	.Ldebug_loc111+0
+	.long	.Ldebug_loc113+0
 	.byte	24
 	.long	.Ltmp378
 	.long	.Ltmp390
@@ -5740,10 +5755,10 @@ uip_draddr:
 	.byte	1
 	.short	509
 	.long	2363
-	.long	.Ldebug_loc115+0
+	.long	.Ldebug_loc117+0
 	.byte	0
 	.byte	0
-	.byte	30
+	.byte	32
 	.ascii	 "uip_init"
 	.byte	0
 	.ascii	 "uip_init"
@@ -6158,7 +6173,7 @@ uip_draddr:
 	.byte	0
 	.byte	27
 	.byte	46
-	.byte	0
+	.byte	1
 	.byte	3
 	.byte	8
 	.byte	58
@@ -6172,6 +6187,24 @@ uip_draddr:
 	.byte	0
 	.byte	0
 	.byte	28
+	.byte	5
+	.byte	0
+	.byte	3
+	.byte	8
+	.byte	58
+	.byte	11
+	.byte	59
+	.byte	5
+	.byte	73
+	.byte	19
+	.byte	0
+	.byte	0
+	.byte	29
+	.byte	11
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	30
 	.byte	46
 	.byte	0
 	.ascii	 "\207@"
@@ -6198,7 +6231,7 @@ uip_draddr:
 	.byte	12
 	.byte	0
 	.byte	0
-	.byte	29
+	.byte	31
 	.byte	46
 	.byte	0
 	.byte	3
@@ -6211,7 +6244,7 @@ uip_draddr:
 	.byte	12
 	.byte	0
 	.byte	0
-	.byte	30
+	.byte	32
 	.byte	46
 	.byte	0
 	.ascii	 "\207@"
@@ -6248,13 +6281,13 @@ uip_draddr:
 	.long	.Lset1
 	.long	2521
 .asciiz "uip_netmask"
-	.long	4439
+	.long	4468
 .asciiz "uip_init"
 	.long	2599
 .asciiz "uip_slen"
-	.long	4328
+	.long	4357
 .asciiz "uip_udp_new"
-	.long	3900
+	.long	3929
 .asciiz "uip_tcpchksum"
 	.long	580
 .asciiz "uip_appdata"
@@ -6266,7 +6299,7 @@ uip_draddr:
 .asciiz "uip_connect"
 	.long	3499
 .asciiz "uip_send"
-	.long	4169
+	.long	4198
 .asciiz "uip_add_rcv_nxt"
 	.long	2470
 .asciiz "uip_flags"
@@ -6282,13 +6315,13 @@ uip_draddr:
 .asciiz "uip_ipaddr_cmp"
 	.long	2547
 .asciiz "uip_draddr"
-	.long	3851
+	.long	3880
 .asciiz "uip_udpchksum"
 	.long	2369
 .asciiz "uip_udp_conn"
 	.long	3255
 .asciiz "uip_udp_listen"
-	.long	4073
+	.long	4102
 .asciiz "uip_add32"
 	.long	2494
 .asciiz "uip_hostaddr"
@@ -6298,7 +6331,7 @@ uip_draddr:
 .asciiz "xtcp_increment_word"
 	.long	552
 .asciiz "uip_ethaddr"
-	.long	4307
+	.long	4336
 .asciiz "xtcp_swap_words"
 	.long	3643
 .asciiz "chksum"
@@ -6308,11 +6341,11 @@ uip_draddr:
 .asciiz "onesReduce"
 	.long	2157
 .asciiz "uip_conns"
-	.long	4216
+	.long	4245
 .asciiz "uip_process"
-	.long	3949
+	.long	3978
 .asciiz "uip_ipchksum"
-	.long	3793
+	.long	3822
 .asciiz "upper_layer_chksum"
 	.long	2829
 .asciiz "xtcp_compare_words"
@@ -6320,7 +6353,7 @@ uip_draddr:
 .asciiz "uip_listenports"
 	.long	2408
 .asciiz "uip_udp_conns"
-	.long	3996
+	.long	4025
 .asciiz "uip_chksum"
 	.long	2181
 .asciiz "uip_acc32"
@@ -6729,8 +6762,8 @@ uip_draddr:
 	.long	0
 	.long	0
 .Ldebug_loc81:
-	.long	.Lfunc_begin14
-	.long	.Ltmp193
+	.long	.Ltmp177
+	.long	.Ltmp178
 .Lset44 = .Ltmp486-.Ltmp485
 	.short	.Lset44
 .Ltmp485:
@@ -6739,195 +6772,205 @@ uip_draddr:
 	.long	0
 	.long	0
 .Ldebug_loc83:
-	.long	.Lfunc_begin18
-	.long	.Ltmp230
+	.long	.Lfunc_begin14
+	.long	.Ltmp193
 .Lset45 = .Ltmp488-.Ltmp487
 	.short	.Lset45
 .Ltmp487:
 	.byte	80
 .Ltmp488:
+	.long	0
+	.long	0
+.Ldebug_loc85:
+	.long	.Lfunc_begin18
 	.long	.Ltmp230
-	.long	.Ltmp232
 .Lset46 = .Ltmp490-.Ltmp489
 	.short	.Lset46
 .Ltmp489:
-	.byte	81
+	.byte	80
 .Ltmp490:
-	.long	0
-	.long	0
-.Ldebug_loc86:
-	.long	.Lfunc_begin18
-	.long	.Ltmp229
+	.long	.Ltmp230
+	.long	.Ltmp232
 .Lset47 = .Ltmp492-.Ltmp491
 	.short	.Lset47
 .Ltmp491:
 	.byte	81
 .Ltmp492:
+	.long	0
+	.long	0
+.Ldebug_loc88:
+	.long	.Lfunc_begin18
 	.long	.Ltmp229
-	.long	.Ltmp232
 .Lset48 = .Ltmp494-.Ltmp493
 	.short	.Lset48
 .Ltmp493:
-	.byte	82
+	.byte	81
 .Ltmp494:
-	.long	0
-	.long	0
-.Ldebug_loc89:
-	.long	.Lfunc_begin19
-	.long	.Ltmp238
+	.long	.Ltmp229
+	.long	.Ltmp232
 .Lset49 = .Ltmp496-.Ltmp495
 	.short	.Lset49
 .Ltmp495:
-	.byte	80
+	.byte	82
 .Ltmp496:
 	.long	0
 	.long	0
 .Ldebug_loc91:
 	.long	.Lfunc_begin19
-	.long	.Ltmp241
+	.long	.Ltmp238
 .Lset50 = .Ltmp498-.Ltmp497
 	.short	.Lset50
 .Ltmp497:
-	.byte	81
+	.byte	80
 .Ltmp498:
 	.long	0
 	.long	0
 .Ldebug_loc93:
-	.long	.Ltmp239
-	.long	.Ltmp240
+	.long	.Lfunc_begin19
+	.long	.Ltmp241
 .Lset51 = .Ltmp500-.Ltmp499
 	.short	.Lset51
 .Ltmp499:
-	.byte	80
+	.byte	81
 .Ltmp500:
 	.long	0
 	.long	0
 .Ldebug_loc95:
-	.long	.Lfunc_begin20
-	.long	.Ltmp248
+	.long	.Ltmp239
+	.long	.Ltmp240
 .Lset52 = .Ltmp502-.Ltmp501
 	.short	.Lset52
 .Ltmp501:
 	.byte	80
 .Ltmp502:
+	.long	0
+	.long	0
+.Ldebug_loc97:
+	.long	.Lfunc_begin20
 	.long	.Ltmp248
-	.long	.Ltmp249
 .Lset53 = .Ltmp504-.Ltmp503
 	.short	.Lset53
 .Ltmp503:
-	.byte	81
+	.byte	80
 .Ltmp504:
-	.long	0
-	.long	0
-.Ldebug_loc98:
-	.long	.Lfunc_begin21
-	.long	.Ltmp275
+	.long	.Ltmp248
+	.long	.Ltmp249
 .Lset54 = .Ltmp506-.Ltmp505
 	.short	.Lset54
 .Ltmp505:
-	.byte	80
+	.byte	81
 .Ltmp506:
-	.long	.Ltmp276
-	.long	.Ltmp278
+	.long	0
+	.long	0
+.Ldebug_loc100:
+	.long	.Lfunc_begin21
+	.long	.Ltmp275
 .Lset55 = .Ltmp508-.Ltmp507
 	.short	.Lset55
 .Ltmp507:
 	.byte	80
 .Ltmp508:
-	.long	0
-	.long	0
-.Ldebug_loc102:
-	.long	.Ltmp273
-	.long	.Ltmp274
+	.long	.Ltmp276
+	.long	.Ltmp278
 .Lset56 = .Ltmp510-.Ltmp509
 	.short	.Lset56
 .Ltmp509:
-	.byte	84
+	.byte	80
 .Ltmp510:
-	.long	.Ltmp324
-	.long	.Ltmp324
+	.long	0
+	.long	0
+.Ldebug_loc104:
+	.long	.Ltmp273
+	.long	.Ltmp274
 .Lset57 = .Ltmp512-.Ltmp511
 	.short	.Lset57
 .Ltmp511:
 	.byte	84
 .Ltmp512:
-	.long	.Ltmp338
-	.long	.Ltmp338
+	.long	.Ltmp324
+	.long	.Ltmp324
 .Lset58 = .Ltmp514-.Ltmp513
 	.short	.Lset58
 .Ltmp513:
-	.byte	91
+	.byte	84
 .Ltmp514:
-	.long	0
-	.long	0
-.Ldebug_loc106:
-	.long	.Lfunc_begin22
-	.long	.Ltmp378
+	.long	.Ltmp338
+	.long	.Ltmp338
 .Lset59 = .Ltmp516-.Ltmp515
 	.short	.Lset59
 .Ltmp515:
-	.byte	80
+	.byte	91
 .Ltmp516:
+	.long	0
+	.long	0
+.Ldebug_loc108:
+	.long	.Lfunc_begin22
 	.long	.Ltmp378
-	.long	.Ltmp384
 .Lset60 = .Ltmp518-.Ltmp517
 	.short	.Lset60
 .Ltmp517:
-	.byte	126
-	.byte	8
+	.byte	80
 .Ltmp518:
+	.long	.Ltmp378
 	.long	.Ltmp384
-	.long	.Ltmp386
 .Lset61 = .Ltmp520-.Ltmp519
 	.short	.Lset61
 .Ltmp519:
-	.byte	81
+	.byte	126
+	.byte	8
 .Ltmp520:
-	.long	.Ltmp387
-	.long	.Ltmp388
+	.long	.Ltmp384
+	.long	.Ltmp386
 .Lset62 = .Ltmp522-.Ltmp521
 	.short	.Lset62
 .Ltmp521:
 	.byte	81
 .Ltmp522:
-	.long	0
-	.long	0
-.Ldebug_loc111:
-	.long	.Lfunc_begin22
-	.long	.Ltmp377
+	.long	.Ltmp387
+	.long	.Ltmp388
 .Lset63 = .Ltmp524-.Ltmp523
 	.short	.Lset63
 .Ltmp523:
 	.byte	81
 .Ltmp524:
+	.long	0
+	.long	0
+.Ldebug_loc113:
+	.long	.Lfunc_begin22
 	.long	.Ltmp377
-	.long	.Lfunc_end22
 .Lset64 = .Ltmp526-.Ltmp525
 	.short	.Lset64
 .Ltmp525:
-	.byte	126
-	.byte	4
+	.byte	81
 .Ltmp526:
-	.long	0
-	.long	0
-.Ldebug_loc115:
-	.long	.Ltmp383
-	.long	.Ltmp389
+	.long	.Ltmp377
+	.long	.Lfunc_end22
 .Lset65 = .Ltmp528-.Ltmp527
 	.short	.Lset65
 .Ltmp527:
-	.byte	84
+	.byte	126
+	.byte	4
 .Ltmp528:
-	.long	.Ltmp389
+	.long	0
+	.long	0
+.Ldebug_loc117:
+	.long	.Ltmp383
 	.long	.Ltmp389
 .Lset66 = .Ltmp530-.Ltmp529
 	.short	.Lset66
 .Ltmp529:
-	.byte	80
+	.byte	84
 .Ltmp530:
+	.long	.Ltmp389
+	.long	.Ltmp389
+.Lset67 = .Ltmp532-.Ltmp531
+	.short	.Lset67
+.Ltmp531:
+	.byte	80
+.Ltmp532:
 	.long	0
 	.long	0
-.Ldebug_loc118:
+.Ldebug_loc120:
 	.section	.debug_aranges,"",@progbits
 	.section	.debug_ranges,"",@progbits
 	.section	.debug_macinfo,"",@progbits

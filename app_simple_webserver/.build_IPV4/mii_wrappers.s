@@ -1,4 +1,4 @@
-	.file	"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c"
+	.file	"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c"
 
 .set ethernet_rx_server_wr.locnoside, 1
 
@@ -51,11 +51,11 @@
 .set init_mii_mem.locnonotificationselect, 1
 
 
-	.file	1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c"
-	.file	2 "/home/vdelacruz/Documents/Ethernet sin mii/module_locks/src/hwlock.h"
-	.file	3 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_queue.h"
-	.file	4 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_full.h"
-	.file	5 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_malloc.h"
+	.file	1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c"
+	.file	2 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_locks/src/hwlock.h"
+	.file	3 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_queue.h"
+	.file	4 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_full.h"
+	.file	5 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_malloc.h"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -159,7 +159,7 @@ ethernet_tx_server_wr:
 .Ltmp21:
 	.size	ethernet_tx_server_wr, .Ltmp21-ethernet_tx_server_wr
 .Lfunc_end1:
-	.file	7 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet_smi/src/smi.h"
+	.file	7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet_smi/src/smi.h"
 .Ltmp22:
 	.cfi_endproc
 .Leh_func_end1:
@@ -408,11 +408,11 @@ tx_lp_data:
 	.ascii	 "4.2.1 (LLVM build) XMOS Community_13.1.0 (build 12073)"
 	.byte	0
 	.short	1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/mii_wrappers.c"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/mii_wrappers.c"
 	.byte	0
 	.long	0
 	.long	.Lsection_line
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 	.byte	1
 	.byte	2

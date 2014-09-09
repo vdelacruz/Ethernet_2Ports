@@ -1,4 +1,4 @@
-	.file	"/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/ethernet_xtcp_server.xc"
+	.file	"/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/ethernet_xtcp_server.xc"
 
 	.inline_definition xtcp_complete_send
 	.inline_definition delay_seconds
@@ -229,11 +229,11 @@
 	.set ethernet_xtcp_server.locnonotificationselect, 1
 
 
-	.file	1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/ethernet_xtcp_server.xc"
-	.file	2 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/xtcp_client.h"
-	.file	3 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/timer.h"
-	.file	4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/mii_full.h"
-	.file	5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/ethernet_phy_reset.h"
+	.file	1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/ethernet_xtcp_server.xc"
+	.file	2 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/xtcp_client.h"
+	.file	3 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/timer.h"
+	.file	4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/mii_full.h"
+	.file	5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/ethernet_phy_reset.h"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -353,7 +353,7 @@ ethernet_xtcp_server:
 .Lsection_end1:
 	.section	.debug_info,"",@progbits
 .Linfo_begin1:
-	.long	3336
+	.long	3314
 	.short	2
 	.long	.Labbrev_begin
 	.byte	4
@@ -361,11 +361,11 @@ ethernet_xtcp_server:
 	.ascii	 "XMOS 32-bit XC Compiler Community_13.1.0 (build 12073, May-09-2014)"
 	.byte	0
 	.short	49152
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/ethernet_xtcp_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/ethernet_xtcp_server.xc"
 	.byte	0
 	.long	0
 	.long	.Lsection_line
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 	.byte	1
 	.byte	2
@@ -381,7 +381,7 @@ ethernet_xtcp_server:
 	.byte	0
 	.byte	2
 	.short	507
-	.long	3290
+	.long	3268
 	.byte	0
 	.byte	4
 	.ascii	 "delay_seconds"
@@ -396,7 +396,7 @@ ethernet_xtcp_server:
 	.byte	0
 	.byte	3
 	.byte	46
-	.long	3323
+	.long	3301
 	.byte	0
 	.byte	4
 	.ascii	 "delay_milliseconds"
@@ -411,7 +411,7 @@ ethernet_xtcp_server:
 	.byte	0
 	.byte	3
 	.byte	54
-	.long	3323
+	.long	3301
 	.byte	0
 	.byte	4
 	.ascii	 "delay_microseconds"
@@ -426,7 +426,7 @@ ethernet_xtcp_server:
 	.byte	0
 	.byte	3
 	.byte	62
-	.long	3323
+	.long	3301
 	.byte	0
 	.byte	6
 	.ascii	 "mii_packet_get_length"
@@ -1054,21 +1054,21 @@ ethernet_xtcp_server:
 	.byte	0
 	.byte	1
 	.byte	6
-	.long	3173
+	.long	3151
 	.long	.Ldebug_loc0+0
 	.byte	10
 	.ascii	 "ipconfig"
 	.byte	0
 	.byte	1
 	.byte	7
-	.long	3285
+	.long	3263
 	.long	.Ldebug_loc3+0
 	.byte	10
 	.ascii	 "c_xtcp"
 	.byte	0
 	.byte	1
 	.byte	8
-	.long	3306
+	.long	3284
 	.long	.Ldebug_loc6+0
 	.byte	10
 	.byte	110
@@ -1088,7 +1088,7 @@ ethernet_xtcp_server:
 	.byte	0
 	.byte	1
 	.byte	11
-	.long	3311
+	.long	3289
 	.byte	0
 	.byte	0
 	.byte	0
@@ -1165,7 +1165,7 @@ ethernet_xtcp_server:
 	.byte	12
 	.ascii	 "mii_interface_lite_t"
 	.byte	0
-	.byte	40
+	.byte	36
 	.byte	13
 	.ascii	 "clk_mii_rx"
 	.byte	0
@@ -1197,16 +1197,6 @@ ethernet_xtcp_server:
 	.byte	8
 	.byte	1
 	.byte	13
-	.ascii	 "p_mii_rxer"
-	.byte	0
-	.long	2689
-	.byte	1
-	.byte	10
-	.byte	2
-	.byte	35
-	.byte	12
-	.byte	1
-	.byte	13
 	.ascii	 "p_mii_rxd"
 	.byte	0
 	.long	2689
@@ -1214,7 +1204,7 @@ ethernet_xtcp_server:
 	.byte	10
 	.byte	2
 	.byte	35
-	.byte	16
+	.byte	12
 	.byte	1
 	.byte	13
 	.ascii	 "p_mii_rxdv"
@@ -1224,7 +1214,7 @@ ethernet_xtcp_server:
 	.byte	10
 	.byte	2
 	.byte	35
-	.byte	20
+	.byte	16
 	.byte	1
 	.byte	13
 	.ascii	 "p_mii_txclk"
@@ -1234,7 +1224,7 @@ ethernet_xtcp_server:
 	.byte	10
 	.byte	2
 	.byte	35
-	.byte	24
+	.byte	20
 	.byte	1
 	.byte	13
 	.ascii	 "p_mii_txen"
@@ -1244,7 +1234,7 @@ ethernet_xtcp_server:
 	.byte	10
 	.byte	2
 	.byte	35
-	.byte	28
+	.byte	24
 	.byte	1
 	.byte	13
 	.ascii	 "p_mii_txd"
@@ -1254,7 +1244,7 @@ ethernet_xtcp_server:
 	.byte	10
 	.byte	2
 	.byte	35
-	.byte	32
+	.byte	28
 	.byte	1
 	.byte	13
 	.ascii	 "p_mii_timing"
@@ -1264,13 +1254,13 @@ ethernet_xtcp_server:
 	.byte	10
 	.byte	2
 	.byte	35
-	.byte	36
+	.byte	32
 	.byte	1
 	.byte	0
 	.byte	12
 	.ascii	 "ethernet_xtcp_ports_s"
 	.byte	0
-	.byte	64
+	.byte	60
 	.byte	13
 	.ascii	 "otp_ports"
 	.byte	0
@@ -1309,11 +1299,11 @@ ethernet_xtcp_server:
 	.byte	10
 	.byte	2
 	.byte	35
-	.byte	60
+	.byte	56
 	.byte	1
 	.byte	0
 	.byte	14
-	.long	3078
+	.long	3056
 	.byte	8
 	.ascii	 "unsigned char"
 	.byte	0
@@ -1323,9 +1313,9 @@ ethernet_xtcp_server:
 	.byte	4
 	.byte	5
 	.byte	16
-	.long	3178
+	.long	3156
 	.byte	17
-	.long	3195
+	.long	3173
 	.byte	3
 	.byte	0
 	.byte	12
@@ -1335,7 +1325,7 @@ ethernet_xtcp_server:
 	.byte	13
 	.ascii	 "ipaddr"
 	.byte	0
-	.long	3198
+	.long	3176
 	.byte	1
 	.byte	10
 	.byte	2
@@ -1345,7 +1335,7 @@ ethernet_xtcp_server:
 	.byte	13
 	.ascii	 "netmask"
 	.byte	0
-	.long	3198
+	.long	3176
 	.byte	1
 	.byte	10
 	.byte	2
@@ -1355,7 +1345,7 @@ ethernet_xtcp_server:
 	.byte	13
 	.ascii	 "gateway"
 	.byte	0
-	.long	3198
+	.long	3176
 	.byte	1
 	.byte	10
 	.byte	2
@@ -1364,20 +1354,20 @@ ethernet_xtcp_server:
 	.byte	1
 	.byte	0
 	.byte	14
-	.long	3210
+	.long	3188
 	.byte	8
 	.ascii	 "chanend"
 	.byte	0
 	.byte	7
 	.byte	4
 	.byte	18
-	.long	3290
+	.long	3268
 	.byte	14
-	.long	3301
+	.long	3279
 	.byte	16
-	.long	3178
+	.long	3156
 	.byte	17
-	.long	3195
+	.long	3173
 	.byte	5
 	.byte	0
 	.byte	8
@@ -1701,9 +1691,9 @@ ethernet_xtcp_server:
 	.long	.Linfo_begin1
 .Lset3 = .Linfo_end1-.Linfo_begin1
 	.long	.Lset3
-	.long	3210
+	.long	3188
 .asciiz "xtcp_ipconfig_t"
-	.long	3078
+	.long	3056
 .asciiz "ethernet_xtcp_ports_s"
 	.long	2760
 .asciiz "smi_interface_t"
@@ -1788,22 +1778,22 @@ ethernet_xtcp_server:
 	.section	.debug_macinfo,"",@progbits
 
 	.typestring otp_board_info_get_mac, "f{si}(&(s(otp_ports_t){m(data){p},m(addr){o:p},m(ctrl){o:p}}),ui,&(a(6:uc)))"
-	.typestring ethernet_xtcp_server, "f{0}(&(s(ethernet_xtcp_ports_s){m(otp_ports){s(otp_ports_t){m(data){p},m(addr){o:p},m(ctrl){o:p}}},m(smi){s(smi_interface_t){m(phy_address){si},m(p_smi_mdc){p}}},m(mii){s(mii_interface_lite_t){m(clk_mii_rx){ck},m(clk_mii_tx){ck},m(p_mii_rxclk){i:p},m(p_mii_rxer){i:p},m(p_mii_rxd){bi:p:32},m(p_mii_rxdv){i:p},m(p_mii_txclk){i:p},m(p_mii_txen){o:p},m(p_mii_txd){bo:p:32},m(p_mii_timing){i:p}}},m(eth_rst){si}}),&(s(xtcp_ipconfig_t){m(ipaddr){a(4:uc)},m(netmask){a(4:uc)},m(gateway){a(4:uc)}}),&(a(:chd)),si)"
-	.typestring uip_single_server, "f{0}(no:p,&(s(smi_interface_t){m(phy_address){si},m(p_smi_mdc){p}}),&(s(mii_interface_lite_t){m(clk_mii_rx){ck},m(clk_mii_tx){ck},m(p_mii_rxclk){i:p},m(p_mii_rxer){i:p},m(p_mii_rxd){bi:p:32},m(p_mii_rxdv){i:p},m(p_mii_txclk){i:p},m(p_mii_txen){o:p},m(p_mii_txd){bo:p:32},m(p_mii_timing){i:p}}),&(a(:chd)),si,&(s(xtcp_ipconfig_t){m(ipaddr){a(4:uc)},m(netmask){a(4:uc)},m(gateway){a(4:uc)}}),&(a(6:uc)))"
+	.typestring ethernet_xtcp_server, "f{0}(&(s(ethernet_xtcp_ports_s){m(otp_ports){s(otp_ports_t){m(data){p},m(addr){o:p},m(ctrl){o:p}}},m(smi){s(smi_interface_t){m(phy_address){si},m(p_smi_mdc){p}}},m(mii){s(mii_interface_lite_t){m(clk_mii_rx){ck},m(clk_mii_tx){ck},m(p_mii_rxclk){i:p},m(p_mii_rxd){bi:p:32},m(p_mii_rxdv){i:p},m(p_mii_txclk){i:p},m(p_mii_txen){o:p},m(p_mii_txd){bo:p:32},m(p_mii_timing){i:p}}},m(eth_rst){si}}),&(s(xtcp_ipconfig_t){m(ipaddr){a(4:uc)},m(netmask){a(4:uc)},m(gateway){a(4:uc)}}),&(a(:chd)),si)"
+	.typestring uip_single_server, "f{0}(no:p,&(s(smi_interface_t){m(phy_address){si},m(p_smi_mdc){p}}),&(s(mii_interface_lite_t){m(clk_mii_rx){ck},m(clk_mii_tx){ck},m(p_mii_rxclk){i:p},m(p_mii_rxd){bi:p:32},m(p_mii_rxdv){i:p},m(p_mii_txclk){i:p},m(p_mii_txen){o:p},m(p_mii_txd){bo:p:32},m(p_mii_timing){i:p}}),&(a(:chd)),si,&(s(xtcp_ipconfig_t){m(ipaddr){a(4:uc)},m(netmask){a(4:uc)},m(gateway){a(4:uc)}}),&(a(6:uc)))"
 	.section	.xtacalltable,"",@progbits
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 .cc_top cc_0,.Lxta.call_labels0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/ethernet_xtcp_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/ethernet_xtcp_server.xc"
 	.byte	0
 	.long	12
 	.long	.Lxta.call_labels0
 .cc_bottom cc_0
 .cc_top cc_1,.Lxta.call_labels1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/ethernet_xtcp_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/ethernet_xtcp_server.xc"
 	.byte	0
 	.long	15
 	.long	.Lxta.call_labels1
@@ -1813,10 +1803,10 @@ ethernet_xtcp_server:
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 .cc_top cc_2,.Lxtalabel0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/ethernet_xtcp_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/ethernet_xtcp_server.xc"
 	.byte	0
 	.long	10
 	.long	17

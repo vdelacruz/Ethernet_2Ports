@@ -49,7 +49,7 @@ typedef struct mii_interface_lite_t {
   clock clk_mii_tx;            /**< MII TX Clock Block **/
 
   in port p_mii_rxclk;         /**< MII RX clock wire */
-  in port p_mii_rxer;          /**< MII RX error wire */
+  //in port p_mii_rxer;          /**< MII RX error wire */
   in buffered port:32 p_mii_rxd; /**< MII RX data wire */
   in port p_mii_rxdv;          /**< MII RX data valid wire */
 

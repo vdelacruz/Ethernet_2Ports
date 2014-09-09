@@ -5,33 +5,52 @@ xmake CONFIG=IPV4 all
 Using modules: module_xtcp module_ethernet_board_support module_ethernet module_otp_board_info module_ethernet_smi module_locks
 Creating dependencies for main.xc
 Compiling main.xc
+../src/main.xc: In function `main':
+../src/main.xc:98: warning: `c_xtcp1' not used in two parallel statements
 Creating app_simple_webserver_IPV4.xe
-Constraint check for "tile[0]" (node "0", tile 0):
-  Cores available:            8,   used:          3 .  OKAY
-  Timers available:          10,   used:          3 .  OKAY
-  Chanends available:        32,   used:          8 .  OKAY
-  Memory available:       65536,   used:      43956 .  OKAY
-    (Stack: 15812, Code: 20980, Data: 7164)
-Constraints checks PASSED.
-Constraint check for "tile[1]" (node "1", tile 0):
-  Cores available:            8,   used:          1 .  OKAY
-  Timers available:          10,   used:          1 .  OKAY
-  Chanends available:        32,   used:          0 .  OKAY
-  Memory available:       65536,   used:       1156 .  OKAY
-    (Stack: 336, Code: 644, Data: 176)
-Constraints checks PASSED.
-Constraint check for "tile[2]" (node "2", tile 0):
-  Cores available:            8,   used:          1 .  OKAY
-  Timers available:          10,   used:          1 .  OKAY
-  Chanends available:        32,   used:          0 .  OKAY
-  Memory available:       65536,   used:       1156 .  OKAY
-    (Stack: 336, Code: 644, Data: 176)
-Constraints checks PASSED.
-Constraint check for "tile[3]" (node "3", tile 0):
-  Cores available:            8,   used:          1 .  OKAY
-  Timers available:          10,   used:          1 .  OKAY
-  Chanends available:        32,   used:          0 .  OKAY
-  Memory available:       65536,   used:       1156 .  OKAY
-    (Stack: 336, Code: 644, Data: 176)
-Constraints checks PASSED.
-Build Complete
+../src/main.xc:90: error: use of `usage.anon.7' violates parallel usage rules
+/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc:197: error: previously used here
+  called by uip_single_server
+  called by ethernet_xtcp_server
+  called by usage.anon.32
+/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc:197: error: previously used here
+  called by uip_single_server
+  called by ethernet_xtcp_server
+  called by usage.anon.31
+../src/main.xc:90: error: use of `uip_buf32' violates parallel usage rules
+/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc:225: error: previously used here
+  called by uip_single_server
+  called by ethernet_xtcp_server
+  called by usage.anon.32
+/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_single_server.xc:225: error: previously used here
+  called by uip_single_server
+  called by ethernet_xtcp_server
+  called by usage.anon.31
+../src/main.xc:90: error: use of `usage.anon.8' violates parallel usage rules
+/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc:271: error: previously used here (bytes 12..16)
+  called by xtcpd_service_clients
+  called by usage.anon.6
+  called by uip_single_server
+  called by ethernet_xtcp_server
+  called by usage.anon.32
+/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc:271: error: previously used here (bytes 12..16)
+  called by xtcpd_service_clients
+  called by usage.anon.6
+  called by uip_single_server
+  called by ethernet_xtcp_server
+  called by usage.anon.31
+../src/main.xc:90: error: use of `usage.anon.6' violates parallel usage rules
+/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc:269: error: previously used here
+  called by xtcpd_service_clients
+  called by usage.anon.6
+  called by uip_single_server
+  called by ethernet_xtcp_server
+  called by usage.anon.32
+/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.xc:269: error: previously used here
+  called by xtcpd_service_clients
+  called by usage.anon.6
+  called by uip_single_server
+  called by ethernet_xtcp_server
+  called by usage.anon.31
+xmake[1]: *** [bin/IPV4/app_simple_webserver_IPV4.xe] Error 1
+xmake: *** [bin/IPV4/app_simple_webserver_IPV4.xe] Error 2

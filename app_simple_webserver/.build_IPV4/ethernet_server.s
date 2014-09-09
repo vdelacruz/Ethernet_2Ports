@@ -1,4 +1,4 @@
-	.file	"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.file	"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 
 	.inline_definition delay_seconds
 	.inline_definition delay_milliseconds
@@ -73,16 +73,16 @@
 	.call usage.anon.2,delay_ticks_longlong
 	.call usage.anon.1,delay_ticks_longlong
 	.call usage.anon.0,delay_ticks_longlong
-	.par mii_rx_pins_wr,mii_tx_pins_wr,"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
-	.par mii_rx_pins_wr,ethernet_tx_server_wr,"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
-	.par mii_rx_pins_wr,ethernet_rx_server_wr,"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
-	.par mii_rx_pins_wr,ethernet_filter,"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
-	.par mii_tx_pins_wr,ethernet_tx_server_wr,"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
-	.par mii_tx_pins_wr,ethernet_rx_server_wr,"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
-	.par mii_tx_pins_wr,ethernet_filter,"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
-	.par ethernet_tx_server_wr,ethernet_rx_server_wr,"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
-	.par ethernet_tx_server_wr,ethernet_filter,"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
-	.par ethernet_rx_server_wr,ethernet_filter,"/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
+	.par mii_rx_pins_wr,mii_tx_pins_wr,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
+	.par mii_rx_pins_wr,ethernet_tx_server_wr,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
+	.par mii_rx_pins_wr,ethernet_rx_server_wr,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
+	.par mii_rx_pins_wr,ethernet_filter,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
+	.par mii_tx_pins_wr,ethernet_tx_server_wr,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
+	.par mii_tx_pins_wr,ethernet_rx_server_wr,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
+	.par mii_tx_pins_wr,ethernet_filter,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
+	.par ethernet_tx_server_wr,ethernet_rx_server_wr,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
+	.par ethernet_tx_server_wr,ethernet_filter,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
+	.par ethernet_rx_server_wr,ethernet_filter,"/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc:33: error: use of `%s' violates parallel usage rules"
 	.set usage.anon.0.locnoside, 1
 	.set usage.anon.1.locnoside, 1
 	.set usage.anon.2.locnoside, 1
@@ -238,9 +238,9 @@
 	.overlay_subgraph_conflict ethernet_server_full.task.mii_rx_pins_wr.0, ethernet_server_full.task.mii_tx_pins_wr.1, ethernet_server_full.task.ethernet_tx_server_wr.2, ethernet_server_full.task.ethernet_rx_server_wr.3, ethernet_server_full.task.ethernet_filter.4
 
 
-	.file	1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
-	.file	2 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/timer.h"
-	.file	3 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/mii_full.h"
+	.file	1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
+	.file	2 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/timer.h"
+	.file	3 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/mii_full.h"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -641,11 +641,11 @@ par.desc.1:
 	.ascii	 "XMOS 32-bit XC Compiler Community_13.1.0 (build 12073, May-09-2014)"
 	.byte	0
 	.short	49152
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	0
 	.long	.Lsection_line
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 	.byte	1
 	.byte	2
@@ -2311,64 +2311,64 @@ par.desc.1:
 .Lentries_start0:
 	.long	.Lentries_end1-.Lentries_start0
 	.long	0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 .cc_top cc_0,.Lxta.call_labels0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	17
 	.long	.Lxta.call_labels0
 .cc_bottom cc_0
 .cc_top cc_1,.Lxta.call_labels1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	18
 	.long	.Lxta.call_labels1
 .cc_bottom cc_1
 .cc_top cc_2,.Lxta.call_labels2
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	19
 	.long	.Lxta.call_labels2
 .cc_bottom cc_2
 .cc_top cc_3,.Lxta.call_labels3
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	31
 	.long	.Lxta.call_labels3
 .cc_bottom cc_3
 .cc_top cc_4,.Lxta.call_labels4
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	32
 	.long	.Lxta.call_labels4
 .cc_bottom cc_4
 .cc_top cc_5,.Lxta.call_labels5
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	36
 	.long	.Lxta.call_labels5
 .cc_bottom cc_5
 .cc_top cc_6,.Lxta.call_labels6
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	37
 	.long	.Lxta.call_labels6
 .cc_bottom cc_6
 .cc_top cc_7,.Lxta.call_labels7
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	38
 	.long	.Lxta.call_labels7
 .cc_bottom cc_7
 .cc_top cc_8,.Lxta.call_labels8
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	39
 	.long	.Lxta.call_labels8
 .cc_bottom cc_8
 .cc_top cc_9,.Lxta.call_labels9
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	40
 	.long	.Lxta.call_labels9
@@ -2378,17 +2378,17 @@ par.desc.1:
 .Lentries_start2:
 	.long	.Lentries_end3-.Lentries_start2
 	.long	0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 .cc_top cc_10,.Lxtalabel0
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	16
 	.long	20
 	.long	.Lxtalabel0
 .cc_bottom cc_10
 .cc_top cc_11,.Lxtalabel1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 	.byte	0
 	.long	29
 	.long	42

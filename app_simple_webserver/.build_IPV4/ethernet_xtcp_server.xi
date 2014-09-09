@@ -1,4 +1,4 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/ethernet_xtcp_server.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/ethernet_xtcp_server.xc"
 # 1 "ethernet_xtcp_server.h" 1
 # 3 "ethernet_xtcp_server.h"
 # 1 "uip_server.h" 1
@@ -236,8 +236,8 @@ int otp_board_info_get_serial( otp_ports_t &ports ,
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -538,8 +538,8 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -596,7 +596,7 @@ typedef struct mii_interface_lite_t {
   __clock_t  clk_mii_tx;
 
   in port p_mii_rxclk;
-  in port p_mii_rxer;
+
   in buffered port:32 p_mii_rxd;
   in port p_mii_rxdv;
 
@@ -1035,7 +1035,7 @@ void ethernet_xtcp_server( ethernet_xtcp_ports_t &ports ,
                           xtcp_ipconfig_t &ipconfig ,
                           chanend xtcp[],
                           int n);
-# 2 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/ethernet_xtcp_server.xc" 2
+# 2 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/ethernet_xtcp_server.xc" 2
 # 1 "uip_single_server.h" 1
 # 1 "xs1.h" 1 3
 # 2 "uip_single_server.h" 2
@@ -1053,9 +1053,9 @@ void uip_single_server(out port ?p_mii_resetn,
                        chanend xtcp[], int num_xtcp,
                        xtcp_ipconfig_t& ipconfig,
                        char mac_address[6]);
-# 3 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/ethernet_xtcp_server.xc" 2
+# 3 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/ethernet_xtcp_server.xc" 2
 # 1 "xtcp_conf_derived.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/ethernet_xtcp_server.xc" 2
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/ethernet_xtcp_server.xc" 2
 
 
 void ethernet_xtcp_server(ethernet_xtcp_ports_t &ports,

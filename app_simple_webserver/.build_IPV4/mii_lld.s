@@ -1,6 +1,6 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lld.S"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lld.S"
 .cc_top miiLLD.func, miiLLD
-# 2 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lld.S"
+# 2 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lld.S"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -31,8 +31,8 @@
 # 42 "xs1.h" 2 3
 # 1 "xs1_clock.h" 1 3
 # 43 "xs1.h" 2 3
-# 3 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lld.S" 2
-# 32 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lld.S"
+# 3 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lld.S" 2
+# 32 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lld.S"
      .section .cp.rodata, "ac", @progbits
 
     .align 4
@@ -50,7 +50,7 @@ DallFives:
 .cc_bottom miiconsts.data
     .text
     .align 4
-# 64 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_lld.S"
+# 64 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_lld.S"
 .globl miiLLD.nstackwords
 .globl miiLLD.maxthreads
 .globl miiLLD.maxtimers

@@ -1,4 +1,4 @@
-	.file	"/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_server_support.c"
+	.file	"/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_server_support.c"
 
 .set uip_linkdown.locnoside, 1
 
@@ -101,9 +101,9 @@
 .set xtcpd_check_connection_poll.locnonotificationselect, 1
 
 
-	.file	1 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_server_support.c"
-	.file	2 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip-conf.h"
-	.file	3 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_client.h"
+	.file	1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_server_support.c"
+	.file	2 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip-conf.h"
+	.file	3 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_client.h"
 	.section	.debug_info,"",@progbits
 .Lsection_info:
 	.section	.debug_abbrev,"",@progbits
@@ -236,7 +236,7 @@ autoip_configured:
 .Ltmp24:
 	.size	autoip_configured, .Ltmp24-autoip_configured
 .Lfunc_end1:
-	.file	4 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip.h"
+	.file	4 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip.h"
 .Ltmp25:
 	.cfi_endproc
 .Leh_func_end1:
@@ -300,13 +300,13 @@ dhcpc_configured:
 .Ltmp36:
 	.size	dhcpc_configured, .Ltmp36-dhcpc_configured
 .Lfunc_end2:
-	.file	5 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/pt.h"
-	.file	6 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h"
-	.file	7 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_server.h"
-	.file	8 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/clock-arch.h"
-	.file	9 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/xtcp_server_conf.h"
-	.file	10 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/timer.h"
-	.file	11 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/lc-switch.h"
+	.file	5 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/pt.h"
+	.file	6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/dhcpc/dhcpc.h"
+	.file	7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_server.h"
+	.file	8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/clock-arch.h"
+	.file	9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/xtcp_server_conf.h"
+	.file	10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/timer.h"
+	.file	11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/lc-switch.h"
 .Ltmp37:
 	.cfi_endproc
 .Leh_func_end2:
@@ -1268,11 +1268,11 @@ uip_buf32:
 	.ascii	 "4.2.1 (LLVM build) XMOS Community_13.1.0 (build 12073)"
 	.byte	0
 	.short	1
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/module_xtcp/src/xtcp_uip/uip_server_support.c"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_xtcp/src/xtcp_uip/uip_server_support.c"
 	.byte	0
 	.long	0
 	.long	.Lsection_line
-	.ascii	 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4"
+	.ascii	 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4"
 	.byte	0
 	.byte	1
 	.byte	2
@@ -1758,7 +1758,7 @@ uip_buf32:
 	.byte	1
 	.byte	132
 	.long	243
-	.long	.Ldebug_loc67+0
+	.long	.Ldebug_loc65+0
 	.byte	0
 	.byte	0
 	.byte	0
@@ -3240,26 +3240,16 @@ uip_buf32:
 	.long	0
 	.long	0
 .Ldebug_loc65:
-	.long	.Ltmp213
-	.long	.Ltmp214
+	.long	.Ltmp215
+	.long	.Ltmp216
 .Lset44 = .Ltmp301-.Ltmp300
 	.short	.Lset44
 .Ltmp300:
-	.byte	84
+	.byte	90
 .Ltmp301:
 	.long	0
 	.long	0
 .Ldebug_loc67:
-	.long	.Ltmp215
-	.long	.Ltmp216
-.Lset45 = .Ltmp303-.Ltmp302
-	.short	.Lset45
-.Ltmp302:
-	.byte	90
-.Ltmp303:
-	.long	0
-	.long	0
-.Ldebug_loc69:
 	.section	.debug_aranges,"",@progbits
 	.section	.debug_ranges,"",@progbits
 	.section	.debug_macinfo,"",@progbits

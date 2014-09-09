@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_driver.xc"
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_driver.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_driver.xc"
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_driver.xc"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -300,17 +300,17 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_driver.xc" 2
-# 8 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_driver.xc"
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_driver.xc" 2
+# 8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_driver.xc"
 # 1 "ethernet_conf_derived.h" 1
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -322,8 +322,8 @@ service xscope_host_data(chanend c);;
 # 10 "ethernet_conf_derived.h"
 # 1 "xtcp_conf_derived.h" 1
 # 11 "ethernet_conf_derived.h" 2
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_driver.xc" 2
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_driver.xc"
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_driver.xc" 2
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_driver.xc"
 # 1 "mii_driver.h" 1
 # 4 "mii_driver.h"
 # 1 "mii.h" 1
@@ -382,7 +382,7 @@ typedef struct mii_interface_lite_t {
   __clock_t  clk_mii_tx;
 
   in port p_mii_rxclk;
-  in port p_mii_rxer;
+
   in buffered port:32 p_mii_rxd;
   in port p_mii_rxdv;
 
@@ -401,15 +401,15 @@ extern void mii_initialise(out port ?p_mii_resetn,
 extern void mii_driver(mii_interface_lite_t &m, chanend cIn, chanend cOut);
 
 extern void phy_reset(out port p_mii_resetn, timer tmr);
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_driver.xc" 2
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_driver.xc" 2
 # 1 "mii_lld.h" 1
 extern unsigned int tailValues[4];
 extern void miiLLD(buffered in port:32 rxd, in port rxdv, buffered out port:32 txd,
                    chanend INchannel, chanend OUTchannel, in port timing,
                    timer tmr);
-# 12 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_driver.xc" 2
+# 12 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_driver.xc" 2
 # 1 "mii.h" 1
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_driver.xc" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_driver.xc" 2
 # 1 "mii_lite.h" 1
 # 4 "mii_lite.h"
 # 1 "xs1.h" 1 3
@@ -423,7 +423,7 @@ extern void miiLLD(buffered in port:32 rxd, in port rxdv, buffered out port:32 t
 extern void mii_port_init(mii_interface_lite_t &m);
 # 17 "mii_lite.h"
 extern void miiTimeStampInit(unsigned offset);
-# 14 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/lite/mii_driver.xc" 2
+# 14 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/lite/mii_driver.xc" 2
 
 void mii_initialise(out port ?p_mii_resetn,
                    mii_interface_lite_t &m)

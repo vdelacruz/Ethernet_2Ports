@@ -2,8 +2,8 @@
 # 6 "../src/main.xc"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet 2 nodes/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet 2 nodes/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -304,8 +304,8 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 5 "/home/vdelacruz/Documents/Ethernet 2 nodes/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet 2 nodes/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -601,7 +601,7 @@ typedef struct mii_interface_lite_t {
   __clock_t  clk_mii_tx;
 
   in port p_mii_rxclk;
-  in port p_mii_rxer;
+
   in buffered port:32 p_mii_rxd;
   in port p_mii_rxdv;
 
@@ -1083,6 +1083,8 @@ void xhttpd(chanend tcp_svr);
 
 
 on tile[0]: out port p_reset_0 =  0x10f00 ;
+on tile[0]: out port p_reset_1 =  0x10400 ;
+
 
 
 
@@ -1098,15 +1100,36 @@ ethernet_xtcp_ports_t xtcp_ports_0 =
           on tile[0] : 0x106 ,
           on tile[0] : 0x206 ,
           on tile[0]: 0x10500 ,
-          on tile[0]: 0x40000 ,
           on tile[0]: 0x40400 ,
           on tile[0]: 0x10e00 ,
           on tile[0]: 0x10a00 ,
           on tile[0]: 0x10d00 ,
           on tile[0]: 0x40500 ,
-          on tile[0] : 0x80200
+          on tile[0]: 0x80100 ,
+
         },
          0 };
+
+
+ethernet_xtcp_ports_t xtcp_ports_1 =
+
+    {on  tile[0] : {  0x200000 ,
+        0x100000 ,  0x100100  },
+        {  0 ,  on tile[0]: 0x40200  },
+        {
+          on tile[0] : 0x306 ,
+          on tile[0] : 0x406 ,
+          on tile[0]: 0x10800 ,
+          on tile[0]: 0x40100 ,
+          on tile[0]: 0x10b00 ,
+          on tile[0]: 0x10700 ,
+          on tile[0]: 0x10900 ,
+          on tile[0]: 0x40000 ,
+          on tile[0]: 0x80000 ,
+        },
+         0 };
+
+
 
 
 
@@ -1121,22 +1144,39 @@ xtcp_ipconfig_t ipconfig = {
 };
 
 
+xtcp_ipconfig_t ipconfig_1 = {
+  { 0, 0, 0, 0 },
+  { 0, 0, 0, 0 },
+  { 0, 0, 0, 0 }
+};
+
 
 int main(void) {
        chan c_xtcp[1];
+       chan c_xtcp1[1];
 
 	par
 	{
 
           on  tile[0] :
+      {
+          par{
              ethernet_xtcp_server(xtcp_ports_0,
                                   ipconfig,
                                   c_xtcp,
                                   1);
 
+             ethernet_xtcp_server(xtcp_ports_1,
+                                               ipconfig_1,
+                                               c_xtcp1,
+                                               1);
+
+             xhttpd(c_xtcp[0]);
+          }
+      }
 
 
-          on tile[0]: xhttpd(c_xtcp[0]);
+
 
 	}
 	return 0;

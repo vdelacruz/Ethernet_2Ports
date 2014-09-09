@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
-# 6 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
+# 6 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -300,7 +300,7 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 7 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc" 2
+# 7 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc" 2
 # 1 "mii_full.h" 1
 # 8 "mii_full.h"
 # 1 "xs1.h" 1 3
@@ -331,11 +331,11 @@ typedef out buffered port:32 out_buffered_port_32_t;
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -382,7 +382,7 @@ typedef struct mii_interface_lite_t {
   __clock_t  clk_mii_tx;
 
   in port p_mii_rxclk;
-  in port p_mii_rxer;
+
   in buffered port:32 p_mii_rxd;
   in port p_mii_rxdv;
 
@@ -525,7 +525,7 @@ void mii_tx_pins(
       mii_ts_queue_t &ts_queue ,
       out buffered port:32 p_mii_txd ,
       int ifnum);
-# 8 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc" 2
+# 8 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc" 2
 # 1 "smi.h" 1
 # 9 "smi.h"
 # 1 "xs1.h" 1 3
@@ -559,7 +559,7 @@ int smi_check_link_state( smi_interface_t &smi );
 
 
 int smi_reg( smi_interface_t &smi , unsigned reg, unsigned val, int inning);
-# 9 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc" 2
+# 9 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc" 2
 # 1 "mii_wrappers.h" 1
 
 
@@ -586,7 +586,7 @@ void ethernet_tx_server_wr(const char mac_addr[], chanend tx[], int num_q, int n
 
 
 void ethernet_rx_server_wr(chanend rx[], int num_rx);
-# 10 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc" 2
+# 10 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc" 2
 # 1 "mii_filter.h" 1
 # 8 "mii_filter.h"
 # 1 "mii_full.h" 1
@@ -636,7 +636,7 @@ void ethernet_get_filter_counts( unsigned &address ,
 								unsigned &filter ,
 								unsigned &length ,
 								unsigned &crc );
-# 11 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_server.xc" 2
+# 11 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_server.xc" 2
 
 
 

@@ -1,5 +1,5 @@
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_client.xc"
-# 16 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_client.xc"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_client.xc"
+# 16 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_client.xc"
 # 1 "xs1.h" 1 3
 # 19 "xs1.h" 3
 # 1 "timer.h" 1 3
@@ -300,7 +300,7 @@ unsigned get_tile_id(tileref t);
 unsigned get_logical_core_id(void);
 # 1934 "xs1.h" 3
 extern int __builtin_getid(void);
-# 17 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_client.xc" 2
+# 17 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_client.xc" 2
 # 1 "xclib.h" 1 3
 # 35 "xclib.h" 3
 unsigned bitrev(unsigned x);
@@ -308,7 +308,7 @@ unsigned bitrev(unsigned x);
 unsigned byterev(unsigned x);
 # 59 "xclib.h" 3
 int clz(unsigned x);
-# 18 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_client.xc" 2
+# 18 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_client.xc" 2
 # 1 "mii_full.h" 1
 # 8 "mii_full.h"
 # 1 "xs1.h" 1 3
@@ -339,11 +339,11 @@ typedef out buffered port:32 out_buffered_port_32_t;
 # 3 "ethernet_conf_derived.h"
 # 1 "platform.h" 1 3
 # 21 "platform.h" 3
-# 1 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
-# 4 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 1 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 1
+# 4 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 # 1 "xs1.h" 1 3
-# 5 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
-# 13 "/home/vdelacruz/Documents/Ethernet sin mii/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
+# 5 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h" 2
+# 13 "/home/vdelacruz/Documents/Ethernet 2 Ports/app_simple_webserver/.build_IPV4/SOMANET-C22.h"
 extern tileref tile[4];
 
 
@@ -390,7 +390,7 @@ typedef struct mii_interface_lite_t {
   __clock_t  clk_mii_tx;
 
   in port p_mii_rxclk;
-  in port p_mii_rxer;
+
   in buffered port:32 p_mii_rxd;
   in port p_mii_rxdv;
 
@@ -533,7 +533,7 @@ void mii_tx_pins(
       mii_ts_queue_t &ts_queue ,
       out buffered port:32 p_mii_txd ,
       int ifnum);
-# 19 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_client.xc" 2
+# 19 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_client.xc" 2
 # 1 "ethernet_server_def.h" 1
 # 20 "ethernet_server_def.h"
 # 1 "ethernet_conf_derived.h" 1
@@ -570,7 +570,7 @@ typedef enum {
   ETHERNET_REQ_ACK,
   ETHERNET_REQ_NACK,
 } ethernet_protocol_t;
-# 20 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_client.xc" 2
+# 20 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_client.xc" 2
 # 1 "ethernet_rx_client.h" 1
 # 9 "ethernet_rx_client.h"
 # 1 "ethernet_conf_derived.h" 1
@@ -679,9 +679,9 @@ void safe_mac_rx(chanend c_mac,
                  unsigned int &len ,
                  unsigned int &src_port ,
                  int n);
-# 21 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_client.xc" 2
+# 21 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_client.xc" 2
 # 1 "ethernet_conf_derived.h" 1
-# 22 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_client.xc" 2
+# 22 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_client.xc" 2
 # 1 "print.h" 1 3
 # 34 "print.h" 3
 int printchar(char value);
@@ -715,14 +715,14 @@ int printllonghexln(unsigned long long value);
 int printstr(const char (& alias s)[]);
 # 133 "print.h" 3
 int printstrln(const char (& alias s)[]);
-# 23 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_client.xc" 2
+# 23 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_client.xc" 2
 
 static inline unsigned int get_tile_id_from_chanend(chanend c) {
   unsigned int ci;
   asm("shr %0, %1, 16":"=r"(ci):"r"(c));
   return ci;
 }
-# 33 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_client.xc"
+# 33 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_client.xc"
 #pragma unsafe arrays
 static int ethernet_unified_get_data(chanend ethernet_rx_svr, unsigned char Buf[], unsigned int &rxTime,
                                      unsigned int &src_port, int &user_data, unsigned int Cmd, int n)
@@ -858,7 +858,7 @@ void mac_set_custom_filter(chanend mac_svr, int x)
   mac_svr <: x;
   return;
 }
-# 171 "/home/vdelacruz/Documents/Ethernet sin mii/module_ethernet/src/full/ethernet_rx_client.xc"
+# 171 "/home/vdelacruz/Documents/Ethernet 2 Ports/module_ethernet/src/full/ethernet_rx_client.xc"
 void mac_get_link_counters(chanend mac_svr, int& dropped)
 {
 
